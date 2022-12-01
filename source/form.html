@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+
+  <!--header -->
+
+  <header class="header">
+
+    <div class="header__top">
+
+      <!--header logo -->
+
+      <a class="logo" href="index.html">
+
+        <img class="logo__img" src="img/-header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
+      </a>
+
+      <!--header nav -->
+
+      <nav class="header__menu">
+
+        <h2 class="visually-hidden">Navigation</h2>
+
+        <button class="header__btn">
+
+          <span class="visually-hidden">Menu button</span>
+        </button>
+
+        <!--dropdown menu-->
+
+        <ul class="menu">
+
+          <li class="menu__list-item">
+
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+
+          <li class="menu__list-item">
+
+            <a class="menu__link" href="#">Фото и видео</a>
+          </li>
+
+          <li class="menu__list-item">
+
+            <a class="menu__link" href="#">Форма отзыва</a>
+          </li>
+
+          <li class="menu__list-item">
+
+            <a class="menu__link" href="#">htmlacademy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <!--header content bottom-->
+
+    <div class="header__content">
+
+      <img class="header__img-sedona" src="img/-intro/-sedona.svg" alt="sedona." width="282" height="49">
+
+    </div>
+  </header>
+
+  <!--main form-->
+
+  <main class="main-form">
+
+    <!--hero form-->
+
+    <!--form title-->
+
+    <section class="hero">
+
+      <h2 class="visually-hidden">Review</h2>
+
+      <h3 class="hero__title">Оставьте свой отзыв</h3>
+
+      <p class="hero__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        вами достопримечательностях</p>
+
+    </section>
+
+    <!--form-->
+
+    <section class="form">
+
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+
+      <!--form name input-->
+
+      <div class="fildset-wrapper">
+
+        <form class="form-review" action="https://echo.htmlacademy.ru" method="get">
+
+          <fieldset class="form-review__user-name-input">
+
+            <legend class="form-review__title">Представьтесь:</legend>
+
+            <label class="form-review__name">Имя*:
+
+              <input class="form-review__name-input" type="text" id="input-person" name="user-name" placeholder="Пётр"
+                required>
+
+
+              <label class="form-review__surname">Фамилия*:
+
+                <input class="modal-input" type="text" id="input-surname" name="user-surname" placeholder="Пустота"
+                  required>
+              </label>
+              <label class="form-review__patronymic">Отчество:
+
+                <input class="modal-input" type="text" id="input-patronymic" name="user-patronymic"
+                  placeholder="Викторович" required>
+              </label>
+          </fieldset>
+
+          <!--form contacts input-->
+
+          <fieldset class="form-review__user-contacts">
+
+            <legend class="form-review__title">Контактная информация:</legend>
+
+            <!--tel input-->
+
+            <label class="form-review__tel" for="input-tel">Контактный телефон*:
+
+              <div class="form-review__wrapper-input-tel">
+
+                <input class="form-review__tel-input" type="tel" id="input-tel" name="user-tel"
+                  placeholder="Введите телефон" required>
+              </div>
+            </label>
+            <!--e-mail input-->
+
+            <label class="form-review__email" for="input-email">Электронная почта*:
+
+              <div class="form-review__wrapper-input-email">
+
+                <input class="form-review__email-input" type="email" id="input-email" name="user-email"
+                  placeholder="Введите e-mail" required>
+              </div>
+            </label>
+
+          </fieldset>
+      </div>
+      <!--form radio-box-->
+
+      <fieldset class="form-review__user-impression">
+
+        <legend class="form-review__title">Ваше общее впечатление:</legend>
+
+        <label class="form-review__radio">
+
+          <input class="form-review__radio-box" type="radio" name="impression" checked>
+
+          <span class="form-review__control-mark"></span>
+
+          <span class="form-review__radio-title">Скорее положительное</span>
+        </label>
+
+        <label class="form-review__radio">
+
+          <input class="form-review__radio-box" type="radio" name="impression">
+
+          <span class="form-review__control-mark"></span>
+
+          <span class="form-review__radio-title">Скорее отрицательное</span>
+        </label>
+
+        <label class="form-review__radio">
+
+          <input class="form-review__radio-box" type="radio" name="impression">
+
+          <span class="form-review__control-mark"></span>
+
+          <span class="form-review__radio-title">Затрудняюсь ответить</span>
+        </label>
+      </fieldset>
+
+      <!--form checkbox-->
+
+      <fieldset class="form-review__user-visited">
+        <legend class="form-review__title">Посещенные достопримечательности:</legend>
+        <label class="form-review__check-box">
+          <input class="form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
+          <span class="form-review__check-mark"></span>
+          <span class="form-review__check-title">Мост Дьявола</span>
+        </label>
+        <label class="form-review__check-box">
+          <input class="form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
+          <span class="form-review__check-mark"></span>
+          <span class="form-review__check-title">Гора-Колокол</span>
+        </label>
+        <label class="form-review__check-box">
+          <input class="form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
+          <span class="form-review__check-mark"></span>
+          <span class="form-review__check-title">Слайд-парк</span>
+        </label>
+        <label class="form-review__check-box">
+          <input class="form-review__checkbox-box" type="checkbox" name="devil's-bridge">
+          <span class="form-review__check-mark"></span>
+          <span class="form-review__check-title">Красные скалы</span>
+        </label>
+      </fieldset>
+
+      <!--emodzi-->
+
+      <div class="form-review__emotions">
+
+        <h3 class="form-review__emotions-title">Опишите свои эмоции:</h3>
+
+        <textarea class="form-review__emotions-input" rows="5"
+          placeholder="Опишите подробно все свои восторги"></textarea>
+
+      </div>
+
+      <button class="button">Отправить отзыв</button>
+      </form>
+
+
+    </section>
+  </main>
+
+  <!--footer-->
+
+  <footer class="footer">
+
+    <a href="#" class="footer__link">#visitSEDONA</a>
+
+    <ul class="footer__social-list">
+
+      <li class="footer__list-item">
+
+        <a class="footer__link" href="https://vk.com/htmlacademy">
+
+          <svg class="footer__list-ico" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_45457_97)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_45457_97">
+                <rect width="24" height="14" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+      </li>
+
+      <li class="footer__list-item">
+
+        <a class="footer__link" href="https://t.me/htmlacademy">
+
+          <svg class="footer__list-ico" width="21" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.741 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
+              fill="white" />
+          </svg>
+
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </li>
+
+      <li class="footer__list-item">
+
+        <a class="footer__link" href="https://youtube.com/user/htmlacademyru">
+
+          <svg class="footer__list-ico" width="20" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+              fill="white" />
+          </svg>
+
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+
+
+    <a class="footer__logo-link" href="https://htmlacademy.ru/adaptive">
+
+      <span class="footer__logo-linl-title">Разработано</span>
+
+      <svg class="footer__logo-img" width="27" height="35" viewBox="0 0 27 35" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+          fill="black" />
+      </svg>
+      <span class="visually-hidden">Logo HTMLAcademy</span>
+    </a>
+  </footer>
+
+  <!--Popup windows-->
+
+  <!--form get error-->
+
+  <div class="form-review__error">
+
+
+    <h3 class="form-review__title">Что-то пошло не так!</h3>
+
+    <p class="form-review__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+    <button class="button">Ок</button>
+
+  </div>
+
+  <!--form get send-->
+
+  <div class="form-review__right">
+
+
+    <h3 class="form-review__title">Ваш отзыв отправлен!</h3>
+
+    <p class="form-review__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      опубликуем его на сайте.</p>
+
+    <button class="button">Закрыть окно</button>
+  </div>
+</body>
+
+</html>
