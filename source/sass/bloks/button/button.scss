@@ -1,0 +1,32 @@
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--secondary, #81b3d2);
+  color: var(--white, #ffffff);
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #669ec0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button:disabled {
+  background: #e5e5e5;
+  cursor: default;
+}
+
+.button:active {
+  background-color: #669ec0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel__button {
+  padding: 16px 49px;
+}

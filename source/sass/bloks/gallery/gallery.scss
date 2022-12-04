@@ -1,0 +1,53 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__list {
+  list-style: none;
+}
+
+.gallery__list-card {
+  margin-bottom: 50px;
+}
+
+.gallery__img {
+  margin-bottom: 15px;
+}
+
+.gallery__list-card-description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gallery__wrapper-author {
+  margin-bottom: 11px;
+}
+
+.gallery__card-title {
+  margin-bottom: 10px;
+}
+
+.gallery__card-like {
+  text-decoration: none;
+}
+
+.gallery__card-like:hover {
+  opacity: 0.8;
+}
+
+.gallery__card-like:active {
+  opacity: 0.6;
+}
+
+.gallery__like-amount {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--dark, #000000);
+}

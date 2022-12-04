@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  line-height: 26px;
+  color: var(--dark, #000000);
+  font-size: 21px;
+  overflow-x: hidden;
+  min-width: 320px;
+}

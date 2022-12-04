@@ -1,0 +1,355 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.form-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-review__fildset {
+  border: none;
+}
+
+.form-review__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark, #000000);
+  margin-bottom: 20px;
+  min-width: 233px;
+}
+
+.form-review__title-anderline::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 259px;
+  background: #e5e5e5;
+}
+
+.form-review__title-name-anderline::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 344px;
+  background: #e5e5e5;
+}
+
+.form-review__title-radio-anderline::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 298px;
+  background: #e5e5e5;
+}
+
+.form-review__title-check-anderline::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 355px;
+  background: #e5e5e5;
+}
+
+.form-review__user-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.form-review__no-padding {
+  padding: 0;
+}
+
+.form-review__input {
+  width: 280px;
+  height: 58px;
+  background: #f2f2f2;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  align-items: center;
+  color: var(--dark, #000000);
+  padding: 16px 69px 16px 16px;
+}
+
+.form-review__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-review__input:hover {
+  background: #e5e5e5;
+}
+
+.form-review__input:focus {
+  outline: none;
+  background: #ffffff;
+  border: 4px solid #e5e5e5;
+}
+
+.form-review__input:invalid {
+  outline: none;
+  background: #ffffff;
+  border: 4px solid #ee0c0c;
+}
+
+.form-review__wrapper-input {
+  display: flex;
+}
+
+.form-review--short {
+  width: 222px;
+  height: 58px;
+}
+
+.form-review__ico {
+  background: #e6e6e6;
+  width: 58px;
+  height: 58px;
+  padding-top: 18px;
+  padding-left: 20px;
+}
+
+.form-review__ico--tel::after {
+  content: url("../../../img/-form/phone.svg");
+}
+
+.form-review__ico--mail::before {
+  content: url("../../../img/-form/mail.svg");
+}
+
+.form-review__label {
+  font-weight: 400;
+  font-size: 14px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--text, #333333);
+  margin-bottom: 16px;
+}
+
+.form-review__radio-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form-review__check-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form-review__emotions-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark, #000000);
+  margin-bottom: 20px;
+}
+
+.form-review__emotions-input {
+  width: 279px;
+  height: 150px;
+  border: none;
+  background: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 56px;
+}
+
+.form-review__emotions-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-review__emotions-input:hover {
+  background: #e5e5e5;
+}
+
+.form-review__emotions-input:focus {
+  outline: none;
+  background: #ffffff;
+  border: 4px solid #e5e5e5;
+}
+
+.form-review--popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #2d34404d;
+}
+
+.form-review--active {
+  display: flex;
+}
+
+.form-review__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 320px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: var(--white, #ffffff);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  padding-top: 45px;
+}
+
+.form-review__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text, #333333);
+  max-width: 237px;
+  margin-bottom: 28px;
+}
+
+.button--form-error {
+  max-width: 180px;
+  padding: 18px 64px 14px 64px;
+  margin-bottom: 35px;
+}
+
+.button--form-right {
+  max-width: 280px;
+  padding: 18px 64px 14px 64px;
+  margin-bottom: 35px;
+}
+
+.form-review__button-wrapper {
+  background: #f2f2f2;
+  min-width: 320px;
+  padding: 20px 20px 0 20px;
+}
+
+.form-review__check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  justify-self: flex-start;
+}
+
+.form-review__control-mark {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+}
+
+.form-review__control-mark:hover {
+  background: #e5e5e5;
+}
+
+.form-review__control-mark::after {
+  content: "";
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.form-review__radio-box[type="radio"]:checked
+  + .form-review__control-mark::after {
+  display: flex;
+}
+
+.form-review__radio-box[type="radio"]:checked:active
+  + .form-review__control-mark::after {
+  background: rgba(51, 51, 51, 0.3);
+}
+
+.form-review__check-mark {
+  display: block;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 2px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+}
+
+.form-review__check-mark:hover {
+  background: #e5e5e5;
+}
+
+.form-review__check-mark::after {
+  content: url("../../../img/-form/tick.svg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  position: absolute;
+  width: 22px;
+  height: 16px;
+}
+
+.form-review__checkbox-box[type="checkbox"]:checked
+  + .form-review__check-mark::after {
+  display: flex;
+}
+
+.form-review__checkbox-box[type="checkbox"]:checked:active
+  + .form-review__check-mark::after {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
+.button--form {
+  padding: 16px 49px;
+  min-width: 280px;
+}
+
+.form-review__rulles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
