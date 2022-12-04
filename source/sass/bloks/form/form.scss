@@ -285,13 +285,11 @@
   border-radius: 50%;
 }
 
-.form-review__radio-box[type="radio"]:checked
-  + .form-review__control-mark::after {
+.form-review__radio-box[type="radio"]:checked + .form-review__control-mark::after {
   display: flex;
 }
 
-.form-review__radio-box[type="radio"]:checked:active
-  + .form-review__control-mark::after {
+.form-review__radio-box[type="radio"]:checked:active + .form-review__control-mark::after {
   background: rgba(51, 51, 51, 0.3);
 }
 
@@ -326,13 +324,11 @@
   height: 16px;
 }
 
-.form-review__checkbox-box[type="checkbox"]:checked
-  + .form-review__check-mark::after {
+.form-review__checkbox-box[type="checkbox"]:checked + .form-review__check-mark::after {
   display: flex;
 }
 
-.form-review__checkbox-box[type="checkbox"]:checked:active
-  + .form-review__check-mark::after {
+.form-review__checkbox-box[type="checkbox"]:checked:active + .form-review__check-mark::after {
   fill: rgba(51, 51, 51, 0.3);
 }
 
