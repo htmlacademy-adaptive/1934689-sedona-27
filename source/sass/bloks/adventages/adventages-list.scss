@@ -1,0 +1,107 @@
+.adventages-list {
+  list-style: none;
+}
+
+.adventages__list-item {
+  padding: 24px 26px;
+}
+
+.adventages__list-item--img {
+  position: relative;
+  overflow: hidden;
+  min-height: 184px;
+}
+
+.adventages__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.adventages-list__list-item--blue {
+  background-color: var(--secondary, #81b3d2);
+  padding: 33px 18px 40px 18px;
+}
+
+.adventages__title {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white, #ffffff);
+  margin-bottom: 11px;
+}
+
+.adventages__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white, #ffffff);
+  margin-bottom: 11px;
+}
+
+.adventages__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--white, #ffffff);
+}
+
+.adventages-list__list-item--ico {
+  display: flex;
+  background-color: var(--white, #ffffff);
+  padding: 31px 0 31px 0;
+  margin-left: 18px;
+}
+
+.adventages-list__list-item--hausing::before {
+  content: url("../../../img/-features/icon-house.svg");
+  margin-right: 8px;
+}
+
+.adventages-list__list-item--eat::before {
+  content: url("../../../img/-features/icon-burger.svg");
+  margin-right: 8px;
+}
+
+.adventages-list__list-item--gifts::before {
+  content: url("../../../img/-features/icon-gift.svg");
+  margin-right: 8px;
+}
+
+.adventages__title--ico {
+  color: var(--text, #333333);
+  margin-bottom: 16px;
+  text-align: start;
+}
+
+.adventages__text--ico {
+  color: var(--text, #333333);
+  text-align: start;
+}
+
+.adventages__title--no-ico {
+  color: var(--dark, #000000);
+}
+
+.adventages__number--no-ico {
+  color: var(--dark, #000000);
+}
+
+.adventages__text--no-ico {
+  color: var(--dark, #000000);
+}
+
+.adventages__text-colum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 237px;
+}
