@@ -4,14 +4,14 @@
   align-items: center;
   padding: 35px 0;
   text-align: center;
-  background-color: var(--white, #ffffff);
+  background-color: #ffffff;
 }
 
 .hotel__title {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .hotel__description {
@@ -19,4 +19,18 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hotel {
+    margin-bottom: 5px;
+  }
+  .hotel__title {
+    font-size: 30px;
+  }
+
+  .hotel__description {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }

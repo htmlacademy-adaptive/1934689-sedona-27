@@ -22,7 +22,7 @@
 }
 
 .adventages-list__list-item--blue {
-  background-color: var(--secondary, #81b3d2);
+  background-color: #81b3d2;
   padding: 33px 18px 40px 18px;
 }
 
@@ -31,7 +31,7 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white, #ffffff);
+  color: #ffffff;
   margin-bottom: 11px;
 }
 
@@ -41,7 +41,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white, #ffffff);
+  color: #ffffff;
   margin-bottom: 11px;
 }
 
@@ -51,14 +51,14 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: var(--white, #ffffff);
+  color: #ffffff;
 }
 
 .adventages-list__list-item--ico {
   display: flex;
-  background-color: var(--white, #ffffff);
+  background-color: #ffffff;
   padding: 31px 0 31px 0;
-  margin-left: 18px;
+  justify-content: center;
 }
 
 .adventages-list__list-item--hausing::before {
@@ -77,26 +77,26 @@
 }
 
 .adventages__title--ico {
-  color: var(--text, #333333);
+  color: #333333;
   margin-bottom: 16px;
   text-align: start;
 }
 
 .adventages__text--ico {
-  color: var(--text, #333333);
+  color: #333333;
   text-align: start;
 }
 
 .adventages__title--no-ico {
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .adventages__number--no-ico {
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .adventages__text--no-ico {
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .adventages__text-colum {
@@ -104,4 +104,135 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 237px;
+}
+
+@media (min-width: 768px) {
+  .adventages {
+    margin-bottom: 60px;
+  }
+
+  .adventages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "one imone imone"
+      "hs  et    gf"
+      "imtw imtw bltw"
+      "lio   lit   lith";
+  }
+
+  .adventages-list__list-one {
+    grid-area: one;
+  }
+
+  .adventages__list-img-one {
+    grid-area: imone;
+  }
+
+  .adventages-list__list-item--hausing {
+    grid-area: hs;
+  }
+
+  .adventages-list__list-item--eat {
+    grid-area: et;
+  }
+
+  .adventages-list__list-item--gifts {
+    grid-area: gf;
+  }
+
+  .adventages-list__list-two {
+    grid-area: bltw;
+  }
+
+  .adventages__list-item-img-two {
+    grid-area: imtw;
+  }
+
+  .adventages__title-one {
+    grid-area: lio;
+  }
+
+  .adventages__title-two {
+    grid-area: lit;
+  }
+
+  .adventages__title-three {
+    grid-area: lith;
+  }
+
+  .adventages-list__list-item--blue {
+    padding: 52px 33px 31px 33px;
+  }
+
+  .adventages__title {
+    font-size: 21px;
+  }
+
+  .adventages-list__list-item--ico {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .adventages__list-item {
+    display: inline-block;
+    padding: 52px 33px;
+  }
+
+  .adventages__title--no-ico {
+    max-width: 159px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .adventages__text--no-ico {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .adventages-list__list-item--hausing::before {
+    content: "";
+    background-image: url("../../../img/-features/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77px;
+    height: 72px;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  .adventages-list__list-item--eat::before {
+    content: "";
+    background-image: url("../../../img/-features/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 68px;
+    margin: 0;
+    margin-bottom: 26px;
+    vertical-align: middle;
+  }
+
+  .adventages-list__list-item--gifts::before {
+    content: "";
+    background-image: url("../../../img/-features/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67px;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 26px;
+    vertical-align: middle;
+  }
+
+  .adventages__text-colum {
+    align-items: center;
+  }
+
+  .adventages__text--ico {
+    text-align: center;
+  }
 }

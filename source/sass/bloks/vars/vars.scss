@@ -1,8 +1,3 @@
-:root {
-  --primary: #e7e5e5;
-  --secondary: #81b3d2;
-  --light: #eeeeee;
-  --dark: #000000;
-  --white: #ffffff;
-  --text: #333333;
-}
+$tablet: (
+  max-width: 767px,
+);

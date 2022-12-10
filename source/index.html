@@ -34,6 +34,8 @@
 
         <button class="header__btn" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
 
+          <span class="header__btn-line"></span>
+
           <span class="visually-hidden">Menu button</span>
         </button>
 
@@ -43,12 +45,16 @@
 
           <li class="menu__list-item">
 
-            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link menu__link--current" href="index.html">Главная</a>
           </li>
 
           <li class="menu__list-item">
 
             <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+
+          <li class="menu__list-item menu__list-invisible">
+
           </li>
 
           <li class="menu__list-item">
@@ -113,7 +119,7 @@
 
         <!--adventages description-->
 
-        <li class="adventages-list__list-item adventages-list__list-item--blue">
+        <li class="adventages-list__list-item adventages-list__list-item--blue adventages-list__list-one">
 
           <h3 class="adventages__title">Настоящий городок</h3>
 
@@ -124,7 +130,7 @@
 
         <!--adventages photo-->
 
-        <li class="adventages-list__list-item adventages__list-item--img">
+        <li class="adventages-list__list-item adventages__list-item--img adventages__list-img-one">
 
           <img class="adventages__img" src="img/-adventages/adventages-city.jpg" alt="sity" width="520" height="260">
         </li>
@@ -174,7 +180,7 @@
 
         <!--adventages description-->
 
-        <li class="adventages__list-item adventages-list__list-item--blue">
+        <li class="adventages__list-item adventages-list__list-item--blue adventages-list__list-two">
 
           <h3 class="adventages__title">Там есть мост Дьявола</h3>
 
@@ -186,23 +192,23 @@
 
         <!--adventages photo-->
 
-        <li class="adventages__list-item adventages__list-item--img">
+        <li class="adventages__list-item adventages__list-item--img adventages__list-item-img-two">
 
           <img class="adventages__img" src="img/-adventages/photo-bridge.jpg" alt="sity" width="520" height="260">
         </li>
 
         <!--adventages features without icon-->
 
-        <li class="adventages__list-item">
+        <li class="adventages__list-item adventages__title-one">
 
-          <h3 class="adventages__title adventages__title--no-ico">Небольшая площадь</h3>
+          <h3 class="adventages__title  adventages__title--no-ico">Небольшая площадь</h3>
 
           <p class="adventages__number adventages__number--no-ico">— №3 —</p>
 
           <p class="adventages__text adventages__text--no-ico">Все интересные места находятся очень близко</p>
         </li>
 
-        <li class="adventages__list-item">
+        <li class="adventages__list-item adventages__title-two">
 
           <h3 class="adventages__title adventages__title--no-ico">Красивая дорога</h3>
 
@@ -211,7 +217,7 @@
           <p class="adventages__text adventages__text--no-ico">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
 
-        <li class="adventages__list-item">
+        <li class="adventages__list-item adventages__title-three">
 
           <h3 class="adventages__title adventages__title--no-ico">Мало туристов</h3>
 
