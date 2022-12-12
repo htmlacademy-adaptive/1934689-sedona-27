@@ -5,11 +5,17 @@
   padding: 35px 0;
   text-align: center;
   background-color: #ffffff;
-  margin-bottom: 20px;
+}
+
+@media (min-width: 1023px) {
+  .hero {
+    margin-bottom: 0;
+  }
 }
 
 .hero--form {
   position: relative;
+  background-color: #e7e5e5;
 }
 
 .hero--form::after {
@@ -22,6 +28,18 @@
   background: #e5e5e5;
 }
 
+@media (min-width: 767px) {
+  .hero--form::after {
+    transform: rotate(90deg);
+    top: 402px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 338px;
+  }
+}
+
 .hero__title--text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -31,19 +49,18 @@
   max-width: 284px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .hero {
-    padding: 48px 0;
+    padding: 48px 60px;
   }
 
   .hero__title--text {
     min-width: 520px;
-    font-size: 21px;
+    font-size: 30px;
   }
 
   .hero__description--text {
     min-width: 520px;
-    font-size: 15px;
   }
 }
 

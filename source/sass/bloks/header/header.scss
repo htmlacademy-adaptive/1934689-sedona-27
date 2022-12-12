@@ -1,9 +1,9 @@
-@use "../vars/vars.scss";
-
 .header {
   display: flex;
   position: relative;
 }
+
+// header top
 
 .header__top {
   display: flex;
@@ -16,9 +16,33 @@
   z-index: 9;
 }
 
+@media (min-width: 1023px) {
+  .header__top {
+    position: absolute;
+    padding: 0;
+  }
+}
+
+//header menu
+
 .header__menu {
   display: none;
 }
+
+@media (min-width: 320px) {
+  .header__menu {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) {
+  .header__menu {
+    display: block;
+    width: 100%;
+  }
+}
+
+//header menu btn
 
 .header__btn {
   display: none;
@@ -28,11 +52,15 @@
   vertical-align: middle;
 }
 
-@media (min-width: 320px) {
-  .header__menu {
-    display: block;
-  }
+.header__btn:hover {
+  opacity: 0.6;
+}
 
+.header__btn:active {
+  opacity: 0.3;
+}
+
+@media (min-width: 320px) {
   .header__btn {
     display: block;
     position: relative;
@@ -90,39 +118,12 @@
     background-color: #ffffff;
     bottom: 9px;
   }
-
-  .header__bottom {
-    width: 100%;
-  }
 }
 
-@media (min-width: 768px) {
-  .logo {
-    z-index: 1;
-  }
-
-  .header__menu {
-    display: block;
-    width: 100%;
-  }
-
+@media (min-width: 767px) {
   .header__btn {
     display: none;
   }
-}
-
-.header__btn:hover {
-  opacity: 0.6;
-}
-
-@media (min-width: 1239px) {
-  .header__top {
-    position: absolute;
-  }
-}
-
-.header__btn:active {
-  opacity: 0.3;
 }
 
 .header__bottom {
@@ -130,7 +131,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-image: url("../../../img/-intro/-back-img.jpg");
+  background-image: url("../../../img/header/mobile/back-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 389px;
@@ -138,16 +139,121 @@
   margin-top: 60px;
 }
 
+@media (min-width: 767px) {
+  .header__bottom {
+    background-image: url("../../../img/header/tablet/back-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 518px;
+    padding: 77px 0 91px;
+  }
+
+  .header__wrapper-welcome {
+    height: 45px;
+    width: 188px;
+  }
+
+  .header__wrapper-gorgeus {
+    height: 29px;
+    width: 253px;
+  }
+
+  .header__wrapper-sedona {
+    height: 80px;
+    width: 460px;
+  }
+
+  .header__wrapper-canyon {
+    height: 75px;
+    width: 282px;
+  }
+}
+
 .header__bottom--catalog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url("../../../img/-catalog/header/back-hero-catalog.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 108px 0 67px 0;
   min-height: 215px;
   margin: 0;
-  min-width: 320px;
+}
+
+@media (min-width: 767px) {
+  .header__bottom--catalog {
+    padding: 511px 0 66px;
+    margin-top: -46%;
+    min-height: 518px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .header__bottom--catalog {
+    height: 215px;
+    padding: 360px 0 66px;
+    margin-top: -20%;
+  }
+}
+
+.header__wrapper-welcome {
+  background-image: url("../../../img/header/mobile/welcome.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 28px;
+  width: 115px;
+}
+
+.header__wrapper-gorgeus {
+  background-image: url("../../../img/header/mobile/gorgeous.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 159px;
+}
+
+.header__wrapper-sedona {
+  background-image: url("../../../img/header/mobile/sedona.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 49px;
+  width: 282px;
+}
+
+.header__wrapper-canyon {
+  background-image: url("../../../img/header/mobile/grand-canyon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 46px;
+  width: 173px;
+}
+
+@media (min-width: 320px) {
+  .header__bottom {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .header__bottom {
+    background-image: url("../../../img/header/descktop/back-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 518px;
+  }
+
+  .header__wrapper-welcome {
+    height: 45px;
+    width: 188px;
+  }
+
+  .header__wrapper-gorgeus {
+    height: 29px;
+    width: 253px;
+  }
+
+  .header__wrapper-sedona {
+    height: 80px;
+    width: 460px;
+  }
+
+  .header__wrapper-canyon {
+    height: 75px;
+    width: 282px;
+  }
 }

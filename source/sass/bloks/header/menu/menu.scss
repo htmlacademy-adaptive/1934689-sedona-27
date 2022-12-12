@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .menu {
     display: flex;
     align-items: center;
@@ -111,9 +111,13 @@
   }
 }
 
-@media (min-width: 1239px) {
+@media (min-width: 1023px) {
   .menu {
     position: relative;
     padding: 18px 91px 17px 91px;
+  }
+
+  .menu__list-item {
+    padding: 0;
   }
 }

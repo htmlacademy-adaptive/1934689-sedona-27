@@ -21,7 +21,7 @@
 
       <a class="logo" href="index.html">
 
-        <img class="logo__img" src="img/-header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
+        <img class="logo__img" src="img/header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
       </a>
 
       <!--header nav -->
@@ -43,12 +43,16 @@
 
           <li class="menu__list-item">
 
-            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link menu__link--current" href="index.html">Главная</a>
           </li>
 
           <li class="menu__list-item">
 
             <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+
+          <li class="menu__list-item menu__list-invisible">
+
           </li>
 
           <li class="menu__list-item">
@@ -70,8 +74,8 @@
 
       <!--header bg img-->
 
-      <img class="header__img-sedona" src="img/-intro/-sedona.svg" alt="sedona." width="282" height="49">
-
+      <div class="header__wrapper-sedona">
+      </div>
     </div>
   </header>
 
@@ -165,59 +169,64 @@
       <fieldset class="form-review__user-input form-review__no-padding form-review__fildset">
 
         <legend class="form-review__title form-review__title-radio-anderline">ваще общее мысленное впечатление:</legend>
+        <div class="form-review__wrapper-radiobox">
 
-        <label class="form-review__check">
+          <label class="form-review__check">
 
-          <input class="visually-hidden form-review__radio-box" type="radio" name="impression" checked>
+            <input class="visually-hidden form-review__radio-box" type="radio" name="impression" checked>
 
-          <span class="form-review__control-mark"></span>
+            <span class="form-review__control-mark"></span>
 
-          <span class="form-review__radio-title">Скорее положительное</span>
-        </label>
+            <span class="form-review__radio-title">Скорее положительное</span>
+          </label>
 
-        <label class="form-review__check">
+          <label class="form-review__check">
 
-          <input class="visually-hidden form-review__radio-box" type="radio" name="impression">
+            <input class="visually-hidden form-review__radio-box" type="radio" name="impression">
 
-          <span class="form-review__control-mark"></span>
+            <span class="form-review__control-mark"></span>
 
-          <span class="form-review__radio-title">Скорее отрицательное</span>
-        </label>
+            <span class="form-review__radio-title">Скорее отрицательное</span>
+          </label>
 
-        <label class="form-review__check">
+          <label class="form-review__check">
 
-          <input class="visually-hidden form-review__radio-box" type="radio" name="impression">
+            <input class="visually-hidden form-review__radio-box" type="radio" name="impression">
 
-          <span class="form-review__control-mark"></span>
+            <span class="form-review__control-mark"></span>
 
-          <span class="form-review__radio-title">Затрудняюсь ответить</span>
-        </label>
+            <span class="form-review__radio-title">Затрудняюсь ответить</span>
+          </label>
+        </div>
       </fieldset>
 
       <!--form checkbox-->
 
       <fieldset class="form-review__user-input form-review__no-padding form-review__fildset">
         <legend class="form-review__title form-review__title-check-anderline">Посещенные достопримечательности:</legend>
-        <label class="form-review__check">
-          <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
-          <span class="form-review__check-mark"></span>
-          <span class="form-review__check-title">Мост Дьявола</span>
-        </label>
-        <label class="form-review__check">
-          <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
-          <span class="form-review__check-mark"></span>
-          <span class="form-review__check-title">Гора-Колокол</span>
-        </label>
-        <label class="form-review__check">
-          <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
-          <span class="form-review__check-mark"></span>
-          <span class="form-review__check-title">Слайд-парк</span>
-        </label>
-        <label class="form-review__check">
-          <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge">
-          <span class="form-review__check-mark"></span>
-          <span class="form-review__check-title">Красные скалы</span>
-        </label>
+
+        <div class="form-review__wrapper-checkbox">
+          <label class="form-review__check">
+            <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
+            <span class="form-review__check-mark"></span>
+            <span class="form-review__check-title">Мост Дьявола</span>
+          </label>
+          <label class="form-review__check">
+            <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
+            <span class="form-review__check-mark"></span>
+            <span class="form-review__check-title">Гора-Колокол</span>
+          </label>
+          <label class="form-review__check">
+            <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge" checked>
+            <span class="form-review__check-mark"></span>
+            <span class="form-review__check-title">Слайд-парк</span>
+          </label>
+          <label class="form-review__check">
+            <input class="visually-hidden form-review__checkbox-box" type="checkbox" name="devil's-bridge">
+            <span class="form-review__check-mark"></span>
+            <span class="form-review__check-title">Красные скалы</span>
+          </label>
+        </div>
       </fieldset>
 
       <!--emodzi-->
@@ -231,10 +240,13 @@
 
       </div>
 
-      <button class="button button--form">Отправить отзыв</button>
-      </form>
-      <div class="form-review__rulles">* — обязательные поля</div>
+      <div class="form-review__emotion-active-wrapper">
 
+        <button class="button button--form">Отправить отзыв</button>
+
+        <div class="form-review__rulles">* — обязательные поля</div>
+      </div>
+      </form>
     </section>
   </main>
 

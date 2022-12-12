@@ -21,7 +21,7 @@
 
       <a class="logo" href="index.html">
 
-        <img class="logo__img" src="img/-header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
+        <img class="logo__img" src="img/header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
       </a>
 
       <!--header nav -->
@@ -43,12 +43,16 @@
 
           <li class="menu__list-item">
 
-            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link menu__link--current" href="index.html">Главная</a>
           </li>
 
           <li class="menu__list-item">
 
             <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+
+          <li class="menu__list-item menu__list-invisible">
+
           </li>
 
           <li class="menu__list-item">
@@ -70,8 +74,8 @@
 
       <!--header bg img-->
 
-      <img class="header__img-sedona" src="img/-intro/-sedona.svg" alt="sedona." width="282" height="49">
-
+      <div class="header__wrapper-sedona">
+      </div>
     </div>
   </header>
 
@@ -108,17 +112,17 @@
 
       <ul class="gallery__list">
 
-        <li class="gallery__list-card">
+        <li class="gallery__list-card gallery__list-card-main">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-1-mobile.jpg" alt="road" width="280" height="280">
+          <div class="gallery__wrapper-img-fist"></div>
 
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Неродные просторы</h3>
+              <h3 class="gallery__card-title">Неродные просторы</h3>
 
-              <span class="gallery__card-author">Автор фото: Борис</span>
+              <p class="gallery__card-author">Автор фото: Борис</p>
             </div>
 
             <div class="gallery__card-reaction">
@@ -144,15 +148,15 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-2-mobile.jpg" alt="road" width="280" height="280">
+          <div class="gallery__wrapper-img-second"></div>
 
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Местная растительность</h3>
+              <h3 class="gallery__card-title">Местная растительность</h3>
 
-              <span class="gallery__card-author">Автор фото: Сергей</span>
+              <p class="gallery__card-author">Автор фото: Сергей</p>
 
             </div>
 
@@ -179,15 +183,15 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-3-mobile.jpg" alt="road" width="280" height="280">
+          <div class="gallery__wrapper-img-third"></div>
 
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Дорога на север</h3>
+              <h3 class="gallery__card-title">Дорога на север</h3>
 
-              <span class="gallery__card-author">Автор фото: Пётр</span>
+              <p class="gallery__card-author">Автор фото: Пётр</p>
 
             </div>
             <div class="gallery__card-reaction">
@@ -213,15 +217,15 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-4-desktop.jpg" alt="road" width="280" height="280">
+          <div class="gallery__wrapper-img-fourth"></div>
 
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Мост дьявола</h3>
+              <h3 class="gallery__card-title">Мост дьявола</h3>
 
-              <span class="gallery__card-author">Автор фото: Антон</span>
+              <p class="gallery__card-author">Автор фото: Антон</p>
             </div>
 
             <div class="gallery__card-reaction">
@@ -266,7 +270,7 @@
 
       <h2 class="visually-hidden">video presentation.</h2>
 
-      <img class="video-presentation__video" src="img/-catalog/-video/video-mobile.jpg" alt="video presentation."
+      <img class="video-presentation__video" src="img/catalog/video/video-mobile.jpg" alt="video presentation."
         width="280" height="177">
 
       <svg class="video-presentation__polygon" width="48" height="54" viewBox="0 0 48 54" fill="none"

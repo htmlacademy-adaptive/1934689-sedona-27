@@ -4,7 +4,7 @@
   align-items: center;
   padding: 35px 0;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #e7e5e5;
 }
 
 .hotel__title {
@@ -21,10 +21,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
-  .hotel {
-    margin-bottom: 5px;
-  }
+@media (min-width: 767px) {
   .hotel__title {
     font-size: 30px;
   }

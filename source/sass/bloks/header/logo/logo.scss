@@ -14,3 +14,9 @@
   bottom: 0;
   right: 0;
 }
+
+@media (min-width: 767px) {
+  .logo {
+    z-index: 1;
+  }
+}
