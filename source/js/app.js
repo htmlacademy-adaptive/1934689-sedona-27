@@ -16,10 +16,4 @@ const headerBtn = document.querySelector('.header__btn'),
             : headerBtn.setAttribute('aria-label', 'Закрыть меню')
       });
 
-      const menuItem = document.querySelector('.menu__link'),
-            curentListItem = document.querySelector('.logo')
-
-            menuItem.addEventListener('click', () => {
-                curentListItem.classList.toggle('menu__link--current')
-            })
 
