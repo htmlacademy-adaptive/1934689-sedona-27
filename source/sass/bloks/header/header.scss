@@ -44,7 +44,7 @@
 
 //header menu btn
 
-.header__btn {
+.header__button {
   display: none;
   border: none;
   background-color: #ffffff;
@@ -52,16 +52,16 @@
   vertical-align: middle;
 }
 
-.header__btn:hover {
+.header__button:hover {
   opacity: 0.6;
 }
 
-.header__btn:active {
+.header__button:active {
   opacity: 0.3;
 }
 
 @media (min-width: 320px) {
-  .header__btn {
+  .header__button {
     display: block;
     position: relative;
     width: 22px;
@@ -69,8 +69,8 @@
     z-index: 10;
   }
 
-  .header__btn::after,
-  .header__btn::before {
+  .header__button::after,
+  .header__button::before {
     content: "";
     position: absolute;
     background-color: #81b3d2;
@@ -80,7 +80,7 @@
     transition: all 0.3s ease 0s;
   }
 
-  .header__btn-line {
+  .header__button-line {
     content: "";
     position: absolute;
     background-color: #81b3d2;
@@ -90,30 +90,30 @@
     top: 9px;
   }
 
-  .header__btn::before {
+  .header__button::before {
     top: 0;
   }
 
-  .header__btn::after {
+  .header__button::after {
     bottom: 0;
   }
 
-  .header__btn--active {
+  .header__button--active {
     background-color: transparent;
   }
 
-  .header__btn--active .header__btn-line {
+  .header__button--active .header__button-line {
     transform: scale(0);
     transition: all 0.3s ease 0s;
   }
 
-  .header__btn--active::before {
+  .header__button--active::before {
     transform: rotate(45deg);
     background-color: #ffffff;
     top: 9px;
   }
 
-  .header__btn--active::after {
+  .header__button--active::after {
     transform: rotate(-45deg);
     background-color: #ffffff;
     bottom: 9px;
@@ -121,7 +121,7 @@
 }
 
 @media (min-width: 767px) {
-  .header__btn {
+  .header__button {
     display: none;
   }
 }
@@ -130,13 +130,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-image: url("../../../img/header/mobile/back-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 389px;
-  padding: 90px 19px 85px 20px;
-  margin-top: 60px;
+  padding: 87px 19px 100px 20px;
+  margin-top: 56px;
+  width: 100%;
 }
 
 @media (min-width: 767px) {
@@ -147,31 +147,24 @@
     min-height: 518px;
     padding: 77px 0 91px;
   }
+}
 
-  .header__wrapper-welcome {
-    height: 45px;
-    width: 188px;
-  }
-
-  .header__wrapper-gorgeus {
-    height: 29px;
-    width: 253px;
-  }
-
-  .header__wrapper-sedona {
-    height: 80px;
-    width: 460px;
-  }
-
-  .header__wrapper-canyon {
-    height: 75px;
-    width: 282px;
+@media (min-width: 1023px) {
+  .header__bottom {
+    background-image: url("../../../img/header/descktop/back-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 518px;
   }
 }
 
 .header__bottom--catalog {
   padding: 108px 0 67px 0;
   min-height: 215px;
+  margin: 0;
+}
+
+.header__bottom--catalog .header__wrapper-sedona {
   margin: 0;
 }
 
@@ -197,6 +190,7 @@
   background-repeat: no-repeat;
   height: 28px;
   width: 115px;
+  margin-bottom: 10px;
 }
 
 .header__wrapper-gorgeus {
@@ -205,6 +199,7 @@
   background-repeat: no-repeat;
   height: 18px;
   width: 159px;
+  margin-bottom: 31px;
 }
 
 .header__wrapper-sedona {
@@ -213,6 +208,7 @@
   background-repeat: no-repeat;
   height: 49px;
   width: 282px;
+  margin-bottom: 35px;
 }
 
 .header__wrapper-canyon {
@@ -223,20 +219,30 @@
   width: 173px;
 }
 
-@media (min-width: 320px) {
-  .header__bottom {
-    width: 100%;
+@media (min-width: 767px) {
+  .header__wrapper-welcome {
+    height: 45px;
+    width: 188px;
+    margin-bottom: 10px;
+  }
+
+  .header__wrapper-gorgeus {
+    height: 29px;
+    width: 253px;
+  }
+
+  .header__wrapper-sedona {
+    height: 80px;
+    width: 460px;
+  }
+
+  .header__wrapper-canyon {
+    height: 75px;
+    width: 282px;
   }
 }
 
 @media (min-width: 1023px) {
-  .header__bottom {
-    background-image: url("../../../img/header/descktop/back-desktop.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 518px;
-  }
-
   .header__wrapper-welcome {
     height: 45px;
     width: 188px;

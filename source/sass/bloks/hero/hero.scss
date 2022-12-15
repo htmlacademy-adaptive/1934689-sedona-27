@@ -1,10 +1,43 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 0;
+  padding: 31px 0 53px;
   text-align: center;
   background-color: #ffffff;
+}
+
+.hero--dark {
+  background-color: #e7e5e5;
+  position: relative;
+}
+
+.hero--dark::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #c4bcbc;
+}
+
+@media (min-width: 767px) {
+  .hero--dark::before {
+    content: none;
+  }
+}
+
+.hero--dark-no-lines {
+  background-color: #e7e5e5;
+}
+
+@media (min-width: 767px) {
+  .hero {
+    padding: 66px 67px;
+    background-color: #e7e5e5;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -18,25 +51,25 @@
   background-color: #e7e5e5;
 }
 
-.hero--form::after {
-  content: "";
+.hero--form::before {
   position: absolute;
-  width: 320px;
+  content: "";
+  width: 100%;
   height: 1px;
   left: 0;
-  top: 232px;
-  background: #e5e5e5;
+  bottom: 0;
+  background: #c4bcbc;
 }
 
 @media (min-width: 767px) {
-  .hero--form::after {
+  .hero--form::before {
     transform: rotate(90deg);
-    top: 402px;
+    top: 436px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0 auto;
-    width: 338px;
+    width: 342px;
   }
 }
 
@@ -44,16 +77,12 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  padding-bottom: 35px;
+  margin-bottom: 31px;
   text-transform: uppercase;
   max-width: 284px;
 }
 
 @media (min-width: 767px) {
-  .hero {
-    padding: 48px 60px;
-  }
-
   .hero__title--text {
     min-width: 520px;
     font-size: 30px;
@@ -65,12 +94,10 @@
 }
 
 .hero__description--text {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   max-width: 284px;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 32px;
 }

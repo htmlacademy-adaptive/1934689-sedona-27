@@ -1,4 +1,4 @@
-const headerBtn = document.querySelector('.header__btn'),
+const headerBtn = document.querySelector('.header__button'),
       menu = document.querySelector('.menu')
       bodyMenu = document.querySelector('.page__body')
 
@@ -8,7 +8,7 @@ const headerBtn = document.querySelector('.header__btn'),
         headerBtn.setAttribute('aria-expanded', !exp)
 
         menu.classList.toggle('menu--opened')
-        headerBtn.classList.toggle('header__btn--active')
+        headerBtn.classList.toggle('header__button--active')
         bodyMenu.classList.toggle('page__body--menu')
 
 

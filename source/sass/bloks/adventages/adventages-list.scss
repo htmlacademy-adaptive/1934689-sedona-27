@@ -3,54 +3,53 @@
 }
 
 .adventages__list-item {
-  padding: 24px 26px;
+  padding: 31px 29px;
 }
 
-.adventages__list-item--img {
+@media (min-width: 768px) {
+  .adventages__list-item {
+    padding: 52px 33px;
+  }
+}
+
+.adventages__list-item--image-city {
   position: relative;
-  overflow: hidden;
-  min-height: 184px;
-  padding: 0;
-}
-
-.adventages__wrapper-img-city {
   background-image: url("../../../img/adventages/mobile/adventages-city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 260px;
+  min-height: 260px;
+  overflow: hidden;
+  padding: 0;
 }
 
-.adventages__wrapper-img-bridge {
+.adventages__list-item--image-bridge {
+  position: relative;
   background-image: url("../../../img/adventages/mobile/photo-bridge.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 260px;
+  min-height: 260px;
+  overflow: hidden;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
-  .adventages__wrapper-img-city {
+  .adventages__wrapper-image-city {
     background-image: url("../../../img/adventages/tablet-descktop/photo-city-tablet.jpg");
-    width: 100%;
-    height: 256px;
   }
 
-  .adventages__wrapper-img-bridge {
+  .adventages__wrapper-image-bridge {
     background-image: url("../../../img/adventages//tablet-descktop/photo-bridge-tablet.jpg");
-    width: 100%;
-    height: 256px;
   }
 }
 
 @media (min-width: 1023px) {
-  .adventages__wrapper-img-city {
+  .adventages__wrapper-image-city {
     background-image: url("../../../img/adventages/tablet-descktop/photo-city-tablet.jpg");
-    width: 100%;
-    height: 256px;
   }
 
-  .adventages__wrapper-img-bridge {
+  .adventages__wrapper-image-bridge {
     background-image: url("../../../img/adventages//tablet-descktop/photo-bridge-tablet.jpg");
     width: 100%;
     height: 256px;
@@ -59,7 +58,7 @@
 
 .adventages-list__list-item--blue {
   background-color: #81b3d2;
-  padding: 33px 18px 40px 18px;
+  padding: 40px 30px 44px;
 }
 
 .adventages__title {
@@ -68,7 +67,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 11px;
+  margin-bottom: 23px;
 }
 
 .adventages__number {
@@ -78,7 +77,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 11px;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 768px) {
+  .adventages__number {
+    margin-bottom: 34px;
+  }
 }
 
 .adventages__text {
@@ -93,28 +98,28 @@
 .adventages-list__list-item--ico {
   display: flex;
   background-color: #ffffff;
-  padding: 31px 0 31px 0;
+  padding: 25px 0 51px 0;
   justify-content: center;
 }
 
 .adventages-list__list-item--hausing::before {
   content: url("../../../img/-features/icon-house.svg");
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .adventages-list__list-item--eat::before {
   content: url("../../../img/-features/icon-burger.svg");
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .adventages-list__list-item--gifts::before {
   content: url("../../../img/-features/icon-gift.svg");
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .adventages__title--ico {
   color: #333333;
-  margin-bottom: 16px;
+  margin: 8px 0 28px;
   text-align: start;
 }
 
@@ -125,6 +130,23 @@
 
 .adventages__list-item-no-ico {
   background-color: #eeeeee;
+  position: relative;
+}
+
+.adventages__list-item-no-ico::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #d6d6d6;
+}
+
+@media (min-width: 768px) {
+  .adventages__list-item-no-ico::before {
+    content: none;
+  }
 }
 
 .adventages__title--no-ico {
@@ -161,7 +183,7 @@
     grid-area: one;
   }
 
-  .adventages__list-img-one {
+  .adventages__list-image-one {
     grid-area: imone;
   }
 
@@ -181,7 +203,7 @@
     grid-area: bltw;
   }
 
-  .adventages__list-item-img-two {
+  .adventages__list-item-image-two {
     grid-area: imtw;
   }
 
@@ -198,7 +220,7 @@
   }
 
   .adventages-list__list-item--blue {
-    padding: 52px 33px 31px 33px;
+    padding: 52px 33px 30px 33px;
   }
 
   .adventages__title {
@@ -207,9 +229,9 @@
 
   .adventages-list__list-item--ico {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 0;
+    padding: 60px 33px;
   }
 
   .adventages__title--no-ico {

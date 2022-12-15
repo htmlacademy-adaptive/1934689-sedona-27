@@ -30,9 +30,17 @@
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
   }
 
-  .menu__list-invisible {
-    display: none;
+
+  @media (min-width: 767px) {
+    .menu__list-item:nth-child(2) {
+      margin-right: 93px;
+    }
+
+    .menu__list-item:nth-child(3) {
+      margin-left: 93px;
+    }
   }
+
 
   .menu__list-item:hover {
     background: #669ec0;
