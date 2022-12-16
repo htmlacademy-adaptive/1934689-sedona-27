@@ -9,3 +9,17 @@
 .video-presentation__polygon {
   position: absolute;
 }
+
+@media (min-width: 767px) {
+  .video-presentation {
+    min-width: 648px;
+    min-height: 500px;
+    margin-bottom: 40px;
+  }
+
+  .video-presentation__video {
+    padding: 0 60px;
+    width: 100%;
+    min-height: 500px;
+  }
+}

@@ -3,27 +3,62 @@
 }
 
 .adventages__list-item {
-  padding: 24px 26px;
+  padding: 31px 29px;
 }
 
-.adventages__list-item--img {
+@media (min-width: 768px) {
+  .adventages__list-item {
+    padding: 52px 33px;
+  }
+}
+
+.adventages__list-item--image-city {
   position: relative;
+  background-image: url("../../../img/adventages/mobile/adventages-city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 260px;
   overflow: hidden;
-  min-height: 184px;
+  padding: 0;
 }
 
-.adventages__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  object-fit: cover;
+.adventages__list-item--image-bridge {
+  position: relative;
+  background-image: url("../../../img/adventages/mobile/photo-bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 260px;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .adventages__wrapper-image-city {
+    background-image: url("../../../img/adventages/tablet-descktop/photo-city-tablet.jpg");
+  }
+
+  .adventages__wrapper-image-bridge {
+    background-image: url("../../../img/adventages//tablet-descktop/photo-bridge-tablet.jpg");
+  }
+}
+
+@media (min-width: 1023px) {
+  .adventages__wrapper-image-city {
+    background-image: url("../../../img/adventages/tablet-descktop/photo-city-tablet.jpg");
+  }
+
+  .adventages__wrapper-image-bridge {
+    background-image: url("../../../img/adventages//tablet-descktop/photo-bridge-tablet.jpg");
+    width: 100%;
+    height: 256px;
+  }
 }
 
 .adventages-list__list-item--blue {
-  background-color: var(--secondary, #81b3d2);
-  padding: 33px 18px 40px 18px;
+  background-color: #81b3d2;
+  padding: 40px 30px 44px;
 }
 
 .adventages__title {
@@ -31,8 +66,8 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white, #ffffff);
-  margin-bottom: 11px;
+  color: #ffffff;
+  margin-bottom: 23px;
 }
 
 .adventages__number {
@@ -41,8 +76,14 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--white, #ffffff);
-  margin-bottom: 11px;
+  color: #ffffff;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 768px) {
+  .adventages__number {
+    margin-bottom: 34px;
+  }
 }
 
 .adventages__text {
@@ -51,52 +92,73 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: var(--white, #ffffff);
+  color: #ffffff;
 }
 
 .adventages-list__list-item--ico {
   display: flex;
-  background-color: var(--white, #ffffff);
-  padding: 31px 0 31px 0;
-  margin-left: 18px;
+  background-color: #ffffff;
+  padding: 25px 0 51px 0;
+  justify-content: center;
 }
 
 .adventages-list__list-item--hausing::before {
   content: url("../../../img/-features/icon-house.svg");
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .adventages-list__list-item--eat::before {
   content: url("../../../img/-features/icon-burger.svg");
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .adventages-list__list-item--gifts::before {
   content: url("../../../img/-features/icon-gift.svg");
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .adventages__title--ico {
-  color: var(--text, #333333);
-  margin-bottom: 16px;
+  color: #333333;
+  margin: 8px 0 28px;
   text-align: start;
 }
 
 .adventages__text--ico {
-  color: var(--text, #333333);
+  color: #333333;
   text-align: start;
 }
 
+.adventages__list-item-no-ico {
+  background-color: #eeeeee;
+  position: relative;
+}
+
+.adventages__list-item-no-ico::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #d6d6d6;
+}
+
+@media (min-width: 768px) {
+  .adventages__list-item-no-ico::before {
+    content: none;
+  }
+}
+
 .adventages__title--no-ico {
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .adventages__number--no-ico {
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .adventages__text--no-ico {
-  color: var(--dark, #000000);
+  color: #000000;
 }
 
 .adventages__text-colum {
@@ -104,4 +166,125 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 237px;
+}
+
+@media (min-width: 768px) {
+  .adventages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "one imone imone"
+      "hs  et    gf"
+      "imtw imtw bltw"
+      "lio   lit   lith";
+  }
+
+  .adventages-list__list-one {
+    grid-area: one;
+  }
+
+  .adventages__list-image-one {
+    grid-area: imone;
+  }
+
+  .adventages-list__list-item--hausing {
+    grid-area: hs;
+  }
+
+  .adventages-list__list-item--eat {
+    grid-area: et;
+  }
+
+  .adventages-list__list-item--gifts {
+    grid-area: gf;
+  }
+
+  .adventages-list__list-two {
+    grid-area: bltw;
+  }
+
+  .adventages__list-item-image-two {
+    grid-area: imtw;
+  }
+
+  .adventages__list-item-first {
+    grid-area: lio;
+  }
+
+  .adventages__list-item-second {
+    grid-area: lit;
+  }
+
+  .adventages__list-item-third {
+    grid-area: lith;
+  }
+
+  .adventages-list__list-item--blue {
+    padding: 52px 33px 30px 33px;
+  }
+
+  .adventages__title {
+    font-size: 21px;
+  }
+
+  .adventages-list__list-item--ico {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 33px;
+  }
+
+  .adventages__title--no-ico {
+    max-width: 159px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .adventages__text--no-ico {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .adventages-list__list-item--hausing::before {
+    content: "";
+    background-image: url("../../../img/-features/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77px;
+    height: 72px;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  .adventages-list__list-item--eat::before {
+    content: "";
+    background-image: url("../../../img/-features/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 68px;
+    margin: 0;
+    margin-bottom: 26px;
+    vertical-align: middle;
+  }
+
+  .adventages-list__list-item--gifts::before {
+    content: "";
+    background-image: url("../../../img/-features/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67px;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 26px;
+    vertical-align: middle;
+  }
+
+  .adventages__text-colum {
+    align-items: center;
+  }
+
+  .adventages__text--ico {
+    text-align: center;
+  }
 }

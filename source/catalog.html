@@ -21,7 +21,7 @@
 
       <a class="logo" href="index.html">
 
-        <img class="logo__img" src="img/-header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
+        <img class="logo__image" src="img/header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
       </a>
 
       <!--header nav -->
@@ -30,7 +30,9 @@
 
         <h2 class="visually-hidden">Navigation</h2>
 
-        <button class="header__btn" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
+        <button class="header__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
+
+          <span class="header__button-line"></span>
 
           <span class="visually-hidden">Menu button</span>
         </button>
@@ -41,7 +43,7 @@
 
           <li class="menu__list-item">
 
-            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link menu__link--current" href="index.html">Главная</a>
           </li>
 
           <li class="menu__list-item">
@@ -66,10 +68,10 @@
 
     <div class="header__bottom header__bottom--catalog">
 
-      <!--header bg img-->
+      <!--header bg image-->
 
-      <img class="header__img-sedona" src="img/-intro/-sedona.svg" alt="sedona." width="282" height="49">
-
+      <div class="header__wrapper-sedona">
+      </div>
     </div>
   </header>
 
@@ -79,7 +81,7 @@
 
     <!--hero сatalog-->
 
-    <section class="hero">
+    <section class="hero hero--dark">
 
       <h2 class="visually-hidden">Photo and video</h2>
 
@@ -108,15 +110,16 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-1-mobile.jpg" alt="road" width="280" height="280">
+          <img class="gallery__image-first" src="./img/catalog/card/mobile-card/photo-1-mobile.jpg"
+            alt="дорога в закат.">
 
-          <div class="gallery__card-description">
+          <div class="gallery__card-description gallery__card-description-first">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Неродные просторы</h3>
+              <h3 class="gallery__card-title">Неродные просторы</h3>
 
-              <span class="gallery__card-author">Автор фото: Борис</span>
+              <p class="gallery__card-author">Автор фото: Борис</p>
             </div>
 
             <div class="gallery__card-reaction">
@@ -128,8 +131,8 @@
                     d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                     fill="black" />
                 </svg>
-                <span class="visually-hidden">Like symbol</span>
 
+                <span class="visually-hidden">Like symbol</span>
 
                 <span class="gallery__number-reaction">
 
@@ -142,15 +145,15 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-2-mobile.jpg" alt="road" width="280" height="280">
-
+          <img class="gallery__image-second" src="./img/catalog/card/mobile-card/photo-2-mobile.jpg"
+            alt="офигенская ветка.">
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Местная растительность</h3>
+              <h3 class="gallery__card-title">Местная растительность</h3>
 
-              <span class="gallery__card-author">Автор фото: Сергей</span>
+              <p class="gallery__card-author">Автор фото: Сергей</p>
 
             </div>
 
@@ -163,8 +166,8 @@
                     d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                     fill="black" />
                 </svg>
-                <span class="visually-hidden">Like symbol</span>
 
+                <span class="visually-hidden">Like symbol</span>
 
                 <span class="gallery__number-reaction">
 
@@ -177,17 +180,18 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-3-mobile.jpg" alt="road" width="280" height="280">
-
-          <div class="gallery__card-description">
+          <img class="gallery__image-third" src="./img/catalog/card/mobile-card/photo-3-mobile.jpg"
+            alt="другая дорога.">
+          <div class="gallery__card-description gallery__card-description--darck">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Дорога на север</h3>
+              <h3 class="gallery__card-title">Дорога на север</h3>
 
-              <span class="gallery__card-author">Автор фото: Пётр</span>
+              <p class="gallery__card-author">Автор фото: Пётр</p>
 
             </div>
+
             <div class="gallery__card-reaction">
 
               <a href="#" class="gallery__card-like">
@@ -197,8 +201,8 @@
                     d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                     fill="black" />
                 </svg>
-                <span class="visually-hidden">Like symbol</span>
 
+                <span class="visually-hidden">Like symbol</span>
 
                 <span class="gallery__number-reaction">
 
@@ -211,15 +215,15 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__img" src="img/-catalog/-card/photo-4-desktop.jpg" alt="road" width="280" height="280">
-
+          <img class="gallery__image-fourth" src="./img/catalog/card/mobile-card/photo-4-mobile.jpg"
+            alt="мост дьявола.">
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
 
-              <h3 class="gallery__card-tittle">Мост дьявола</h3>
+              <h3 class="gallery__card-title">Мост дьявола</h3>
 
-              <span class="gallery__card-author">Автор фото: Антон</span>
+              <p class="gallery__card-author">Автор фото: Антон</p>
             </div>
 
             <div class="gallery__card-reaction">
@@ -231,8 +235,8 @@
                     d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                     fill="black" />
                 </svg>
-                <span class="visually-hidden">Like symbol</span>
 
+                <span class="visually-hidden">Like symbol</span>
 
                 <span class="gallery__number-reaction">
 
@@ -242,13 +246,11 @@
             </div>
         </li>
       </ul>
-
-
     </section>
 
     <!--video-presentation-->
 
-    <section class="hero">
+    <section class="hero hero--dark-no-lines">
 
       <h2 class="visually-hidden">video presentation</h2>
 
@@ -264,7 +266,7 @@
 
       <h2 class="visually-hidden">video presentation.</h2>
 
-      <img class="video-presentation__video" src="img/-catalog/-video/video-mobile.jpg" alt="video presentation."
+      <img class="video-presentation__video" src="img/catalog/video/video-mobile.jpg" alt="video presentation."
         width="280" height="177">
 
       <svg class="video-presentation__polygon" width="48" height="54" viewBox="0 0 48 54" fill="none"
@@ -332,7 +334,7 @@
 
       <span class="footer__logo-title">Разработано</span>
 
-      <svg class="footer__logo-img" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+      <svg class="footer__logo-image" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
           fill="" />

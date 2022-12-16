@@ -4,6 +4,16 @@
   align-items: center;
   justify-content: center;
   text-align: start;
+  background-color: #e7e5e5;
+  padding-top: 30px;
+}
+
+@media (min-width: 767px) {
+  .form {
+    margin: 0 60px;
+    display: block;
+    margin-bottom: 64px;
+  }
 }
 
 .form-review {
@@ -11,9 +21,51 @@
   flex-direction: column;
 }
 
+@media (min-width: 767px) {
+  .form-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-review__wrapper-radiobox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-review__wrapper-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 124px 0 84px;
+  }
+
+  .form-review__check {
+    min-width: 205px;
+  }
+}
+
 .form-review__fildset {
+  position: relative;
   border: none;
 }
+
+.form-review__fildset::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #c4bcbc;
+}
+
+@media (min-width: 767px) {
+  .form-review__fildset::before {
+    content: none;
+  }
+}
+
 
 .form-review__title {
   position: relative;
@@ -25,56 +77,46 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: var(--dark, #000000);
+  color: #000000;
   margin-bottom: 20px;
   min-width: 233px;
 }
 
-.form-review__title-anderline::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  top: 259px;
-  background: #e5e5e5;
-}
+@media (min-width: 767px) {
+  .form-review__title {
+    font-size: 21px;
+  }
 
-.form-review__title-name-anderline::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  top: 344px;
-  background: #e5e5e5;
-}
+  .form-review__title--line::after {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background: #dbdbdb;
+    top: 12px;
+    left: -170px;
+  }
 
-.form-review__title-radio-anderline::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  top: 298px;
-  background: #e5e5e5;
-}
-
-.form-review__title-check-anderline::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  top: 355px;
-  background: #e5e5e5;
+  .form-review__title--line::before {
+    position: absolute;
+    content: "";
+    width: 123px;
+    height: 1px;
+    background: #dbdbdb;
+    top: 12px;
+    right: -170px;
+  }
 }
 
 .form-review__user-input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
-  padding: 0 20px;
+  margin-bottom: 39px;
+  padding-bottom: 39px;
 }
 
 .form-review__no-padding {
-  padding: 0;
+  padding-bottom: 24px;
 }
 
 .form-review__input {
@@ -85,7 +127,7 @@
   font-weight: 700;
   font-size: 18px;
   align-items: center;
-  color: var(--dark, #000000);
+  color: #000000;
   padding: 16px 69px 16px 16px;
 }
 
@@ -142,7 +184,7 @@
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
-  color: var(--text, #333333);
+  color: #333333;
   margin-bottom: 16px;
 }
 
@@ -156,6 +198,12 @@
   font-size: 18px;
 }
 
+@media (min-width: 767px) {
+  .form-review__emotions {
+    margin-bottom: 48px;
+  }
+}
+
 .form-review__emotions-title {
   font-weight: 700;
   font-size: 18px;
@@ -163,19 +211,26 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: var(--dark, #000000);
+  color: #000000;
   margin-bottom: 20px;
 }
 
+@media (min-width: 767px) {
+  .form-review__title {
+    max-width: 308px;
+  }
+}
+
 .form-review__emotions-input {
-  width: 279px;
+  min-width: 280px;
+  width: 100%;
   height: 150px;
   border: none;
   background: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   color: #000000;
-  margin-bottom: 56px;
+  padding: 16px 0 0 16px;
 }
 
 .form-review__emotions-input::placeholder {
@@ -216,7 +271,7 @@
   min-width: 320px;
   margin: auto;
   box-sizing: border-box;
-  background-color: var(--white, #ffffff);
+  background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding-top: 45px;
 }
@@ -227,7 +282,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--text, #333333);
+  color: #333333;
   max-width: 237px;
   margin-bottom: 28px;
 }
@@ -335,6 +390,12 @@
   fill: rgba(51, 51, 51, 0.3);
 }
 
+@media (min-width: 767px) {
+  .form-review__emotion-active-wrapper {
+    display: flex;
+  }
+}
+
 .button--form {
   padding: 16px 49px;
   min-width: 280px;
@@ -347,6 +408,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin-right: 20px;
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;

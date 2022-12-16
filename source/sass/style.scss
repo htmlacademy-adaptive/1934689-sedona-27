@@ -1,15 +1,16 @@
 // Начните писать стили здесь
+@use "../sass/bloks/vars/vars.scss";
 @use "../sass/fonts.scss";
-@use "../sass/bloks/header/header.scss";
-@use "../sass/bloks/header/menu/menu.scss";
 @use "../sass/bloks/project/prodject-base.scss";
+@use "../sass/bloks/button/button.scss";
+@use "../sass/bloks/header/header.scss";
 @use "../sass/bloks/header/logo/logo.scss";
+@use "../sass/bloks/header/menu/menu.scss";
 @use "../sass/bloks/hero/hero.scss";
 @use "../sass/bloks/adventages/adventages-list.scss";
 @use "../sass/bloks/hotel/hotel.scss";
-@use "../sass/bloks/button/button.scss";
 @use "../sass/bloks/map/map.scss";
-@use "../sass/bloks/gallery/gallery.scss";
-@use "../sass/bloks/footer/footer.scss";
 @use "../sass/bloks/video-presentation/video-presentation.scss";
+@use "../sass/bloks/gallery/gallery.scss";
 @use "../sass/bloks/form/form.scss";
+@use "../sass/bloks/footer/footer.scss";
