@@ -24,9 +24,13 @@
   color: #000000;
   font-size: 21px;
   margin: 0 auto;
-  background-color: #e7e5e5;
+  background-color: #ffffff;
   min-height: 56px;
   overflow-x: hidden;
+}
+
+.main-catalog {
+  background-color: #e7e5e5;
 }
 
 @media (max-width: 767px) {
@@ -35,9 +39,10 @@
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1279px) {
   .page__body {
-    background-color: #e7e5e5;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
     padding: 0 40px;
   }
 }

@@ -1,6 +1,11 @@
+// gallery catalog page
+
 .gallery {
-  padding: 24px 0;
+  padding: 24px 0 26px;
+  margin-bottom: 17px;
 }
+
+// tablet gallery catalog page
 
 @media (min-width: 767px) {
   .gallery {
@@ -8,9 +13,13 @@
   }
 }
 
+// gallery list
+
 .gallery__list {
   list-style: none;
 }
+
+// tablet gallery list
 
 @media (min-width: 767px) {
   .gallery__list {
@@ -19,11 +28,15 @@
   }
 }
 
+// desctop gallery list
+
 @media (min-width: 1023px) {
   .gallery__list {
     margin: 0;
   }
 }
+
+// Gallery card
 
 .gallery__list-card {
   position: relative;
@@ -32,11 +45,15 @@
   flex-wrap: wrap;
 }
 
+// tablet gallery card
+
 @media (min-width: 767px) {
   .gallery__list-card {
     min-width: 324px;
   }
 }
+
+// gallery card underline
 
 .gallery__list-card::before {
   position: absolute;
@@ -48,15 +65,21 @@
   background: #c4bcbc;
 }
 
+// tablet underline off
+
 @media (min-width: 767px) {
   .gallery__list-card::before {
     content: none;
   }
 }
 
+// gallery image
+
 .gallery__image-first {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-first {
@@ -66,9 +89,13 @@
   }
 }
 
+// gallery image
+
 .gallery__image-second {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-second {
@@ -78,9 +105,13 @@
   }
 }
 
+// gallery image
+
 .gallery__image-third {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-third {
@@ -90,9 +121,13 @@
   }
 }
 
+// gallery image
+
 .gallery__image-fourth {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-fourth {
@@ -101,6 +136,8 @@
     max-height: 267px;
   }
 }
+
+// gallery text
 
 .gallery__card-title {
   font-size: 14px;
@@ -116,6 +153,12 @@
   padding: 0 20px;
 }
 
+.gallery__list-card:last-child .gallery__card-description {
+  margin-bottom: 0;
+}
+
+// tablet allery text
+
 @media (min-width: 767px) {
   .gallery__card-description {
     display: flex;
@@ -129,11 +172,15 @@
   }
 }
 
+// tablet description card  background darck
+
 @media (min-width: 767px) {
   .gallery__card-description--darck {
     background-color: #eaeaea;
   }
 }
+
+// tablet card description
 
 @media (min-width: 767px) {
   .gallery__card-description-first {
@@ -148,16 +195,21 @@
   }
 }
 
+// gallery card wrapper text
+
 .gallery__wrapper-author {
   margin-bottom: 11px;
 }
 
+// gallery card name author
+
 .gallery__card-author {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   color: #000000;
 }
+
+// gallery card action
 
 .gallery__card-like {
   text-decoration: none;

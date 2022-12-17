@@ -1,41 +1,75 @@
+// hotel find
+
 .hotel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 44px 0 49px;
+  padding: 38px 18px 49px;
   text-align: center;
   background-color: #ffffff;
 }
 
+// tablet hotel find
+
 @media (min-width: 767px) {
   .hotel {
-    padding: 61px 0 58px;
+    padding: 61px  166px 58px;
     background-color: #e7e5e5;
   }
 }
 
+// descktop hotel find
+
+@media (min-width: 1279px) {
+  .hotel {
+    padding: 61px 382px 66px;
+    background-color: #e7e5e5;
+  }
+}
+
+// hotel title
+
 .hotel__title {
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 35px;
 }
+
+// tablet hotel title
+
+@media (min-width: 767px) {
+  .hotel__title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+}
+
+// hotel description
 
 .hotel__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
-@media (min-width: 767px) {
-  .hotel__title {
-    font-size: 30px;
-    margin-bottom: 27px;
-  }
+// tablet hotel description
 
+@media (min-width: 767px) {
   .hotel__description {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 40px;
+  }
+}
+
+// hotel button
+
+@media (min-width: 767px) {
+  .hotel__button {
+    min-width: 458px;
   }
 }

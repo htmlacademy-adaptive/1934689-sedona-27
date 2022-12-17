@@ -16,14 +16,14 @@
   z-index: 9;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1279px) {
   .header__top {
     position: absolute;
     padding: 0;
   }
 }
 
-//header menu
+//header top menu
 
 .header__menu {
   display: none;
@@ -42,14 +42,17 @@
   }
 }
 
-//header menu btn
+//header top menu button
 
 .header__button {
-  display: none;
+  position: relative;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
   vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  z-index: 10;
 }
 
 .header__button:hover {
@@ -60,71 +63,64 @@
   opacity: 0.3;
 }
 
-@media (min-width: 320px) {
-  .header__button {
-    display: block;
-    position: relative;
-    width: 22px;
-    height: 22px;
-    z-index: 10;
-  }
-
-  .header__button::after,
-  .header__button::before {
-    content: "";
-    position: absolute;
-    background-color: #81b3d2;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header__button-line {
-    content: "";
-    position: absolute;
-    background-color: #81b3d2;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    top: 9px;
-  }
-
-  .header__button::before {
-    top: 0;
-  }
-
-  .header__button::after {
-    bottom: 0;
-  }
-
-  .header__button--active {
-    background-color: transparent;
-  }
-
-  .header__button--active .header__button-line {
-    transform: scale(0);
-    transition: all 0.3s ease 0s;
-  }
-
-  .header__button--active::before {
-    transform: rotate(45deg);
-    background-color: #ffffff;
-    top: 9px;
-  }
-
-  .header__button--active::after {
-    transform: rotate(-45deg);
-    background-color: #ffffff;
-    bottom: 9px;
-  }
+.header__button::after,
+.header__button::before {
+  content: "";
+  position: absolute;
+  background-color: #81b3d2;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  transition: all 0.3s ease 0s;
 }
+
+.header__button-line {
+  content: "";
+  position: absolute;
+  background-color: #81b3d2;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 9px;
+}
+
+.header__button::before {
+  top: 0;
+}
+
+.header__button::after {
+  bottom: 0;
+}
+
+.header__button--active {
+  background-color: transparent;
+}
+
+.header__button--active .header__button-line {
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+}
+
+.header__button--active::before {
+  transform: rotate(45deg);
+  background-color: #ffffff;
+  top: 9px;
+}
+
+.header__button--active::after {
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+  bottom: 9px;
+}
+
 
 @media (min-width: 767px) {
   .header__button {
     display: none;
   }
 }
+
+// header bottom
 
 .header__bottom {
   display: flex;
@@ -139,6 +135,8 @@
   width: 100%;
 }
 
+// header bottom tablet
+
 @media (min-width: 767px) {
   .header__bottom {
     background-image: url("../../../img/header/tablet/back-tablet.jpg");
@@ -146,10 +144,13 @@
     background-repeat: no-repeat;
     min-height: 518px;
     padding: 77px 0 91px;
+    margin-top: 50px;
   }
 }
 
-@media (min-width: 1023px) {
+// descktop header bottom
+
+@media (min-width: 1279px) {
   .header__bottom {
     background-image: url("../../../img/header/descktop/back-desktop.jpg");
     background-size: cover;
@@ -157,6 +158,8 @@
     min-height: 518px;
   }
 }
+
+// header bottom catalog
 
 .header__bottom--catalog {
   padding: 108px 0 67px 0;
@@ -168,6 +171,8 @@
   margin: 0;
 }
 
+// tablet header bottom catalog
+
 @media (min-width: 767px) {
   .header__bottom--catalog {
     padding: 511px 0 66px;
@@ -176,13 +181,17 @@
   }
 }
 
-@media (min-width: 1023px) {
+// descktop header bottom catalog
+
+@media (min-width: 1279px) {
   .header__bottom--catalog {
     height: 215px;
     padding: 360px 0 66px;
     margin-top: -20%;
   }
 }
+
+// header top text
 
 .header__wrapper-welcome {
   background-image: url("../../../img/header/mobile/welcome.svg");
@@ -219,6 +228,8 @@
   width: 173px;
 }
 
+// tablet header top text
+
 @media (min-width: 767px) {
   .header__wrapper-welcome {
     height: 45px;
@@ -242,7 +253,9 @@
   }
 }
 
-@media (min-width: 1023px) {
+//descktop header top text
+
+@media (min-width: 1279px) {
   .header__wrapper-welcome {
     height: 45px;
     width: 188px;
