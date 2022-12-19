@@ -1,5 +1,7 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
 }
 
@@ -7,6 +9,7 @@
 
 .header__top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   position: fixed;
   padding: 17px 20px;
@@ -45,6 +48,7 @@
 //header top menu button
 
 .header__button {
+  flex-wrap: wrap;
   position: relative;
   border: none;
   background-color: #ffffff;
@@ -135,6 +139,14 @@
   width: 100%;
 }
 
+// header triangle
+
+.header__bottom::before {
+  position: absolute;
+  content: url("../../../img/header/mobile/mobile-intro-triangle.png");
+  bottom: -7px;
+}
+
 // header bottom tablet
 
 @media (min-width: 767px) {
@@ -148,6 +160,16 @@
   }
 }
 
+// header tablet triangle
+
+@media (min-width: 767px) {
+  .header__bottom::before {
+    position: absolute;
+    content: url("../../../img/header/tablet/tablet-intro-triangle.png");
+    bottom: -7px;
+  }
+}
+
 // descktop header bottom
 
 @media (min-width: 1279px) {
@@ -156,6 +178,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
+  }
+}
+
+// header desktop triangle
+
+@media (min-width: 1279px) {
+  .header__bottom::before {
+    position: absolute;
+    content: url("../../../img/header/descktop/intro-two-triangle.png");
+    bottom: -7px;
   }
 }
 
@@ -185,7 +217,7 @@
 
 @media (min-width: 1279px) {
   .header__bottom--catalog {
-    height: 215px;
+    min-height: 518px;
     padding: 360px 0 66px;
     margin-top: -20%;
   }

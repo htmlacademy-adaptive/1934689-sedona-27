@@ -15,6 +15,32 @@
   }
 }
 
+// tablet footer catalog
+
+@media (min-width: 767px) {
+  .footer--catalog {
+    padding: 36px 60px;
+  }
+}
+
+// descktop footer catalog
+
+@media (min-width: 1279px) {
+  .footer--catalog {
+    background-color: #e7e5e5;
+    padding: 120px 120px 40px 104px;
+  }
+}
+
+// descktop footer form
+
+@media (min-width: 1279px) {
+  .footer--form {
+    min-width: 1200px;
+    padding: 36px 120px 36px 120px;
+  }
+}
+
 // footer social list
 
 .footer__social-list {
