@@ -39,12 +39,6 @@
 // tablet radio box
 
 @media (min-width: 767px) {
-  .form-review {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .form-review__wrapper-radiobox {
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +67,24 @@
 @media (min-width: 1279px) {
   .form-review__wrapper-radiobox {
     padding: 0 173px;
+    justify-content: space-between;
+  }
+}
+
+// tablet fildset wrapper
+
+@media (min-width: 767px) {
+  .fildset-wrapper {
+    display: flex;
+  }
+}
+
+// descktop fildset wrapper
+
+@media (min-width: 1279px) {
+  .fildset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -185,25 +197,11 @@
   padding-bottom: 39px;
 }
 
-
 //descktop  form user imput
-
-@media (min-width: 1279px) {
-  .form-review__user-input {
-    margin-left: 120px;
-  }
-}
 
 @media (min-width: 1279px) {
   .form-review__user-input:nth-child(3) {
     margin-left: 0;
-  }
-}
-
-@media (min-width: 1279px) {
-  .form-review__user-input:last-child {
-    margin-left: 0;
-    margin-right: 120px;
   }
 }
 
@@ -227,6 +225,15 @@
   align-items: center;
   color: #000000;
   padding: 16px;
+  margin-left: 18px;
+}
+
+// tablet form imput
+
+@media (min-width: 767px) {
+  .form-review__input {
+    margin-bottom: 16px;
+  }
 }
 
 // descktop form imput
@@ -234,6 +241,7 @@
 @media (min-width: 1279px) {
   .form-review__input {
     min-width: 430px;
+    margin-left: 120px;
   }
 }
 
@@ -263,12 +271,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+}
+
+// tablet wrapper input
+
+@media (min-width: 767px) {
+  .form-review__wrapper-input {
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .form-review--short {
-  width: 222px;
-  height: 58px;
+  max-width: 222px;
 }
 
 // descktop user imput short
@@ -276,9 +291,11 @@
 @media (min-width: 1279px) {
   .form-review--short {
     min-width: 344px;
+    margin-left: 0;
   }
 }
-// fotm input ico
+
+// form input ico
 
 .form-review__ico {
   background-color: #e6e6e6;
@@ -286,6 +303,15 @@
   height: 58px;
   padding-top: 18px;
   padding-left: 20px;
+}
+
+// descktop fotm input ico
+
+@media (min-width: 1279px) {
+  .form-review__ico {
+    margin-right: 120px;
+    margin-bottom: 16px;
+  }
 }
 
 .form-review__ico--tel::after {
@@ -304,6 +330,38 @@
   padding: 0 18px;
 }
 
+// tablet form input label
+
+@media (min-width: 767px) {
+  .form-review__label {
+    padding-left: 42px;
+  }
+}
+
+@media (min-width: 767px) {
+  .form-review__label--tablet {
+    padding-left: 54px;
+  }
+}
+
+// descktop form input label
+
+@media (min-width: 1279px) {
+  .form-review__label {
+    margin-left: 120px;
+  }
+}
+
+// descktop right label margin off
+
+@media (min-width: 1279px) {
+  .form-review__label--tablet {
+    margin-left: 0;
+    padding-left: 28px;
+  }
+}
+
+
 .form-review__radio-title {
   font-weight: 700;
   font-size: 18px;
@@ -312,6 +370,12 @@
 .form-review__check-title {
   font-weight: 700;
   font-size: 18px;
+}
+
+// form emotion input
+
+.form-review__emotions {
+  margin: 0 18px;
 }
 
 // tablet emotion bottom
@@ -558,6 +622,12 @@
 
 .form-review__checkbox-box[type="checkbox"]:checked:active + .form-review__check-mark::after {
   fill: rgba(51, 51, 51, 0.3);
+}
+
+// form wrapper button
+
+.form-review__emotion-active-wrapper {
+  margin: 0 18px;
 }
 
 // tablet wrapper emotion active
