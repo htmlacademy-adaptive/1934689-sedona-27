@@ -261,6 +261,9 @@
 
 .form-review__wrapper-input {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-review--short {
@@ -294,16 +297,10 @@
 }
 
 .form-review__label {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 16px;
   padding: 0 18px;
 }
 
