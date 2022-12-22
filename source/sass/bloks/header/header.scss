@@ -12,12 +12,24 @@
   flex-wrap: wrap;
   justify-content: end;
   position: fixed;
-  padding: 17px 20px;
+  padding: 15px 20px;
   background-color: #ffffff;
   vertical-align: middle;
   width: 100%;
   z-index: 9;
 }
+
+// tablet header top
+
+@media (min-width: 767px) {
+  .header__top {
+    display: block;
+    position: fixed;
+    padding: 0 20px;
+  }
+}
+
+// descktop header top
 
 @media (min-width: 1279px) {
   .header__top {
@@ -31,6 +43,14 @@
 .header__menu {
   display: none;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__menu--no-js {
+    display: block;
+    top: 165px;
+  }
+}
+
 
 @media (min-width: 320px) {
   .header__menu {

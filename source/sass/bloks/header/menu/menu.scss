@@ -2,6 +2,7 @@
 // header menu list
 
 .menu {
+  list-style: none;
   position: absolute;
   top: -400%;
   left: 0;
@@ -13,19 +14,25 @@
   transition: all 0.3s ease 0s;
 }
 
+// logo position
+
+.menu::before {
+  content: "";
+  width: 185px;
+  grid-column: 3;
+  grid-row: span 2;
+}
+
 // tablet menu
 
 @media (min-width: 767px) {
   .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: dense;
+    background-image: none;
     background-color: #ffffff;
-    list-style: none;
-    z-index: 0;
-    padding: 0 30px 0 50px;
+    top: 0;
   }
 }
 
@@ -118,31 +125,6 @@
   }
 }
 
-// tablet logo
-
-@media (min-width: 767px) {
-  .menu__list-item:nth-child(2) {
-    position: relative;
-    margin-right: 25%;
-  }
-
-  .menu__list-item:nth-child(2)::after {
-    position: absolute;
-    content: url("../../../../img/header-logo/logotype-mobile.svg");
-    top: 0;
-    left: 100%;
-  }
-}
-
-// descktop logo
-
-@media (min-width: 1279px) {
-  .menu__list-item:nth-child(2)::after {
-    left: 160%;
-  }
-}
-
-
 // action link menu
 
 .menu__list-item:hover {
@@ -162,7 +144,7 @@
   height: 7px;
   width: 100%;
   position: absolute;
-  top: 217px;
+  top: 213px;
   left: 0;
   right: 0;
   margin: auto;

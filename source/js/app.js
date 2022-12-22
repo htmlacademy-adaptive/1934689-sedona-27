@@ -15,3 +15,9 @@ const headerBtn = document.querySelector('.header__button'),
         exp ? headerBtn.setAttribute('aria-label', 'Открыть меню')
             : headerBtn.setAttribute('aria-label', 'Закрыть меню')
       });
+
+            document.addEventListener('DOMContentLoaded', function (Event) {
+              const  header = document.querySelector('.header')
+            header.classList.remove('header__menu--no-js')
+            });
+
