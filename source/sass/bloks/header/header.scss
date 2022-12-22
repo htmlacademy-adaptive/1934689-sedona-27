@@ -1,3 +1,5 @@
+// header
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +52,6 @@
     top: 165px;
   }
 }
-
 
 @media (min-width: 320px) {
   .header__menu {
@@ -136,7 +137,6 @@
   background-color: #ffffff;
   bottom: 9px;
 }
-
 
 @media (min-width: 767px) {
   .header__button {

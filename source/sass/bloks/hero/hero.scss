@@ -1,4 +1,4 @@
-// hero
+// hero section
 
 .hero {
   position: relative;
@@ -19,6 +19,7 @@
 }
 
 // tablet bottom triangle off
+
 @media (min-width: 767px) {
   .hero-triangle::before {
     content: none;
@@ -98,6 +99,8 @@
     top: 476px;
   }
 }
+
+// mobil dark hero
 
 .hero--dark-catalog {
   background-color: #e7e5e5;

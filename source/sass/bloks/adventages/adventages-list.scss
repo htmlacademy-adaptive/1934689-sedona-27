@@ -85,7 +85,6 @@
   color: #ffffff;
 }
 
-
 // adventages blue img
 
 .adventages__list-item--image-city {
@@ -201,7 +200,6 @@
     margin-bottom: 26px;
   }
 }
-
 
 .adventages-list__list-item--eat::before {
   content: url("../../../img/-features/icon-burger.svg");
@@ -335,6 +333,8 @@
       "imtw imtw bltw"
       "lio   lit   lith";
   }
+
+  // position grid etem
 
   .adventages-list__list-one {
     grid-area: one;

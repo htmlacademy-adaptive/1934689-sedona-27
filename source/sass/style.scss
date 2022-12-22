@@ -1,16 +1,56 @@
-// Начните писать стили здесь
+// vars
 @use "../sass/bloks/vars/vars.scss";
+
+// fonts
+
 @use "../sass/fonts.scss";
+
+// main param
+
 @use "../sass/bloks/project/prodject-base.scss";
+
+// button
+
 @use "../sass/bloks/button/button.scss";
+
+// header
 @use "../sass/bloks/header/header.scss";
+
+// logo
 @use "../sass/bloks/header/logo/logo.scss";
+
+// nav menu
+
 @use "../sass/bloks/header/menu/menu.scss";
+
+// hero section
+
 @use "../sass/bloks/hero/hero.scss";
+
+// adventages section
+
 @use "../sass/bloks/adventages/adventages-list.scss";
+
+//hotel section
+
 @use "../sass/bloks/hotel/hotel.scss";
+
+// map section
+
 @use "../sass/bloks/map/map.scss";
+
+// video section catalog
+
 @use "../sass/bloks/video-presentation/video-presentation.scss";
+
+// gallery section catalog
+
 @use "../sass/bloks/gallery/gallery.scss";
+
+// form section page
+
 @use "../sass/bloks/form/form.scss";
+
+// footer section
+
 @use "../sass/bloks/footer/footer.scss";

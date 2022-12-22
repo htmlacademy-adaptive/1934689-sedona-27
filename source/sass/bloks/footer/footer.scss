@@ -61,7 +61,6 @@
   }
 }
 
-
 .footer__list-item {
   display: flex;
   align-items: center;
@@ -72,6 +71,8 @@
   cursor: pointer;
   margin-right: 6px;
 }
+
+//footer actions elements
 
 .footer__list-ico {
   fill: #ffffff;
@@ -97,6 +98,8 @@
   text-decoration: none;
   margin-bottom: 33px;
 }
+
+//tablet footer link
 
 @media (min-width: 767px) {
   .footer__link {
