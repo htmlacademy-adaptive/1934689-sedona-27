@@ -150,7 +150,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../../img/header/mobile/back-img.jpg");
+  background-image: url("../img/header/mobile/back-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 389px;
@@ -163,7 +163,7 @@
 
 .header__bottom::before {
   position: absolute;
-  content: url("../../../img/header/mobile/mobile-intro-triangle.png");
+  content: url("../img/header/mobile/mobile-intro-triangle.png");
   bottom: -7px;
 }
 
@@ -171,7 +171,7 @@
 
 @media (min-width: 767px) {
   .header__bottom {
-    background-image: url("../../../img/header/tablet/back-tablet.jpg");
+    background-image: url("../img/header/tablet/back-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
@@ -185,7 +185,7 @@
 @media (min-width: 767px) {
   .header__bottom::before {
     position: absolute;
-    content: url("../../../img/header/tablet/tablet-intro-triangle.png");
+    content: url("../img/header/tablet/tablet-intro-triangle.png");
     bottom: -7px;
   }
 }
@@ -194,7 +194,7 @@
 
 @media (min-width: 1279px) {
   .header__bottom {
-    background-image: url("../../../img/header/descktop/back-desktop.jpg");
+    background-image: url("../img/header/descktop/back-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
@@ -206,7 +206,7 @@
 @media (min-width: 1279px) {
   .header__bottom::before {
     position: absolute;
-    content: url("../../../img/header/descktop/intro-two-triangle.png");
+    content: url("../img/header/descktop/intro-two-triangle.png");
     bottom: -7px;
   }
 }
@@ -246,7 +246,7 @@
 // header top text
 
 .header__wrapper-welcome {
-  background-image: url("../../../img/header/mobile/welcome.svg");
+  background-image: url("../img/header/mobile/welcome.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 28px;
@@ -255,7 +255,7 @@
 }
 
 .header__wrapper-gorgeus {
-  background-image: url("../../../img/header/mobile/gorgeous.svg");
+  background-image: url("../img/header/mobile/gorgeous.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 18px;
@@ -264,7 +264,7 @@
 }
 
 .header__wrapper-sedona {
-  background-image: url("../../../img/header/mobile/sedona.svg");
+  background-image: url("../img/header/mobile/sedona.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 49px;
@@ -273,7 +273,7 @@
 }
 
 .header__wrapper-canyon {
-  background-image: url("../../../img/header/mobile/grand-canyon.svg");
+  background-image: url("../img/header/mobile/grand-canyon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 46px;
