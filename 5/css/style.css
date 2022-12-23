@@ -262,7 +262,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../../img/header/mobile/back-img.jpg");
+  background-image: url("../img/header/mobile/back-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 389px;
@@ -273,13 +273,13 @@
 
 .header__bottom::before {
   position: absolute;
-  content: url("../../../img/header/mobile/mobile-intro-triangle.png");
+  content: url("../img/header/mobile/mobile-intro-triangle.png");
   bottom: -7px;
 }
 
 @media (min-width: 767px) {
   .header__bottom {
-    background-image: url("../../../img/header/tablet/back-tablet.jpg");
+    background-image: url("../img/header/tablet/back-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
@@ -290,13 +290,13 @@
 @media (min-width: 767px) {
   .header__bottom::before {
     position: absolute;
-    content: url("../../../img/header/tablet/tablet-intro-triangle.png");
+    content: url("../img/header/tablet/tablet-intro-triangle.png");
     bottom: -7px;
   }
 }
 @media (min-width: 1279px) {
   .header__bottom {
-    background-image: url("../../../img/header/descktop/back-desktop.jpg");
+    background-image: url("../img/header/descktop/back-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
@@ -305,7 +305,7 @@
 @media (min-width: 1279px) {
   .header__bottom::before {
     position: absolute;
-    content: url("../../../img/header/descktop/intro-two-triangle.png");
+    content: url("../img/header/descktop/intro-two-triangle.png");
     bottom: -7px;
   }
 }
@@ -334,7 +334,7 @@
   }
 }
 .header__wrapper-welcome {
-  background-image: url("../../../img/header/mobile/welcome.svg");
+  background-image: url("../img/header/mobile/welcome.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 28px;
@@ -343,7 +343,7 @@
 }
 
 .header__wrapper-gorgeus {
-  background-image: url("../../../img/header/mobile/gorgeous.svg");
+  background-image: url("../img/header/mobile/gorgeous.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 18px;
@@ -352,7 +352,7 @@
 }
 
 .header__wrapper-sedona {
-  background-image: url("../../../img/header/mobile/sedona.svg");
+  background-image: url("../img/header/mobile/sedona.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 49px;
@@ -361,7 +361,7 @@
 }
 
 .header__wrapper-canyon {
-  background-image: url("../../../img/header/mobile/grand-canyon.svg");
+  background-image: url("../img/header/mobile/grand-canyon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 46px;
@@ -577,7 +577,7 @@
 
 .hero-triangle::before {
   position: absolute;
-  content: url("../../../img/hero/mobile-two-triangl.png");
+  content: url("../img/hero/mobile-two-triangl.png");
   bottom: -43px;
 }
 
@@ -834,7 +834,7 @@
 
 .adventages__list-item--image-city {
   position: relative;
-  background-image: url("../../../img/adventages/mobile/adventages-city.jpg");
+  background-image: url("../img/adventages/mobile/adventages-city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -850,6 +850,11 @@
   padding: 25px 18px;
 }
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--ico {
+    justify-content: center;
+  }
+}
 @media (min-width: 767px) {
   .adventages-list__list-item--ico {
     flex-direction: column;
@@ -864,6 +869,11 @@
   max-width: 237px;
 }
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages__text-colum {
+    max-width: 290px;
+  }
+}
 @media (min-width: 767px) {
   .adventages__text-colum {
     align-items: center;
@@ -900,14 +910,19 @@
   }
 }
 .adventages-list__list-item--hausing::before {
-  content: url("../../../img/-features/icon-house.svg");
+  content: url("../img/-features/icon-house.svg");
   margin-right: 7px;
 }
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--hausing::before {
+    margin-right: 30px;
+  }
+}
 @media (min-width: 767px) {
   .adventages-list__list-item--hausing::before {
     content: "";
-    background-image: url("../../../img/-features/icon-house.svg");
+    background-image: url("../img/-features/icon-house.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 77px;
@@ -917,14 +932,19 @@
   }
 }
 .adventages-list__list-item--eat::before {
-  content: url("../../../img/-features/icon-burger.svg");
+  content: url("../img/-features/icon-burger.svg");
   margin-right: 7px;
 }
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--eat::before {
+    margin-right: 30px;
+  }
+}
 @media (min-width: 767px) {
   .adventages-list__list-item--eat::before {
     content: "";
-    background-image: url("../../../img/-features/icon-burger.svg");
+    background-image: url("../img/-features/icon-burger.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 76px;
@@ -935,14 +955,19 @@
   }
 }
 .adventages-list__list-item--gifts::before {
-  content: url("../../../img/-features/icon-gift.svg");
+  content: url("../img/-features/icon-gift.svg");
   margin-right: 7px;
 }
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--gifts::before {
+    margin-right: 30px;
+  }
+}
 @media (min-width: 767px) {
   .adventages-list__list-item--gifts::before {
     content: "";
-    background-image: url("../../../img/-features/icon-gift.svg");
+    background-image: url("../img/-features/icon-gift.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 67px;
@@ -954,7 +979,7 @@
 }
 .adventages__list-item--image-bridge {
   position: relative;
-  background-image: url("../../../img/adventages/mobile/photo-bridge.jpg");
+  background-image: url("../img/adventages/mobile/photo-bridge.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1675,11 +1700,11 @@
   }
 }
 .form-review__ico--tel::after {
-  content: url("../../../img/-form/phone.svg");
+  content: url("../img/-form/phone.svg");
 }
 
 .form-review__ico--mail::before {
-  content: url("../../../img/-form/mail.svg");
+  content: url("../img/-form/mail.svg");
 }
 
 .form-review__label {
@@ -1924,7 +1949,7 @@
 }
 
 .form-review__check-mark::after {
-  content: url("../../../img/-form/tick.svg");
+  content: url("../img/-form/tick.svg");
   top: 0;
   left: 0;
   right: 0;
