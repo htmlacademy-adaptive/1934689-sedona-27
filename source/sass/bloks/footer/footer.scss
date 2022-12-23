@@ -1,5 +1,7 @@
+// footer
+
 .footer {
-  padding: 38px 77px 29px 77px;
+  padding: 28px 77px 29px 77px;
   background-color: #ffffff;
 }
 
@@ -9,9 +11,37 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 36px 76px 36px 45px;
+    padding: 29px 82px 23px 82px;
   }
 }
+
+// tablet footer catalog
+
+@media (min-width: 767px) {
+  .footer--catalog {
+    padding: 36px 60px;
+  }
+}
+
+// descktop footer catalog
+
+@media (min-width: 1279px) {
+  .footer--catalog {
+    background-color: #e7e5e5;
+    padding: 120px 120px 40px 104px;
+  }
+}
+
+// descktop footer form
+
+@media (min-width: 1279px) {
+  .footer--form {
+    min-width: 1200px;
+    padding: 36px 120px 36px 120px;
+  }
+}
+
+// footer social list
 
 .footer__social-list {
   display: flex;
@@ -31,7 +61,6 @@
   }
 }
 
-
 .footer__list-item {
   display: flex;
   align-items: center;
@@ -42,6 +71,8 @@
   cursor: pointer;
   margin-right: 6px;
 }
+
+//footer actions elements
 
 .footer__list-ico {
   fill: #ffffff;
@@ -67,6 +98,8 @@
   text-decoration: none;
   margin-bottom: 33px;
 }
+
+//tablet footer link
 
 @media (min-width: 767px) {
   .footer__link {

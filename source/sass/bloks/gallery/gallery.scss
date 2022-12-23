@@ -1,6 +1,10 @@
+// gallery catalog page
+
 .gallery {
-  padding: 24px 0;
+  padding: 24px 0 26px;
 }
+
+// tablet gallery catalog
 
 @media (min-width: 767px) {
   .gallery {
@@ -8,9 +12,21 @@
   }
 }
 
+// desctop gallery catalog
+
+@media (min-width: 1279px) {
+  .gallery {
+    padding: 0;
+  }
+}
+
+// gallery list
+
 .gallery__list {
   list-style: none;
 }
+
+// tablet gallery list
 
 @media (min-width: 767px) {
   .gallery__list {
@@ -19,11 +35,7 @@
   }
 }
 
-@media (min-width: 1023px) {
-  .gallery__list {
-    margin: 0;
-  }
-}
+// Gallery card
 
 .gallery__list-card {
   position: relative;
@@ -32,11 +44,15 @@
   flex-wrap: wrap;
 }
 
+// tablet gallery card
+
 @media (min-width: 767px) {
   .gallery__list-card {
     min-width: 324px;
   }
 }
+
+// gallery card underline
 
 .gallery__list-card::before {
   position: absolute;
@@ -48,15 +64,21 @@
   background: #c4bcbc;
 }
 
+// tablet underline off
+
 @media (min-width: 767px) {
   .gallery__list-card::before {
     content: none;
   }
 }
 
+// gallery image
+
 .gallery__image-first {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-first {
@@ -66,9 +88,22 @@
   }
 }
 
+// desctop galerrey image first catalog
+
+@media (min-width: 1279px) {
+  .gallery__image-first {
+    min-width: 1200px;
+    max-height: 400px;
+  }
+}
+
+// gallery image
+
 .gallery__image-second {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-second {
@@ -78,9 +113,13 @@
   }
 }
 
+// gallery image
+
 .gallery__image-third {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-third {
@@ -90,9 +129,13 @@
   }
 }
 
+// gallery image
+
 .gallery__image-fourth {
   margin: 0 20px 15px 20px;
 }
+
+// tablet gallery image
 
 @media (min-width: 767px) {
   .gallery__image-fourth {
@@ -102,6 +145,32 @@
   }
 }
 
+
+// descktop gallery image
+
+@media (min-width: 1279px) {
+  .gallery__image-second {
+    min-width: 400px;
+  }
+}
+
+// descktop gallery image
+
+@media (min-width: 1279px) {
+  .gallery__image-third {
+    min-width: 400px;
+  }
+}
+
+// descktop gallery image
+
+@media (min-width: 1279px) {
+  .gallery__image-fourth {
+    min-width: 400px;
+  }
+}
+// gallery text
+
 .gallery__card-title {
   font-size: 14px;
   line-height: 21px;
@@ -110,11 +179,23 @@
   margin-bottom: 12px;
 }
 
+
+// descktop gallery text
+
+@media (min-width: 1279px) {
+  .gallery__card-title {
+    color: #ffffff;
+  }
+}
+
 .gallery__card-description {
   margin-bottom: 48px;
   min-width: 280px;
   padding: 0 20px;
 }
+
+
+// tablet gallery text
 
 @media (min-width: 767px) {
   .gallery__card-description {
@@ -124,16 +205,39 @@
     justify-content: space-between;
     margin-bottom: 0;
     max-width: 324px;
-    padding: 0 20px;
+    padding: 22px 20px 15px 20px;
     background-color: #f2f2f2;
   }
 }
+
+// descktop galerry card description
+
+@media (min-width: 1279px) {
+  .gallery__card-description {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    min-width: 400px;
+  }
+}
+
+// tablet description card  background darck
 
 @media (min-width: 767px) {
   .gallery__card-description--darck {
     background-color: #eaeaea;
   }
 }
+
+// descktop description card  background darck off
+
+@media (min-width: 1279px) {
+  .gallery__card-description--darck {
+    background-color: rgb(0, 0, 0, 0.3);
+  }
+}
+
+// tablet card description first
 
 @media (min-width: 767px) {
   .gallery__card-description-first {
@@ -143,21 +247,51 @@
     justify-content: space-between;
     margin-bottom: 0;
     min-width: 648px;
-    padding: 0 20px;
+    padding: 22px 20px;
     background-color: #f2f2f2;
   }
 }
+
+// descktop card description fist
+
+@media (min-width: 1279px) {
+  .gallery__card-description-first {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    min-width: 1200px;
+    background-color: rgb(0, 0, 0, 0.3);
+  }
+}
+
+// gallery card wrapper text
 
 .gallery__wrapper-author {
   margin-bottom: 11px;
 }
 
+@media (min-width: 767px) {
+  .gallery__wrapper-author {
+    margin-bottom: 0;
+  }
+}
+
+// gallery card name author
+
 .gallery__card-author {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   color: #000000;
 }
+
+// descktop gallery card name author
+
+@media (min-width: 1279px) {
+  .gallery__card-author {
+    color: #ffffff;
+  }
+}
+// gallery card action
 
 .gallery__card-like {
   text-decoration: none;
@@ -175,6 +309,14 @@
   margin-left: 14px;
 }
 
+// descktop card like images
+
+@media (min-width: 1279px) {
+  .gallery__card-image {
+    fill: #ffffff;
+  }
+}
+
 .gallery__like-amount {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -183,4 +325,12 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+}
+
+// descktop galerry like amount
+
+@media (min-width: 1279px) {
+  .gallery__like-amount {
+    color: #ffffff;
+  }
 }

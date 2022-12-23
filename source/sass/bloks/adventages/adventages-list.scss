@@ -1,64 +1,35 @@
+// adventages
+
+.adventages {
+  background-color: #ffffff;
+}
+
+// adventages list
+
 .adventages-list {
   list-style: none;
 }
 
-.adventages__list-item {
-  padding: 31px 29px;
-}
-
-@media (min-width: 768px) {
-  .adventages__list-item {
-    padding: 52px 33px;
-  }
-}
-
-.adventages__list-item--image-city {
-  position: relative;
-  background-image: url("../../../img/adventages/mobile/adventages-city.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 260px;
-  overflow: hidden;
-  padding: 0;
-}
-
-.adventages__list-item--image-bridge {
-  position: relative;
-  background-image: url("../../../img/adventages/mobile/photo-bridge.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 260px;
-  overflow: hidden;
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  .adventages__wrapper-image-city {
-    background-image: url("../../../img/adventages/tablet-descktop/photo-city-tablet.jpg");
-  }
-
-  .adventages__wrapper-image-bridge {
-    background-image: url("../../../img/adventages//tablet-descktop/photo-bridge-tablet.jpg");
-  }
-}
-
-@media (min-width: 1023px) {
-  .adventages__wrapper-image-city {
-    background-image: url("../../../img/adventages/tablet-descktop/photo-city-tablet.jpg");
-  }
-
-  .adventages__wrapper-image-bridge {
-    background-image: url("../../../img/adventages//tablet-descktop/photo-bridge-tablet.jpg");
-    width: 100%;
-    height: 256px;
-  }
-}
+// adventages blue
 
 .adventages-list__list-item--blue {
   background-color: #81b3d2;
-  padding: 40px 30px 44px;
+  padding: 54px 18px 40px;
+}
+
+// tablet adventages blue
+
+@media (min-width: 767px) {
+  .adventages-list__list-item--blue {
+    padding: 52px 33px 31px 33px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .adventages-list__list-item--blue {
+    padding: 52px 50px 51px 50px;
+    min-width: 400px;
+  }
 }
 
 .adventages__title {
@@ -67,7 +38,23 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 23px;
+  margin-bottom: 11px;
+}
+
+// tablet adventages title
+
+@media (min-width: 767px) {
+  .adventages__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .dventages__title--blue {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 .adventages__number {
@@ -77,12 +64,15 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 27px;
+  margin-bottom: 17px;
 }
 
-@media (min-width: 768px) {
+// tablet adventages number
+
+@media (min-width: 767px) {
   .adventages__number {
-    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 
@@ -95,27 +85,72 @@
   color: #ffffff;
 }
 
+// adventages blue img
+
+.adventages__list-item--image-city {
+  position: relative;
+  background-image: url("../img/adventages/mobile/adventages-city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 260px;
+  overflow: hidden;
+  padding: 0;
+}
+
+// adventages list with ico
+
 .adventages-list__list-item--ico {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
-  padding: 25px 0 51px 0;
-  justify-content: center;
+  padding: 25px 18px;
 }
 
-.adventages-list__list-item--hausing::before {
-  content: url("../../../img/-features/icon-house.svg");
-  margin-right: 7px;
+// list center between mobile and descktop
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--ico {
+    justify-content: center;
+  }
 }
 
-.adventages-list__list-item--eat::before {
-  content: url("../../../img/-features/icon-burger.svg");
-  margin-right: 7px;
+// tablet adventages list with ico
+
+@media (min-width: 767px) {
+  .adventages-list__list-item--ico {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 33px;
+  }
 }
 
-.adventages-list__list-item--gifts::before {
-  content: url("../../../img/-features/icon-gift.svg");
-  margin-right: 7px;
+// adventages list ico wrapper text
+
+.adventages__text-colum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 237px;
 }
+
+// list center between mobile and tablet
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages__text-colum {
+    max-width: 290px;
+  }
+}
+
+// tablet adventages list ico wrapper text
+
+@media (min-width: 767px) {
+  .adventages__text-colum {
+    align-items: center;
+  }
+}
+
+// adventages list text
 
 .adventages__title--ico {
   color: #333333;
@@ -123,15 +158,190 @@
   text-align: start;
 }
 
-.adventages__text--ico {
+// tablet adventages list text
+
+@media (min-width: 767px) {
+  .adventages__text--ico {
+    text-align: center;
+  }
+}
+
+// adventages description text with ico
+
+.adventages__description--ico {
   color: #333333;
   text-align: start;
 }
 
+// tablet adventages description text with ico
+
+@media (min-width: 767px) {
+  .adventages__description--ico {
+    text-align: center;
+  }
+}
+
+// adventages list ico gifts bobile margin
+
+.adventages-list__list-item--gifts {
+  margin-bottom: 21px;
+}
+
+// tablet adventages list gifts no margin
+
+@media (min-width: 767px) {
+  .adventages-list__list-item--gifts {
+    margin-bottom: 0;
+  }
+}
+
+// adventages ico image
+
+.adventages-list__list-item--hausing::before {
+  content: url("../img/-features/icon-house.svg");
+  margin-right: 7px;
+}
+
+// list center between mobile and tablet
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--hausing::before {
+    margin-right: 30px;
+  }
+}
+
+//tablet adventages ico image hausing
+
+@media (min-width: 767px) {
+  .adventages-list__list-item--hausing::before {
+    content: "";
+    background-image: url("../img/-features/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 77px;
+    height: 72px;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+}
+
+.adventages-list__list-item--eat::before {
+  content: url("../img/-features/icon-burger.svg");
+  margin-right: 7px;
+}
+
+// list center between mobile and tablet
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--eat::before {
+    margin-right: 30px;
+  }
+}
+
+//tablet adventages ico image burger
+
+@media (min-width: 767px) {
+  .adventages-list__list-item--eat::before {
+    content: "";
+    background-image: url("../img/-features/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 68px;
+    margin: 0;
+    margin-bottom: 26px;
+    vertical-align: middle;
+  }
+}
+
+.adventages-list__list-item--gifts::before {
+  content: url("../img/-features/icon-gift.svg");
+  margin-right: 7px;
+}
+
+// list center between mobile and tablet
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .adventages-list__list-item--gifts::before {
+    margin-right: 30px;
+  }
+}
+
+//tablet adventages ico image gifts
+
+@media (min-width: 767px) {
+  .adventages-list__list-item--gifts::before {
+    content: "";
+    background-image: url("../img/-features/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67px;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 17px;
+    vertical-align: middle;
+  }
+}
+
+// adventages img number two for blue
+
+.adventages__list-item--image-bridge {
+  position: relative;
+  background-image: url("../img/adventages/mobile/photo-bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 260px;
+  overflow: hidden;
+  padding: 0;
+}
+
+// adventages list no ico
+
 .adventages__list-item-no-ico {
   background-color: #eeeeee;
   position: relative;
+  padding: 24px 26px;
 }
+
+.adventages__title--no-ico {
+  color: #000000;
+}
+
+//tablet adventages list no ico title
+
+@media (min-width: 767px) {
+  .adventages__title--no-ico {
+    max-width: 159px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .adventages__title--no-ico {
+    font-size: 21px;
+  }
+}
+
+.adventages__number--no-ico {
+  color: #000000;
+}
+
+.adventages__text--no-ico {
+  color: #000000;
+}
+
+//tablet adventages list no ico text
+
+@media (min-width: 767px) {
+  .adventages__text--no-ico {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+// adventages list no ico line
 
 .adventages__list-item-no-ico::before {
   content: "";
@@ -143,32 +353,17 @@
   background-color: #d6d6d6;
 }
 
-@media (min-width: 768px) {
+// tablet adventages list no ico line off
+
+@media (min-width: 767px) {
   .adventages__list-item-no-ico::before {
     content: none;
   }
 }
 
-.adventages__title--no-ico {
-  color: #000000;
-}
+// tablet grid list
 
-.adventages__number--no-ico {
-  color: #000000;
-}
-
-.adventages__text--no-ico {
-  color: #000000;
-}
-
-.adventages__text-colum {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 237px;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .adventages-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -178,6 +373,8 @@
       "imtw imtw bltw"
       "lio   lit   lith";
   }
+
+  // position grid etem
 
   .adventages-list__list-one {
     grid-area: one;
@@ -209,82 +406,36 @@
 
   .adventages__list-item-first {
     grid-area: lio;
+    padding: 52px 33px;
   }
 
   .adventages__list-item-second {
     grid-area: lit;
+    padding: 52px 33px;
   }
 
   .adventages__list-item-third {
     grid-area: lith;
+    padding: 52px 33px;
   }
+}
 
-  .adventages-list__list-item--blue {
-    padding: 52px 33px 30px 33px;
+// descktop adventages list item no ico
+
+@media (min-width: 1279px) {
+  .adventages__list-item-first {
+    padding: 63px 50px 41px;
   }
+}
 
-  .adventages__title {
-    font-size: 21px;
+@media (min-width: 1279px) {
+  .adventages__list-item-second {
+    padding: 63px 50px 41px;
   }
+}
 
-  .adventages-list__list-item--ico {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 33px;
-  }
-
-  .adventages__title--no-ico {
-    max-width: 159px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .adventages__text--no-ico {
-    max-width: 220px;
-    margin: 0 auto;
-  }
-
-  .adventages-list__list-item--hausing::before {
-    content: "";
-    background-image: url("../../../img/-features/icon-house.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 77px;
-    height: 72px;
-    margin: 0;
-    margin-bottom: 26px;
-  }
-
-  .adventages-list__list-item--eat::before {
-    content: "";
-    background-image: url("../../../img/-features/icon-burger.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 76px;
-    height: 68px;
-    margin: 0;
-    margin-bottom: 26px;
-    vertical-align: middle;
-  }
-
-  .adventages-list__list-item--gifts::before {
-    content: "";
-    background-image: url("../../../img/-features/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 67px;
-    height: 80px;
-    margin: 0;
-    margin-bottom: 26px;
-    vertical-align: middle;
-  }
-
-  .adventages__text-colum {
-    align-items: center;
-  }
-
-  .adventages__text--ico {
-    text-align: center;
+@media (min-width: 1279px) {
+  .adventages__list-item-third {
+    padding: 63px 50px 41px;
   }
 }

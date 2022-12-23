@@ -1,3 +1,5 @@
+// form section page
+
 .form {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,8 @@
   padding-top: 30px;
 }
 
+// tablet form
+
 @media (min-width: 767px) {
   .form {
     margin: 0 60px;
@@ -16,21 +20,30 @@
   }
 }
 
+// descktop form
+
+@media (min-width: 1279px) {
+  .form {
+    margin: 0;
+  }
+}
+
 .form-review {
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 767px) {
-  .form-review {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.form-review__wrapper-radiobox {
+  margin-right: 40px;
+}
 
+// tablet radio box
+
+@media (min-width: 767px) {
   .form-review__wrapper-radiobox {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 0;
   }
 
   .form-review__wrapper-checkbox {
@@ -39,16 +52,52 @@
     justify-content: space-between;
     padding: 0 124px 0 84px;
   }
+}
 
-  .form-review__check {
-    min-width: 205px;
+// descktop wrapper checkbox
+
+@media (min-width: 1279px) {
+  .form-review__wrapper-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 165px;
   }
 }
+
+@media (min-width: 1279px) {
+  .form-review__wrapper-radiobox {
+    padding: 0 173px;
+    justify-content: space-between;
+  }
+}
+
+// tablet fildset wrapper
+
+@media (min-width: 767px) {
+  .fildset-wrapper {
+    display: flex;
+  }
+}
+
+// descktop fildset wrapper
+
+@media (min-width: 1279px) {
+  .fildset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// fildset border off
 
 .form-review__fildset {
   position: relative;
   border: none;
 }
+
+// fildset line
 
 .form-review__fildset::before {
   position: absolute;
@@ -60,12 +109,15 @@
   background: #c4bcbc;
 }
 
+// tablet underline off
+
 @media (min-width: 767px) {
   .form-review__fildset::before {
     content: none;
   }
 }
 
+// title form
 
 .form-review__title {
   position: relative;
@@ -79,12 +131,14 @@
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
-  min-width: 233px;
 }
+
+// tablet review title and lines
 
 @media (min-width: 767px) {
   .form-review__title {
     font-size: 21px;
+    margin-bottom: 28px;
   }
 
   .form-review__title--line::after {
@@ -108,11 +162,53 @@
   }
 }
 
+@media (min-width: 1279px) {
+  .form-review__title {
+    margin-bottom: 45px;
+    max-width: 278px;
+  }
+}
+// descktop radi and check box line
+
+@media (min-width: 1279px) {
+  .form-review__title--line::after {
+    width: 280px;
+    top: 12px;
+    left: -342px;
+    background: #dbdbdb;
+  }
+
+  .form-review__title--line::before {
+    width: 280px;
+    top: 12px;
+    right: -342px;
+    background: #dbdbdb;
+  }
+}
+
+// form imput
+
 .form-review__user-input {
   display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
   flex-direction: column;
   margin-bottom: 39px;
   padding-bottom: 39px;
+}
+
+//descktop  form user imput
+
+@media (min-width: 1279px) {
+  .form-review__user-input:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1279px) {
+  .form-review__user-input:nth-child(4) {
+    margin-left: 0;
+  }
 }
 
 .form-review__no-padding {
@@ -128,8 +224,28 @@
   font-size: 18px;
   align-items: center;
   color: #000000;
-  padding: 16px 69px 16px 16px;
+  padding: 16px;
+  margin-left: 18px;
 }
+
+// tablet form imput
+
+@media (min-width: 767px) {
+  .form-review__input {
+    margin-bottom: 16px;
+  }
+}
+
+// descktop form imput
+
+@media (min-width: 1279px) {
+  .form-review__input {
+    min-width: 430px;
+    margin-left: 120px;
+  }
+}
+
+// form input actions
 
 .form-review__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -153,39 +269,96 @@
 
 .form-review__wrapper-input {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// tablet wrapper input
+
+@media (min-width: 767px) {
+  .form-review__wrapper-input {
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .form-review--short {
-  width: 222px;
-  height: 58px;
+  max-width: 222px;
 }
 
+// descktop user imput short
+
+@media (min-width: 1279px) {
+  .form-review--short {
+    min-width: 344px;
+    margin-left: 0;
+  }
+}
+
+// form input ico
+
 .form-review__ico {
-  background: #e6e6e6;
+  background-color: #e6e6e6;
   width: 58px;
   height: 58px;
   padding-top: 18px;
   padding-left: 20px;
 }
 
+// descktop fotm input ico
+
+@media (min-width: 1279px) {
+  .form-review__ico {
+    margin-right: 120px;
+    margin-bottom: 16px;
+  }
+}
+
 .form-review__ico--tel::after {
-  content: url("../../../img/-form/phone.svg");
+  content: url("../img/-form/phone.svg");
 }
 
 .form-review__ico--mail::before {
-  content: url("../../../img/-form/mail.svg");
+  content: url("../img/-form/mail.svg");
 }
 
 .form-review__label {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 16px;
+  padding: 0 18px;
+}
+
+// tablet form input label
+
+@media (min-width: 767px) {
+  .form-review__label {
+    padding-left: 42px;
+  }
+}
+
+@media (min-width: 767px) {
+  .form-review__label--tablet {
+    padding-left: 54px;
+  }
+}
+
+// descktop form input label
+
+@media (min-width: 1279px) {
+  .form-review__label {
+    margin-left: 120px;
+  }
+}
+
+// descktop right label margin off
+
+@media (min-width: 1279px) {
+  .form-review__label--tablet {
+    margin-left: 0;
+    padding-left: 28px;
+  }
 }
 
 .form-review__radio-title {
@@ -198,28 +371,50 @@
   font-size: 18px;
 }
 
+// form emotion input
+
+.form-review__emotions {
+  margin: 0 18px;
+}
+
+// tablet emotion bottom
+
 @media (min-width: 767px) {
   .form-review__emotions {
     margin-bottom: 48px;
   }
 }
 
+// descktop emotion bottom
+
+@media (min-width: 1279px) {
+  .form-review__emotions {
+    padding: 0 216px;
+  }
+}
+
+// form emotion input title
+
 .form-review__emotions-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
 }
 
+// tablet emotion title
+
 @media (min-width: 767px) {
-  .form-review__title {
-    max-width: 308px;
+  .form-review__emotions-title {
+    font-size: 21px;
+    margin-bottom: 28px;
   }
 }
+
+// form emotion input
 
 .form-review__emotions-input {
   min-width: 280px;
@@ -231,7 +426,26 @@
   font-size: 18px;
   color: #000000;
   padding: 16px 0 0 16px;
+  margin-bottom: 56px;
 }
+
+// descktop form emotion input
+
+@media (min-width: 1279px) {
+  .form-review__emotions-input {
+    max-width: 768px;
+  }
+}
+// tablet emotions input
+
+@media (min-width: 767px) {
+  .form-review__emotions-input {
+    min-height: 160px;
+    margin-bottom: 0;
+  }
+}
+
+// emotions input actions
 
 .form-review__emotions-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -247,6 +461,8 @@
   border: 4px solid #e5e5e5;
 }
 
+// form popup window
+
 .form-review--popup {
   position: fixed;
   top: 0;
@@ -256,6 +472,8 @@
   height: 100%;
   background-color: #2d34404d;
 }
+
+// open form popup window
 
 .form-review--active {
   display: flex;
@@ -305,11 +523,25 @@
   padding: 20px 20px 0 20px;
 }
 
+// form check box
+
 .form-review__check {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  justify-self: flex-start;
+}
+
+@media (min-width: 767px) {
+  .form-review__check {
+    min-width: 220px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .form-review__check {
+    min-width: 184px;
+    margin-bottom: 0;
+  }
 }
 
 .form-review__control-mark {
@@ -343,13 +575,20 @@
   border-radius: 50%;
 }
 
-.form-review__radio-box[type="radio"]:checked + .form-review__control-mark::after {
+/* stylelint-disable*/
+// Prettier cod formater in vs-code formats the code below with a space before the plus sign, swears at it stylelint.
+
+.form-review__radio-box[type="radio"]:checked
+  + .form-review__control-mark::after {
   display: flex;
 }
 
-.form-review__radio-box[type="radio"]:checked:active + .form-review__control-mark::after {
+.form-review__radio-box[type="radio"]:checked:active
+  + .form-review__control-mark::after {
   background: rgba(51, 51, 51, 0.3);
 }
+
+/* stylelint-enable*/
 
 .form-review__check-mark {
   display: block;
@@ -370,7 +609,7 @@
 }
 
 .form-review__check-mark::after {
-  content: url("../../../img/-form/tick.svg");
+  content: url("../img/-form/tick.svg");
   top: 0;
   left: 0;
   right: 0;
@@ -382,13 +621,28 @@
   height: 16px;
 }
 
-.form-review__checkbox-box[type="checkbox"]:checked + .form-review__check-mark::after {
+/* stylelint-disable*/
+// Prettier cod formater in vs-code formats the code below with a space before the plus sign, swears at it stylelint.
+
+.form-review__checkbox-box[type="checkbox"]:checked
+  + .form-review__check-mark::after {
   display: flex;
 }
 
-.form-review__checkbox-box[type="checkbox"]:checked:active + .form-review__check-mark::after {
+.form-review__checkbox-box[type="checkbox"]:checked:active
+  + .form-review__check-mark::after {
   fill: rgba(51, 51, 51, 0.3);
 }
+
+/* stylelint-enable*/
+
+// form wrapper button
+
+.form-review__emotion-active-wrapper {
+  margin: 0 18px;
+}
+
+// tablet wrapper emotion active
 
 @media (min-width: 767px) {
   .form-review__emotion-active-wrapper {
@@ -396,10 +650,22 @@
   }
 }
 
+// descktop wrapper emotion active
+
+@media (min-width: 1279px) {
+  .form-review__emotion-active-wrapper {
+    padding: 0 216px;
+  }
+}
+
+// form buuton
+
 .button--form {
   padding: 16px 49px;
   min-width: 280px;
 }
+
+// form rulles
 
 .form-review__rulles {
   display: flex;
@@ -413,4 +679,12 @@
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+}
+
+// tablet form rulles
+
+@media (min-width: 767px) {
+  .form-review__rulles {
+    margin-bottom: 0;
+  }
 }

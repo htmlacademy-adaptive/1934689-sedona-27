@@ -1,5 +1,9 @@
+// header
+
 .header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
 }
 
@@ -7,26 +11,46 @@
 
 .header__top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   position: fixed;
-  padding: 17px 20px;
+  padding: 15px 20px;
   background-color: #ffffff;
   vertical-align: middle;
   width: 100%;
   z-index: 9;
 }
 
-@media (min-width: 1023px) {
+// tablet header top
+
+@media (min-width: 767px) {
+  .header__top {
+    display: block;
+    position: fixed;
+    padding: 0 20px;
+  }
+}
+
+// descktop header top
+
+@media (min-width: 1279px) {
   .header__top {
     position: absolute;
     padding: 0;
   }
 }
 
-//header menu
+//header top menu
 
 .header__menu {
   display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__menu--no-js {
+    display: block;
+    top: 165px;
+  }
 }
 
 @media (min-width: 320px) {
@@ -42,14 +66,18 @@
   }
 }
 
-//header menu btn
+//header top menu button
 
 .header__button {
-  display: none;
+  flex-wrap: wrap;
+  position: relative;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
   vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  z-index: 10;
 }
 
 .header__button:hover {
@@ -60,64 +88,54 @@
   opacity: 0.3;
 }
 
-@media (min-width: 320px) {
-  .header__button {
-    display: block;
-    position: relative;
-    width: 22px;
-    height: 22px;
-    z-index: 10;
-  }
+.header__button::after,
+.header__button::before {
+  content: "";
+  position: absolute;
+  background-color: #81b3d2;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
 
-  .header__button::after,
-  .header__button::before {
-    content: "";
-    position: absolute;
-    background-color: #81b3d2;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
+.header__button-line {
+  content: "";
+  position: absolute;
+  background-color: #81b3d2;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 9px;
+}
 
-  .header__button-line {
-    content: "";
-    position: absolute;
-    background-color: #81b3d2;
-    width: 100%;
-    height: 4px;
-    left: 0;
-    top: 9px;
-  }
+.header__button::before {
+  top: 0;
+}
 
-  .header__button::before {
-    top: 0;
-  }
+.header__button::after {
+  bottom: 0;
+}
 
-  .header__button::after {
-    bottom: 0;
-  }
+.header__button--active {
+  background-color: transparent;
+}
 
-  .header__button--active {
-    background-color: transparent;
-  }
+.header__button--active .header__button-line {
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+}
 
-  .header__button--active .header__button-line {
-    transform: scale(0);
-    transition: all 0.3s ease 0s;
-  }
+.header__button--active::before {
+  transform: rotate(45deg);
+  background-color: #ffffff;
+  top: 9px;
+}
 
-  .header__button--active::before {
-    transform: rotate(45deg);
-    background-color: #ffffff;
-    top: 9px;
-  }
-
-  .header__button--active::after {
-    transform: rotate(-45deg);
-    background-color: #ffffff;
-    bottom: 9px;
-  }
+.header__button--active::after {
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+  bottom: 9px;
 }
 
 @media (min-width: 767px) {
@@ -126,11 +144,13 @@
   }
 }
 
+// header bottom
+
 .header__bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../../img/header/mobile/back-img.jpg");
+  background-image: url("../img/header/mobile/back-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 389px;
@@ -139,24 +159,59 @@
   width: 100%;
 }
 
+// header triangle
+
+.header__bottom::before {
+  position: absolute;
+  content: url("../img/header/mobile/mobile-intro-triangle.png");
+  bottom: -7px;
+}
+
+// header bottom tablet
+
 @media (min-width: 767px) {
   .header__bottom {
-    background-image: url("../../../img/header/tablet/back-tablet.jpg");
+    background-image: url("../img/header/tablet/back-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
     padding: 77px 0 91px;
+    margin-top: 50px;
   }
 }
 
-@media (min-width: 1023px) {
+// header tablet triangle
+
+@media (min-width: 767px) {
+  .header__bottom::before {
+    position: absolute;
+    content: url("../img/header/tablet/tablet-intro-triangle.png");
+    bottom: -7px;
+  }
+}
+
+// descktop header bottom
+
+@media (min-width: 1279px) {
   .header__bottom {
-    background-image: url("../../../img/header/descktop/back-desktop.jpg");
+    background-image: url("../img/header/descktop/back-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 518px;
   }
 }
+
+// header desktop triangle
+
+@media (min-width: 1279px) {
+  .header__bottom::before {
+    position: absolute;
+    content: url("../img/header/descktop/intro-two-triangle.png");
+    bottom: -7px;
+  }
+}
+
+// header bottom catalog
 
 .header__bottom--catalog {
   padding: 108px 0 67px 0;
@@ -168,6 +223,8 @@
   margin: 0;
 }
 
+// tablet header bottom catalog
+
 @media (min-width: 767px) {
   .header__bottom--catalog {
     padding: 511px 0 66px;
@@ -176,16 +233,20 @@
   }
 }
 
-@media (min-width: 1023px) {
+// descktop header bottom catalog
+
+@media (min-width: 1279px) {
   .header__bottom--catalog {
-    height: 215px;
+    min-height: 518px;
     padding: 360px 0 66px;
     margin-top: -20%;
   }
 }
 
+// header top text
+
 .header__wrapper-welcome {
-  background-image: url("../../../img/header/mobile/welcome.svg");
+  background-image: url("../img/header/mobile/welcome.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 28px;
@@ -194,7 +255,7 @@
 }
 
 .header__wrapper-gorgeus {
-  background-image: url("../../../img/header/mobile/gorgeous.svg");
+  background-image: url("../img/header/mobile/gorgeous.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 18px;
@@ -203,7 +264,7 @@
 }
 
 .header__wrapper-sedona {
-  background-image: url("../../../img/header/mobile/sedona.svg");
+  background-image: url("../img/header/mobile/sedona.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 49px;
@@ -212,12 +273,14 @@
 }
 
 .header__wrapper-canyon {
-  background-image: url("../../../img/header/mobile/grand-canyon.svg");
+  background-image: url("../img/header/mobile/grand-canyon.svg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 46px;
   width: 173px;
 }
+
+// tablet header top text
 
 @media (min-width: 767px) {
   .header__wrapper-welcome {
@@ -242,7 +305,9 @@
   }
 }
 
-@media (min-width: 1023px) {
+//descktop header top text
+
+@media (min-width: 1279px) {
   .header__wrapper-welcome {
     height: 45px;
     width: 188px;

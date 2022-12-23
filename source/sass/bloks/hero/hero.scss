@@ -1,16 +1,70 @@
+// hero section
+
 .hero {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 31px 0 53px;
   text-align: center;
+  padding: 32px 0 16px;
   background-color: #ffffff;
 }
+
+// hero bottom triangle
+
+.hero-triangle::before {
+  position: absolute;
+  content: url("../img/hero/mobile-two-triangl.png");
+  bottom: -43px;
+}
+
+// tablet bottom triangle off
+
+@media (min-width: 767px) {
+  .hero-triangle::before {
+    content: none;
+  }
+}
+
+// tablet hero
+
+@media (min-width: 767px) {
+  .hero {
+    background-color: #e7e5e5;
+    padding: 48px 124px 56px 124px;
+  }
+}
+
+// descktop hero
+
+@media (min-width: 1279px) {
+  .hero {
+    padding: 59px 349px 44px 349px;
+  }
+}
+
+// hero  darck background
 
 .hero--dark {
   background-color: #e7e5e5;
   position: relative;
+  padding: 37px 20px 25px;
+}
+
+//tablet  hero  darck
+
+@media (min-width: 767px) {
+  .hero--dark {
+    padding: 66px 155px 67px;
+  }
+}
+
+// desctop hero dark
+
+@media (min-width: 1279px) {
+  .hero--dark {
+    padding: 100px 372px 65px;
+  }
 }
 
 .hero--dark::before {
@@ -23,28 +77,58 @@
   background: #c4bcbc;
 }
 
+// tablet line
+
 @media (min-width: 767px) {
   .hero--dark::before {
-    content: none;
+    transform: rotate(90deg);
+    width: 338px;
+    top: 438px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
   }
 }
 
-.hero--dark-no-lines {
-  background-color: #e7e5e5;
+// desktop line
+
+@media (min-width: 1279px) {
+  .hero--dark::before {
+    left: 21px;
+    top: 476px;
+  }
 }
+
+// mobil dark hero
+
+.hero--dark-catalog {
+  background-color: #e7e5e5;
+  padding: 0;
+  margin-bottom: 38px;
+}
+
+// tablet hero dark catalog
 
 @media (min-width: 767px) {
-  .hero {
-    padding: 66px 67px;
+  .hero--dark-catalog {
     background-color: #e7e5e5;
+    padding: 58px 162px 66px;
+    margin: 0;
   }
 }
 
-@media (min-width: 1023px) {
-  .hero {
-    margin-bottom: 0;
+// descktop hero dark catalog
+
+@media (min-width: 1279px) {
+  .hero--dark-catalog {
+    font-size: 30px;
+    padding: 62px 378px 64px;
+    margin: 0;
   }
 }
+
+// hero form html
 
 .hero--form {
   position: relative;
@@ -73,31 +157,106 @@
   }
 }
 
-.hero__title--text {
-  font-family: "PT Sans", "Arial", sans-serif;
+// hero title
+
+.hero__title {
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 31px;
+  margin-bottom: 35px;
   text-transform: uppercase;
-  max-width: 284px;
+  padding: 0 30px;
 }
+
+// hero title catalog
+
+.hero__title--dark {
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+// tablet hero title
 
 @media (min-width: 767px) {
-  .hero__title--text {
+  .hero__title {
     min-width: 520px;
-    font-size: 30px;
-  }
-
-  .hero__description--text {
-    min-width: 520px;
+    font-size: 24px;
+    padding: 0;
   }
 }
 
-.hero__description--text {
+// tablet catalog hero title
+
+@media (min-width: 767px) {
+  .hero__title--catalog {
+    font-size: 30px;
+    line-height: 26px;
+    padding: 0;
+  }
+}
+
+// descktop hero title
+
+@media (min-width: 1279px) {
+  .hero__title {
+    max-width: 484px;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0;
+  }
+}
+
+// descktop catalog hero title
+
+@media (min-width: 1279px) {
+  .hero__title--catalog {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+// descktop hero dark title
+
+@media (min-width: 1279px) {
+  .hero__title--dark {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+// hero description
+
+.hero__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  max-width: 284px;
   text-transform: uppercase;
   color: #333333;
+  padding: 0 30px;
+}
+
+// hero description catalog
+
+.hero__description--catalog {
+  padding: 0;
+}
+
+.hero__description--dark {
+  padding: 0 30px;
+}
+
+// hero form
+
+.hero__description--form {
+  padding: 0;
+}
+
+// tablet hero description
+
+@media (min-width: 767px) {
+  .hero__description {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
 }
