@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body page__body--catalog">
@@ -110,8 +114,20 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__image-first" src="./img/catalog/card/mobile-card/photo-1-mobile.jpg"
-            alt="дорога в закат.">
+          <picture>
+
+            <source media="(min-width: 1279px)"
+              srcset="./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 767px)"
+              srcset="./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1-@2x.jpg 2x">
+
+            <img class="gallery__image-first"
+              src="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile.jpg"
+              srcset="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile@2x.jpg 2x" width="280"
+              height="280" alt="дорога в закат.">
+
+          </picture>
 
           <div class="gallery__card-description gallery__card-description-first">
 
@@ -147,8 +163,20 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__image-second" src="./img/catalog/card/mobile-card/photo-2-mobile.jpg"
-            alt="офигенская ветка.">
+          <picture>
+
+            <source media="(min-width: 1279px)"
+              srcset="./img/gallery/card/descktop-card/descktop-photo-2/photo-2-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-2/photo-2-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 767px)"
+              srcset="./img/gallery/card/tablet-card/tablet-photo-2/tablet-photo-2.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-2/tablet-photo-2-@2x.jpg 2x">
+
+            <img class="gallery__image-second"
+              src="./img/gallery/card/mobile-card/gallery-photo-2/gallery-photo-2-mobile.jpg"
+              srcset="./img/gallery/card/mobile-card/gallery-photo-2/gallery-photo-2-mobile@2x.jpg 2x" width="280"
+              height="280" alt="офигенская ветка.">
+
+          </picture>
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
@@ -184,8 +212,20 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__image-third" src="./img/catalog/card/mobile-card/photo-3-mobile.jpg"
-            alt="другая дорога.">
+          <picture>
+
+            <source media="(min-width: 1279px)"
+              srcset="./img/gallery/card/descktop-card/descktop-photo-3/photo-3-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-3/photo-3-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 767px)"
+              srcset="./img/gallery/card/tablet-card/tablet-photo-3/tablet-photo-3.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-3/tablet-photo-3-@2x.jpg 2x">
+
+            <img class="gallery__image-third"
+              src="./img/gallery/card/mobile-card/gallery-photo-3/gallery-photo-3-mobile.jpg"
+              srcset="./img/gallery/card/mobile-card/gallery-photo-3/gallery-photo-3-mobile@2x.jpg 2x" width="280"
+              height="280" alt="другая дорога.">
+          </picture>
+
           <div class="gallery__card-description gallery__card-description--darck">
 
             <div class="gallery__wrapper-author">
@@ -221,8 +261,20 @@
 
         <li class="gallery__list-card">
 
-          <img class="gallery__image-fourth" src="./img/catalog/card/mobile-card/photo-4-mobile.jpg"
-            alt="мост дьявола.">
+          <picture>
+
+            <source media="(min-width: 1279px)"
+              srcset="./img/gallery/card/descktop-card/descktop-photo-4/photo-4-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-4/photo-4-desktop@2x.jpg 2x">
+
+            <source media="(min-width: 767px)"
+              srcset="./img/gallery/card/tablet-card/tablet-photo-4/tablet-photo-4.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-4/tablet-photo-4-@2x.jpg 2x">
+
+            <img class="gallery__image-fourth"
+              src="./img/gallery/card/mobile-card/gallery-photo-4/gallery-photo-4-mobile.jpg"
+              srcset="./img/gallery/card/mobile-card/gallery-photo-4/gallery-photo-4-mobile@2x.jpg 2x" width="280"
+              height="280" alt="мост дьявола.">
+          </picture>
+
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
@@ -275,7 +327,7 @@
 
       <h2 class="visually-hidden">video presentation.</h2>
 
-      <img class="video-presentation__video" src="img/catalog/video/video-mobile.jpg" alt="video presentation."
+      <img class="video-presentation__video" src="img/gallery/video/video-mobile.jpg" alt="video presentation."
         width="280" height="177">
 
       <svg class="video-presentation__polygon" width="48" height="54" viewBox="0 0 48 54" fill="none"
