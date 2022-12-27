@@ -20,4 +20,3 @@ const headerBtn = document.querySelector('.header__button'),
               const  header = document.querySelector('.header')
             header.classList.remove('header__menu--no-js')
             });
-

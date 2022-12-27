@@ -40,8 +40,8 @@
 @media (min-width: 1279px) {
   .menu {
     position: relative;
-    padding-left: 131px;
-    padding-right: 131px;
+    padding-left: 91px;
+    padding-right: 71px;
   }
 }
 
@@ -120,6 +120,18 @@
 
   .menu__list-item {
     box-shadow: none;
+  }
+}
+
+// descktop menu
+
+@media (min-width: 1279px) {
+  .menu__list-item:nth-child(1) {
+    text-align: start;
+  }
+
+  .menu__list-item:last-child {
+    text-align: end;
   }
 }
 
