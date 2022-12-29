@@ -326,11 +326,18 @@
   margin-left: 14px;
 }
 
-// descktop card like images
+// descktop card like icon
+
+.gallery__card-icon {
+  opacity: 0.3;
+}
+
+// descktop card like icon
 
 @media (min-width: 1279px) {
-  .gallery__card-image {
+  .gallery__card-icon {
     fill: #ffffff;
+    opacity: 1;
   }
 }
 
