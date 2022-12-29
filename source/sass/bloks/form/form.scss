@@ -33,6 +33,18 @@
   flex-direction: column;
 }
 
+@media (min-width: 767px) {
+  .form-review {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1279px) {
+  .form-review {
+    align-items: stretch;
+  }
+}
+
 .form-review__wrapper-radiobox {
   margin-right: 40px;
 }
