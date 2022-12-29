@@ -170,6 +170,12 @@
   }
 }
 
+@media (min-width: 322px) {
+  .header__bottom {
+    background-size: cover;
+  }
+}
+
 // header triangle
 
 .header__bottom::before {
@@ -209,6 +215,12 @@
   }
 }
 
+@media (min-width: 770px) {
+  .header__bottom {
+    background-size: cover;
+  }
+}
+
 // descktop header bottom
 
 @media (min-width: 1279px) {
@@ -228,6 +240,12 @@
       background-image: url("../img/header/descktop/back-desktop@2x.jpg");
       background-size: 1200px auto;
     }
+  }
+}
+
+@media (min-width: 1285px) {
+  .header__bottom {
+    background-size: cover;
   }
 }
 
@@ -263,6 +281,13 @@
     min-height: 346px;
     background-position: -139px -343px;
     background-size: 1200px auto;
+  }
+}
+
+@media (min-width: 770px) {
+  .header__bottom--catalog {
+    background-size: cover;
+    background-position: 0 -170px;
   }
 }
 

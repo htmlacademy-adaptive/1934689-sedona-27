@@ -151,6 +151,7 @@
   .form-review__title {
     font-size: 21px;
     margin-bottom: 28px;
+    max-width: 308px;
   }
 
   .form-review__title--line::after {
@@ -405,6 +406,14 @@
   }
 }
 
+@media (min-width: 1285px) {
+  .form-review__emotions {
+    margin: 0 auto;
+    min-width: 1200px;
+    text-align: center;
+  }
+}
+
 // form emotion input title
 
 .form-review__emotions-title {
@@ -441,6 +450,16 @@
   margin-bottom: 56px;
 }
 
+// tablet emotions input
+
+@media (min-width: 767px) {
+  .form-review__emotions-input {
+    min-height: 160px;
+    margin-bottom: 0;
+    min-width: 648px;
+  }
+}
+
 // descktop form emotion input
 
 @media (min-width: 1279px) {
@@ -448,15 +467,6 @@
     max-width: 768px;
   }
 }
-// tablet emotions input
-
-@media (min-width: 767px) {
-  .form-review__emotions-input {
-    min-height: 160px;
-    margin-bottom: 0;
-  }
-}
-
 // emotions input actions
 
 .form-review__emotions-input::placeholder {
@@ -659,6 +669,7 @@
 @media (min-width: 767px) {
   .form-review__emotion-active-wrapper {
     display: flex;
+    min-width: 648px;
   }
 }
 

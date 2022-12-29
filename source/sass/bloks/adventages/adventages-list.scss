@@ -105,6 +105,12 @@
   }
 }
 
+@media (min-width: 322px) {
+  .adventages__list-item--image-city {
+    background-size: cover;
+  }
+}
+
 // tablet adventages blue img
 
 @media (min-width: 767px) {
@@ -125,6 +131,12 @@
   }
 }
 
+@media (min-width: 770px) {
+  .adventages__list-item--image-city {
+    background-size: cover;
+  }
+}
+
 // descktop adventages blue img
 
 @media (min-width: 1279px) {
@@ -134,13 +146,19 @@
     background-repeat: no-repeat;
     background-size: 800px auto;
   }
-  // tablet  adventages image @2x
+  // descktop  adventages image @2x
 
   @media (min-resolution: 2dppx) {
     .adventages__list-item--image-city {
       background-image: url("../img/adventages/adventages-descktop/photo-city@2x.jpg");
       background-size: 800px auto;
     }
+  }
+}
+
+@media (min-width: 1285px) {
+  .adventages__list-item--image-city {
+    background-size: cover;
   }
 }
 
@@ -349,6 +367,12 @@
   }
 }
 
+@media (min-width: 322px) {
+  .adventages__list-item--image-bridge {
+    background-size: cover;
+  }
+}
+
 // tablet adventages blue img
 
 @media (min-width: 767px) {
@@ -370,6 +394,12 @@
   }
 }
 
+@media (min-width: 770px) {
+  .adventages__list-item--image-bridge {
+    background-size: cover;
+  }
+}
+
 // descktop adventages blue img
 
 @media (min-width: 1279px) {
@@ -387,6 +417,12 @@
       background-image: url("../img/adventages/adventages-descktop/photo-bridge@2x.jpg");
       background-size: 800px auto;
     }
+  }
+}
+
+@media (min-width: 1285px) {
+  .adventages__list-item--image-bridge {
+    background-size: cover;
   }
 }
 
