@@ -140,6 +140,7 @@
 .form-review__title {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-weight: 700;
   font-size: 18px;
@@ -172,6 +173,13 @@
 @media (min-width: 1279px) {
   .form-review__title {
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .form-review__title-contact-information {
+    text-align: start;
+    margin-left: 35px;
   }
 }
 
