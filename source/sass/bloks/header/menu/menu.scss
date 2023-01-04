@@ -78,34 +78,7 @@
   text-transform: uppercase;
 }
 
-// tablet fonts and actions menu
-
-@media (min-width: 767px) {
-  .menu__link {
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
-  }
-
-  .menu__link--current {
-    color: #766357;
-  }
-
-  .menu__list-item:hover {
-    background: transparent;
-  }
-
-  .menu__link:hover {
-    color: #81b3d2;
-  }
-
-  .menu__link:active {
-    color: #000000;
-    opacity: 0.3;
-  }
-}
-
-// menu shdow line
+// menu shadow line
 
 .menu__list-item {
   text-align: center;
@@ -163,4 +136,31 @@
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.2) 100%
   );
+}
+
+// tablet fonts and actions menu
+
+@media (min-width: 767px) {
+  .menu__link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+
+  .menu__link--current {
+    color: #766357;
+  }
+
+  .menu__list-item:hover {
+    background-color: #ffffff;
+  }
+
+  .menu__link:hover {
+    color: #81b3d2;
+  }
+
+  .menu__link:active {
+    color: #000000;
+    opacity: 0.3;
+  }
 }

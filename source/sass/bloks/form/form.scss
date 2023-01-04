@@ -102,6 +102,12 @@
   }
 }
 
+@media (min-width: 1600px) {
+  .fildset-wrapper {
+    justify-content: space-around;
+  }
+}
+
 // fildset border off
 
 .form-review__fildset {
@@ -142,7 +148,9 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  background-color: #e7e5e5;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 // tablet review title and lines
@@ -151,51 +159,19 @@
   .form-review__title {
     font-size: 21px;
     margin-bottom: 28px;
-    max-width: 308px;
+    max-width: 330px;
   }
+}
 
-  .form-review__title--line::after {
-    position: absolute;
-    content: "";
-    width: 123px;
-    height: 1px;
-    background: #dbdbdb;
-    top: 12px;
-    left: -170px;
-  }
-
-  .form-review__title--line::before {
-    position: absolute;
-    content: "";
-    width: 123px;
-    height: 1px;
-    background: #dbdbdb;
-    top: 12px;
-    right: -170px;
+@media (min-width: 767px) {
+  .form-review__title--line {
+    min-width: 330px;
   }
 }
 
 @media (min-width: 1279px) {
   .form-review__title {
     margin-bottom: 45px;
-    max-width: 278px;
-  }
-}
-// descktop radi and check box line
-
-@media (min-width: 1279px) {
-  .form-review__title--line::after {
-    width: 280px;
-    top: 12px;
-    left: -342px;
-    background: #dbdbdb;
-  }
-
-  .form-review__title--line::before {
-    width: 280px;
-    top: 12px;
-    right: -342px;
-    background: #dbdbdb;
   }
 }
 
@@ -208,6 +184,26 @@
   flex-direction: column;
   margin-bottom: 39px;
   padding-bottom: 39px;
+}
+
+@media (min-width: 767px) {
+  .form-review__no-padding::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: #dbdbdb;
+    top: -42px;
+  }
+}
+
+// descktop check box line
+
+@media (min-width: 1279px) {
+  .form-review__no-padding::before {
+    width: 100%;
+    top: -61px;
+    background: #dbdbdb;
+  }
 }
 
 //descktop  form user imput
@@ -255,6 +251,12 @@
   .form-review__input {
     min-width: 430px;
     margin-left: 120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .form-review__input {
+    margin-left: 0;
   }
 }
 
@@ -311,7 +313,7 @@
 // form input ico
 
 .form-review__ico {
-  background-color: #e6e6e6;
+  background-color: #dbd7d7;
   width: 58px;
   height: 58px;
   padding-top: 18px;
@@ -362,6 +364,12 @@
 @media (min-width: 1279px) {
   .form-review__label {
     margin-left: 120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .form-review__label {
+    margin-left: 0;
   }
 }
 
@@ -467,6 +475,13 @@
     max-width: 768px;
   }
 }
+
+@media (min-width: 1600px) {
+  .form-review__emotions-input {
+    min-width: 1356px;
+  }
+}
+
 // emotions input actions
 
 .form-review__emotions-input::placeholder {

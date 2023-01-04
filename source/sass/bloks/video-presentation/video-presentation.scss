@@ -10,6 +10,21 @@
 
 .video-presentation__polygon {
   position: absolute;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.video-presentation__polygon:hover {
+  opacity: 0.6;
+}
+
+.video-presentation__polygon:focus {
+  opacity: 0.9;
+}
+
+.video-presentation__polygon:active {
+  opacity: 1;
+  scale: 90%;
 }
 
 @media (min-width: 767px) {
