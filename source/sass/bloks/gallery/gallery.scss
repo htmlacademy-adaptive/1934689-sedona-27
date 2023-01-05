@@ -1,20 +1,22 @@
 // gallery catalog page
 
 .gallery {
-  padding: 24px 0 26px;
+  padding: 13px 0;
+  margin-bottom: -41px;
 }
 
 // tablet gallery catalog
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery {
-    padding: 24px 60px 0 60px;
+    padding: 12px 60px 0 60px;
+    margin-bottom: 0;
   }
 }
 
 // desctop gallery catalog
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery {
     padding: 0;
   }
@@ -28,7 +30,7 @@
 
 // tablet gallery list
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +40,7 @@
 
 // tablest list center
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__list::before {
     content: "";
     display: block;
@@ -57,21 +59,9 @@
 
 // tablet gallery card
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__list-card {
     min-width: 324px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .gallery__list-card {
-    width: 33%;
-  }
-}
-
-@media (min-width: 1600px) {
-  .gallery__list-card-first {
-    width: 100%;
   }
 }
 
@@ -89,7 +79,7 @@
 
 // tablet underline off
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__list-card::before {
     content: none;
   }
@@ -104,7 +94,7 @@
 
 // tablet gallery image
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__image-first {
     display: block;
     padding: 0;
@@ -115,7 +105,7 @@
 
 // desctop galerrey image first catalog
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__image-first {
     min-width: 1200px;
     max-height: 400px;
@@ -132,7 +122,7 @@
 
 // tablet gallery image
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__image-second {
     display: block;
     padding: 0;
@@ -149,7 +139,7 @@
 
 // tablet gallery image
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__image-third {
     display: block;
     padding: 0;
@@ -166,7 +156,7 @@
 
 // tablet gallery image
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__image-fourth {
     display: block;
     padding: 0;
@@ -176,7 +166,7 @@
 
 // descktop gallery image
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__image-second {
     min-width: 400px;
   }
@@ -184,7 +174,7 @@
 
 // descktop gallery image
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__image-third {
     min-width: 400px;
   }
@@ -192,7 +182,7 @@
 
 // descktop gallery image
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__image-fourth {
     min-width: 400px;
   }
@@ -204,12 +194,12 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 12px;
+  margin-bottom: 3px;
 }
 
 // descktop gallery text
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__card-title {
     color: #ffffff;
   }
@@ -219,25 +209,26 @@
   margin-bottom: 48px;
   min-width: 280px;
   padding: 0 20px;
+  margin-top: -6px;
 }
 
 // tablet gallery text
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__card-description {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
-    padding: 22px 20px 15px 20px;
+    padding: 26px 20px 12px 20px;
     background-color: #f2f2f2;
   }
 }
 
 // descktop galerry card description
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__card-description {
     position: absolute;
     bottom: 0;
@@ -246,15 +237,9 @@
   }
 }
 
-@media (min-width: 1600px) {
-  .gallery__card-description {
-    width: 100%;
-  }
-}
-
 // tablet description card  background darck
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__card-description--darck {
     background-color: #eaeaea;
   }
@@ -262,7 +247,7 @@
 
 // descktop description card  background darck off
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__card-description--darck {
     background-color: rgb(0, 0, 0, 0.3);
   }
@@ -270,7 +255,7 @@
 
 // tablet card description first
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__card-description-first {
     display: flex;
     flex-wrap: wrap;
@@ -278,14 +263,15 @@
     justify-content: space-between;
     margin-bottom: 0;
     min-width: 648px;
-    padding: 22px 20px;
+    padding: 19px 18px;
     background-color: #f2f2f2;
+    margin-top: 0;
   }
 }
 
 // descktop card description fist
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__card-description-first {
     position: absolute;
     bottom: 0;
@@ -295,19 +281,13 @@
   }
 }
 
-@media (min-width: 1600px) {
-  .gallery__card-description-first {
-    width: 100%;
-  }
-}
-
 // gallery card wrapper text
 
 .gallery__wrapper-author {
   margin-bottom: 11px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .gallery__wrapper-author {
     margin-bottom: 0;
   }
@@ -323,7 +303,7 @@
 
 // descktop gallery card name author
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__card-author {
     color: #ffffff;
   }
@@ -343,7 +323,7 @@
 }
 
 .gallery__number-reaction {
-  margin-left: 14px;
+  margin-left: 9px;
 }
 
 // descktop card like icon
@@ -354,7 +334,7 @@
 
 // descktop card like icon
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__card-icon {
     fill: #ffffff;
     opacity: 1;
@@ -373,7 +353,7 @@
 
 // descktop galerry like amount
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .gallery__like-amount {
     color: #ffffff;
   }

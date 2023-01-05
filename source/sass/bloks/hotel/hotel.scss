@@ -4,26 +4,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38px 18px 49px;
+  padding: 41px 18px 49px;
   text-align: center;
   background-color: #ffffff;
 }
 
 // tablet hotel find
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .hotel {
     padding: 61px 166px 58px;
-    background-color: #e7e5e5;
   }
 }
 
 // descktop hotel find
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .hotel {
     padding: 61px 382px 66px;
-    background-color: #e7e5e5;
   }
 }
 
@@ -35,12 +33,12 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 // tablet hotel title
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .hotel__title {
     font-size: 30px;
     margin-bottom: 35px;
@@ -59,7 +57,7 @@
 
 // tablet hotel description
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .hotel__description {
     font-size: 14px;
     margin-bottom: 40px;
@@ -68,7 +66,7 @@
 
 // hotel button
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .hotel__button {
     min-width: 458px;
   }

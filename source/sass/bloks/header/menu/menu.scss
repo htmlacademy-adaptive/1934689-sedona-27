@@ -24,7 +24,7 @@
 
 // tablet menu
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -37,28 +37,26 @@
 
 // descktop menu
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .menu {
     position: relative;
-    padding-left: 91px;
-    padding-right: 71px;
+    padding-left: 71px;
+    padding-right: 53px;
   }
 }
 
 // descktop menu catalog
-
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .menu--catalog {
-    padding: 0 91px;
+    padding-left: 44px;
+    padding-right: 48px;
   }
 }
-
 // descktop menu form
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .menu--form {
-    padding-left: 91px;
-    padding-right: 91px;
+    padding: 0;
   }
 }
 
@@ -78,7 +76,57 @@
   text-transform: uppercase;
 }
 
-// menu shadow line
+@media (min-width: 768px) {
+  .menu__list-item:last-of-type::before {
+    display: none;
+  }
+
+  .menu--catalog .menu__list-item {
+    box-shadow: none;
+    padding: 18px 20px 17px 20px;
+  }
+
+  .menu--catalog .menu__list-item:nth-child(1) {
+    box-shadow: none;
+    padding: 18px 11px 17px 20px;
+  }
+
+  .menu--catalog .menu__list-item:nth-child(2) {
+    box-shadow: none;
+    padding: 18px 0 17px 26px;
+  }
+
+  .menu--catalog .menu__list-item:nth-child(3) {
+    box-shadow: none;
+    padding: 18px 26px 17px 0;
+  }
+
+  .menu--catalog .menu__list-item:last-child {
+    box-shadow: none;
+    padding: 18px 23px 17px 12px;
+  }
+}
+
+// descktop menu
+
+@media (min-width: 1280px) {
+  .menu--catalog .menu__list-item:nth-child(1) {
+    padding: 19px 87px 12px 20px;
+  }
+
+  .menu--catalog .menu__list-item:nth-child(2) {
+    padding: 19px 53px 12px 20px;
+  }
+
+  .menu--catalog .menu__list-item:nth-child(3) {
+    padding: 19px 0 12px 38px;
+  }
+
+  .menu--catalog .menu__list-item:last-child {
+    text-align: end;
+  }
+}
+// menu shdow line
 
 .menu__list-item {
   text-align: center;
@@ -86,25 +134,9 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
 }
 
-@media (min-width: 767px) {
-  .menu__list-item:last-of-type::before {
-    display: none;
-  }
-
+@media (min-width: 768px) {
   .menu__list-item {
-    box-shadow: none;
-  }
-}
-
-// descktop menu
-
-@media (min-width: 1279px) {
-  .menu__list-item:nth-child(1) {
-    text-align: start;
-  }
-
-  .menu__list-item:last-child {
-    text-align: end;
+    padding: 18px 20px 17px 20px;
   }
 }
 
@@ -140,7 +172,7 @@
 
 // tablet fonts and actions menu
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .menu__link {
     font-size: 14px;
     line-height: 21px;
