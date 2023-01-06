@@ -35,23 +35,15 @@
   overflow: hidden;
 }
 
-// page body catalog
-
-@media (min-width: 767px) {
-  .page__body--catalog {
-    background-color: #e7e5e5;
-  }
-}
-
-// main catalog
+// mobile main catalog
 
 .main-catalog {
-  background-color: #e7e5e5;
+  margin-bottom: -12px;
 }
 
 // tablet main catalog
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .main-catalog {
     margin-bottom: 40px;
   }
@@ -59,7 +51,7 @@
 
 // desctop main catalog padding off
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .main-catalog {
     margin-bottom: 0;
   }
@@ -67,7 +59,7 @@
 
 // desctop main catalog padding on
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .main-form {
     margin-bottom: 64px;
   }
@@ -75,17 +67,11 @@
 
 // desactop page body
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .page__body {
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
     padding: 0 40px;
-  }
-}
-
-@media (min-width: 1279px) {
-  .page__body--catalog {
-    background-color: #e7e5e5;
   }
 }
 
