@@ -25,6 +25,21 @@
   z-index: 0;
 }
 
+// point on  map picture
+
+.map::after {
+  content: url("../img/map/map-marker.svg");
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 0;
+}
+
 // map picture tablet
 
 @media (min-width: 768px) {
