@@ -10,8 +10,8 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="preload" href="/fonts/ptsans.woff2" us="font">
-  <link rel="preload" href="/fonts/ptsansbold.woff2" us="font">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -324,12 +324,7 @@
 
       <img class="video-presentation__video" src="img/gallery/video/video-mobile.jpg" alt="video presentation."
         width="280" height="177">
-
-      <svg class="video-presentation__polygon" width="48" height="54" viewBox="0 0 48 54"
-        aria-label="иконка проигрывания видео.">
-        <use href="./img/sprite.svg#polygon"></use>
-      </svg>
-      <span class="visually-hidden">play video button</span>
+      <span class="video-presentation__button"></span>
     </section>
   </main>
 
