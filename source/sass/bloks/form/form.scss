@@ -543,6 +543,8 @@
   display: flex;
 }
 
+//poppup wrapper
+
 .form-review__wrapper {
   position: relative;
   display: flex;
@@ -559,11 +561,15 @@
   z-index: 100;
 }
 
+//wrapper error tablet
+
 @media (min-width: 768px) {
   .form-review__wrapper {
     min-width: 400px;
   }
 }
+
+//wrapper access tablet
 
 @media (min-width: 768px) {
   .form-review__wrapper-right {
@@ -571,17 +577,23 @@
   }
 }
 
+//wrapper error descktop
+
 @media (min-width: 1280px) {
   .form-review__wrapper {
     min-width: 400px;
   }
 }
 
+//tablet title error
+
 @media (min-width: 768px) {
   .form-review__title-popup-error {
     max-width: 170px;
   }
 }
+
+//mobile poppup description
 
 .form-review__description {
   font-weight: 400;
@@ -594,11 +606,15 @@
   margin-bottom: 35px;
 }
 
+//tablet poppup description error
+
 @media (min-width: 768px) {
   .form-review__description {
     min-width: 307px;
   }
 }
+
+//tablet poppup description access
 
 @media (min-width: 768px) {
   .form-review__description-right {
@@ -607,11 +623,15 @@
   }
 }
 
+// mobile button poppup error
+
 .button--form-error {
   max-width: 180px;
   padding: 18px 64px 14px 64px;
   margin-bottom: 35px;
 }
+
+// tablet button poppup error
 
 @media (min-width: 768px) {
   .button--form-error {
@@ -620,11 +640,15 @@
   }
 }
 
+// mobile button poppup access
+
 .button--form-right {
   max-width: 280px;
   padding: 18px 64px 14px 64px;
   margin-bottom: 35px;
 }
+
+// tablet button poppup access
 
 @media (min-width: 768px) {
   .button--form-right {
@@ -633,11 +657,15 @@
   }
 }
 
+//mobale wrapper error button
+
 .form-review__button-wrapper {
   background: #f2f2f2;
   min-width: 320px;
   padding: 20px 20px 0;
 }
+
+//tablet wrapper error button
 
 @media (min-width: 768px) {
   .form-review__button-wrapper {
@@ -646,6 +674,7 @@
     padding: 40px 20px 0;
   }
 }
+
 // form check box
 
 .form-review__check {
@@ -709,18 +738,6 @@
   background-color: #f2f2f2;
   margin-left: 20px;
 }
-
-// @media (min-width: 768px) {
-//   .form-review__control-mark {
-//     margin-right: 16px;
-//     margin-left: 36px;
-//   }
-
-//   .form-review__control-mark:nth-child(2) {
-//     margin-right: 16px;
-//     margin-left: 36px;
-//   }
-// }
 
 .form-review__control-mark:hover {
   background: #e5e5e5;

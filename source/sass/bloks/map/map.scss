@@ -1,14 +1,56 @@
 // map section
 
 .map {
+  position: relative;
   background-color: #ffffff;
   margin-bottom: 10px;
+  min-height: 350px;
+}
+
+// map picture without js
+
+// map picture mobile
+
+.map::before {
+  content: url("../img/map/map-mobile.png");
+  position: absolute;
+  min-width: 320px;
+  height: auto;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+// map picture tablet
+
+@media (min-width: 768px) {
+  .map::before {
+    content: url("../img/map/map-tablet.png");
+    position: absolute;
+    min-width: 768px;
+  }
+}
+
+// map picture desctop
+
+@media (min-width: 1280px) {
+  .map::before {
+    content: url("../img/map/map-desktop.png");
+    position: absolute;
+    min-width: 768px;
+  }
 }
 
 .map__interactive {
+  position: absolute;
   width: 100%;
   height: 350px;
   object-fit: cover;
   border: none;
   display: block;
+  z-index: 10;
 }
