@@ -34,7 +34,12 @@
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery__list {
+    min-width: 1200px;
   }
 }
 
@@ -107,9 +112,9 @@
 
 @media (min-width: 1280px) {
   .gallery__image-first {
-    min-width: 1200px;
     max-height: 400px;
     object-fit: cover;
+    min-width: 1200px;
   }
 }
 

@@ -10,12 +10,12 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="preload" href="/fonts/ptsans.woff2" us="font">
-  <link rel="preload" href="/fonts/ptsansbold.woff2" us="font">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body page__body--home">
+<body class="page__body page__body--container">
 
   <h1 class="visually-hidden">Sedona city</h1>
 
@@ -29,7 +29,7 @@
 
       <a class="logo" href="index.html">
 
-        <img class="logo__image" src="img/header-logo/logotype-mobile.svg" width="185px" height="96px"
+        <img class="logo__image" src="img/header-logo/logotype-mobile.svg" width="185" height="96"
           alt="логотипа sedona of sity.">
       </a>
 
@@ -37,7 +37,7 @@
 
       <nav class="header__menu  header__menu--no-js">
 
-        <h2 class="visually-hidden">Navigation</h2>
+        <h2 class="visually-hidden">Навигация по сайту Седона</h2>
 
         <button class="header__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
 
@@ -103,10 +103,10 @@
 
     <section class="hero hero-triangle">
 
-      <h2 class="visually-hidden">About Sedona</h2>
+      <h2 class="visually-hidden">Седона лучший выбор для отдыха</h2>
 
-      <h3 class="hero__title">Седона - небольшой городок в аризоне,
-        заслуживающий большего!</h3>
+      <p class="hero__title">Седона - небольшой городок в аризоне,
+        заслуживающий большего!</p>
 
       <p class="hero__description">Рассмотрим 5 причин, по которым
         Седона круче, чем
@@ -118,7 +118,7 @@
 
     <section class="adventages">
 
-      <h2 class="visually-hidden">Adventages</h2>
+      <h2 class="visually-hidden">какие приимущества Седоны</h2>
 
       <ul class="adventages-list">
 
@@ -128,7 +128,7 @@
 
         <li class="adventages-list__list-item adventages-list__list-item--blue adventages-list__list-one">
 
-          <h3 class="adventages__title adventages__title--blue">Настоящий городок</h3>
+          <p class="adventages__title adventages__title--blue">Настоящий городок</p>
 
           <p class="adventages__number">— №1 —</p>
 
@@ -149,7 +149,7 @@
 
           <div class="adventages__text-colum">
 
-            <h3 class="adventages__title adventages__title--ico">Жилье</h3>
+            <span class="adventages__title adventages__title--ico">Жилье</span>
 
             <p class="adventages__text adventages__description--ico">Рекомендуем пожить в настоящем мотеле, все как в
               кино!</p>
@@ -162,7 +162,7 @@
 
           <div class="adventages__text-colum">
 
-            <h3 class="adventages__title adventages__title--ico">Еда</h3>
+            <span class="adventages__title adventages__title--ico">Еда</span>
 
             <p class="adventages__text adventages__description--ico">Всегда заказывайте фирменный бургер, вы не
               разочаруетесь!</p>
@@ -175,7 +175,7 @@
 
           <div class="adventages__text-colum">
 
-            <h3 class="adventages__title adventages__title--ico">Сувениры</h3>
+            <span class="adventages__title adventages__title--ico">Сувениры</span>
 
             <p class="adventages__text adventages__description--ico">Не только китайского, но и местного производства!
             </p>
@@ -188,7 +188,7 @@
 
         <li class="adventages__list-item adventages-list__list-item--blue adventages-list__list-two">
 
-          <h3 class="adventages__title adventages__title--blue">Там есть мост Дьявола</h3>
+          <p class="adventages__title adventages__title--blue">Там есть мост Дьявола</p>
 
           <p class="adventages__number">— №2 —</p>
 
@@ -205,7 +205,7 @@
 
         <li class="adventages__list-item adventages__list-item-no-ico adventages__list-item-first">
 
-          <h3 class="adventages__title  adventages__title--no-ico">Небольшая площадь</h3>
+          <p class="adventages__title  adventages__title--no-ico">Небольшая площадь</p>
 
           <p class="adventages__number adventages__number--no-ico">— №3 —</p>
 
@@ -214,7 +214,7 @@
 
         <li class="adventages__list-item adventages__list-item-no-ico adventages__list-item-second">
 
-          <h3 class="adventages__title adventages__title--no-ico">Красивая дорога</h3>
+          <p class="adventages__title adventages__title--no-ico">Красивая дорога</p>
 
           <p class="adventages__number adventages__number--no-ico">— №4 —</p>
 
@@ -224,7 +224,7 @@
 
         <li class="adventages__list-item adventages__list-item-no-ico adventages__list-item-third">
 
-          <h3 class="adventages__title adventages__title--no-ico">Мало туристов</h3>
+          <p class="adventages__title adventages__title--no-ico">Мало туристов</p>
 
           <p class="adventages__number adventages__number--no-ico">— №5 —</p>
 
@@ -238,9 +238,9 @@
 
     <section class="hotel">
 
-      <h2 class="visually-hidden">find-hotel</h2>
+      <h2 class="visually-hidden">Где от дохнуть в Седоне</h2>
 
-      <h3 class="hotel__title">Заинтерисовались?</h3>
+      <p class="hotel__title">Заинтерисовались?</p>
 
       <p class="hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам
         лучшие
@@ -256,7 +256,7 @@
 
     <section class="map">
 
-      <h2 class="visually-hidden">Map</h2>
+      <h2 class="visually-hidden">Найти Седону на карте</h2>
 
       <iframe class="map__interactive"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180909.4306491544!2d-112.29008533380927!3d35.16080312360696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669103336314!5m2!1sru!2sru"

@@ -8,25 +8,33 @@
   position: relative;
 }
 
+.video-presentation__button::before {
+  content: url("/img/gallery/video/polygon\ .svg");
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  cursor: pointer;
+  top: 36%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  transition: all 0.2s;
+}
+
 .video-presentation__video {
   object-fit: scale-down;
 }
 
-.video-presentation__polygon {
-  position: absolute;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.video-presentation__polygon:hover {
+.video-presentation__button:hover::before {
   opacity: 0.6;
 }
 
-.video-presentation__polygon:focus {
+.video-presentation__button:focus::before {
   opacity: 0.9;
 }
 
-.video-presentation__polygon:active {
+.video-presentation__button:active::before {
   opacity: 1;
   scale: 90%;
 }

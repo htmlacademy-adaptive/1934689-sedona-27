@@ -35,6 +35,8 @@
 @media (min-width: 1280px) {
   .form-review {
     align-items: stretch;
+    min-width: 1200px;
+    margin-left: -40px;
   }
 }
 
@@ -56,7 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 488px;
+    max-width: 518px;
     margin: 0 auto;
   }
 }
@@ -67,10 +69,10 @@
   .form-review__wrapper-checkbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    min-width: 960px;
+    justify-content: center;
+    min-width: 1200px;
     padding: 0 21px;
-    margin-top: 39px;
+    margin-top: 34px;
   }
 }
 
@@ -78,7 +80,7 @@
   .form-review__wrapper-radiobox {
     justify-content: flex-start;
     padding: 0 153px;
-    margin-top: 25px;
+    margin-top: 19px;
   }
 }
 
@@ -98,7 +100,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 }
 
@@ -143,8 +145,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: px;
-  z-index: 2;
+  margin-bottom: 17px;
 }
 
 // tablet review title and lines
@@ -155,7 +156,6 @@
     margin-bottom: 23px;
     max-width: 330px;
     background-color: #ffffff;
-    z-index: 1;
   }
 }
 
@@ -163,7 +163,6 @@
   .form-review__title--line {
     min-width: 330px;
     background-color: #ffffff;
-    z-index: 1;
   }
 }
 
@@ -177,7 +176,7 @@
 @media (min-width: 1280px) {
   .form-review__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -220,6 +219,7 @@
     height: 1px;
     top: -37px;
     background: #dbdbdb;
+    z-index: -1;
   }
 }
 
@@ -252,6 +252,7 @@
     height: 1px;
     top: -50px;
     background: #dbdbdb;
+    z-index: -1;
   }
 }
 
@@ -356,7 +357,7 @@
   width: 58px;
   height: 58px;
   padding-top: 14px;
-  padding-left: 23px;
+  padding-left: 19px;
 }
 
 // descktop fotm input ico
@@ -544,6 +545,8 @@
   display: flex;
 }
 
+//poppup wrapper
+
 .form-review__wrapper {
   position: relative;
   display: flex;
@@ -557,7 +560,42 @@
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding-top: 45px;
+  z-index: 100;
 }
+
+//wrapper error tablet
+
+@media (min-width: 768px) {
+  .form-review__wrapper {
+    min-width: 400px;
+  }
+}
+
+//wrapper access tablet
+
+@media (min-width: 768px) {
+  .form-review__wrapper-right {
+    min-width: 640px;
+  }
+}
+
+//wrapper error descktop
+
+@media (min-width: 1280px) {
+  .form-review__wrapper {
+    min-width: 400px;
+  }
+}
+
+//tablet title error
+
+@media (min-width: 768px) {
+  .form-review__title-popup-error {
+    max-width: 170px;
+  }
+}
+
+//mobile poppup description
 
 .form-review__description {
   font-weight: 400;
@@ -567,8 +605,27 @@
   text-transform: uppercase;
   color: #333333;
   max-width: 237px;
-  margin-bottom: 28px;
+  margin-bottom: 35px;
 }
+
+//tablet poppup description error
+
+@media (min-width: 768px) {
+  .form-review__description {
+    min-width: 307px;
+  }
+}
+
+//tablet poppup description access
+
+@media (min-width: 768px) {
+  .form-review__description-right {
+    min-width: 444px;
+    margin-bottom: 80px;
+  }
+}
+
+// mobile button poppup error
 
 .button--form-error {
   max-width: 180px;
@@ -576,16 +633,48 @@
   margin-bottom: 35px;
 }
 
+// tablet button poppup error
+
+@media (min-width: 768px) {
+  .button--form-error {
+    max-width: 272px;
+    padding: 18px 108px 14px 108px;
+  }
+}
+
+// mobile button poppup access
+
 .button--form-right {
   max-width: 280px;
   padding: 18px 64px 14px 64px;
   margin-bottom: 35px;
 }
 
+// tablet button poppup access
+
+@media (min-width: 768px) {
+  .button--form-right {
+    min-width: 458px;
+    padding: 18px 140px 14px;
+  }
+}
+
+//mobale wrapper error button
+
 .form-review__button-wrapper {
   background: #f2f2f2;
   min-width: 320px;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 0;
+}
+
+//tablet wrapper error button
+
+@media (min-width: 768px) {
+  .form-review__button-wrapper {
+    min-width: 640px;
+    text-align: center;
+    padding: 40px 20px 0;
+  }
 }
 
 // form check box
@@ -652,18 +741,6 @@
   margin-left: 20px;
 }
 
-// @media (min-width: 768px) {
-//   .form-review__control-mark {
-//     margin-right: 16px;
-//     margin-left: 36px;
-//   }
-
-//   .form-review__control-mark:nth-child(2) {
-//     margin-right: 16px;
-//     margin-left: 36px;
-//   }
-// }
-
 .form-review__control-mark:hover {
   background: #e5e5e5;
 }
@@ -710,6 +787,15 @@
   margin-right: 16px;
   background-color: #f2f2f2;
   margin-left: 20px;
+}
+
+// descktop checkbox
+
+@media (min-width: 1200px) {
+  .form-review__check-mark {
+    margin-right: 11px;
+    margin-left: 32px;
+  }
 }
 
 .form-review__check-mark:hover {

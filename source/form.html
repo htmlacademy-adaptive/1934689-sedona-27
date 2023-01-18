@@ -10,12 +10,12 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="preload" href="/fonts/ptsans.woff2" us="font">
-  <link rel="preload" href="/fonts/ptsansbold.woff2" us="font">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page__body page__body--catalog">
+<body class="page__body page__body--catalog page__body--container">
 
   <!--header -->
 
@@ -34,7 +34,7 @@
 
       <nav class="header__menu">
 
-        <h2 class="visually-hidden">Navigation</h2>
+        <h2 class="visually-hidden">Навигация по сайту Седона</h2>
 
         <button class="header__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
 
@@ -91,9 +91,9 @@
 
     <section class="hero hero--form">
 
-      <h2 class="visually-hidden">Review</h2>
+      <h2 class="visually-hidden">оставить отзыв о Седоне</h2>
 
-      <h3 class="hero__title hero__title--catalog hero__title--form">Оставьте свой отзыв</h3>
+      <span class="hero__title hero__title--catalog hero__title--form">Оставьте свой отзыв</span>
 
       <p class="hero__description hero__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
         также о посещенных
@@ -105,7 +105,7 @@
 
     <section class="form">
 
-      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <h2 class="visually-hidden">Форма обратной связи отзыва о Седоне</h2>
 
       <!--form name input-->
 
@@ -235,7 +235,7 @@
 
         <div class="form-review__emotions">
 
-          <h3 class="form-review__emotions-title">Опишите свои эмоции:</h3>
+          <p class="form-review__emotions-title">Опишите свои эмоции:</p>
 
           <textarea class="form-review__emotions-input" rows="10"
             placeholder="Опишите подробно все свои восторги"></textarea>
@@ -321,7 +321,7 @@
 
     <div class="form-review__wrapper">
 
-      <h3 class="form-review__title">Что-то пошло не так!</h3>
+      <h3 class="form-review__title form-review__title-popup-error">Что-то пошло не так!</h3>
 
       <p class="form-review__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
 
@@ -333,11 +333,12 @@
 
   <div class="form-review__right form-review--popup">
 
-    <div class="form-review__wrapper">
+    <div class="form-review__wrapper form-review__wrapper-right">
 
       <h3 class="form-review__title">Ваш отзыв отправлен!</h3>
 
-      <p class="form-review__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      <p class="form-review__description form-review__description-right">Спасибо за ваше участие, ваш отзыв уже поступил
+        к нам. В ближайшее время мы
         опубликуем его на сайте.</p>
 
       <div class="form-review__button-wrapper">
