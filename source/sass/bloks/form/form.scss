@@ -35,6 +35,8 @@
 @media (min-width: 1280px) {
   .form-review {
     align-items: stretch;
+    min-width: 1200px;
+    margin-left: -40px;
   }
 }
 
@@ -56,7 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 488px;
+    max-width: 518px;
     margin: 0 auto;
   }
 }
@@ -67,10 +69,10 @@
   .form-review__wrapper-checkbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    min-width: 960px;
+    justify-content: center;
+    min-width: 1200px;
     padding: 0 21px;
-    margin-top: 39px;
+    margin-top: 34px;
   }
 }
 
@@ -78,7 +80,7 @@
   .form-review__wrapper-radiobox {
     justify-content: flex-start;
     padding: 0 153px;
-    margin-top: 25px;
+    margin-top: 19px;
   }
 }
 
@@ -98,7 +100,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 }
 
@@ -143,7 +145,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 // tablet review title and lines
@@ -174,7 +176,7 @@
 @media (min-width: 1280px) {
   .form-review__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -355,7 +357,7 @@
   width: 58px;
   height: 58px;
   padding-top: 14px;
-  padding-left: 23px;
+  padding-left: 19px;
 }
 
 // descktop fotm input ico
@@ -785,6 +787,15 @@
   margin-right: 16px;
   background-color: #f2f2f2;
   margin-left: 20px;
+}
+
+// descktop checkbox
+
+@media (min-width: 1200px) {
+  .form-review__check-mark {
+    margin-right: 11px;
+    margin-left: 32px;
+  }
 }
 
 .form-review__check-mark:hover {

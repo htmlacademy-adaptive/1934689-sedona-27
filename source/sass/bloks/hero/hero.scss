@@ -16,6 +16,7 @@
 .hero--form {
   margin-bottom: 0;
   position: relative;
+  padding-bottom: 28px;
 }
 
 @media (min-width: 768px) {
@@ -56,6 +57,7 @@
 @media (min-width: 768px) {
   .hero--form {
     margin-bottom: 24px;
+    padding-top: 63px;
   }
 }
 
@@ -178,6 +180,15 @@
   }
 }
 
+// desctop form line
+
+@media (min-width: 1200px) {
+  .hero--form::before {
+    left: 28px;
+    top: 398px;
+  }
+}
+
 // hero title
 
 .hero__title {
@@ -188,9 +199,14 @@
   padding: 0 30px;
 }
 
+// tablet hero title
+
 @media (min-width: 768px) {
   .hero__title {
+    min-width: 520px;
     margin-bottom: 30px;
+    font-size: 22px;
+    padding: 0;
   }
 }
 
@@ -200,14 +216,8 @@
   margin-bottom: 26px;
 }
 
-// tablet hero title
-
-@media (min-width: 768px) {
-  .hero__title {
-    min-width: 520px;
-    font-size: 24px;
-    padding: 0;
-  }
+.hero__title--form {
+  margin-bottom: 22px;
 }
 
 // tablet catalog hero title
@@ -291,5 +301,13 @@
     font-size: 14px;
     line-height: 21px;
     padding: 0;
+  }
+}
+
+// descktop hero description
+
+@media (min-width: 1280px) {
+  .hero__description {
+    min-width: 434px;
   }
 }

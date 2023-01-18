@@ -80,6 +80,14 @@
   }
 }
 
+// descktop adventages nimber
+
+@media (min-width: 1280px) {
+  .adventages__number {
+    line-height: 31px;
+  }
+}
+
 .adventages__text {
   text-align: center;
   font-weight: 400;
@@ -144,6 +152,7 @@
     background-repeat: no-repeat;
     background-size: 800px auto;
   }
+
   // descktop  adventages image @2x
 
   @media (min-resolution: 2dppx) {
@@ -203,6 +212,7 @@
   .adventages__text-colum {
     max-width: 265px;
     align-items: center;
+    padding-top: 0;
   }
 }
 
@@ -275,14 +285,6 @@
   margin-top: 16px;
 }
 
-// list center between mobile and tablet
-
-@media (min-width: 400px) and (max-width: 768px) {
-  .adventages-list__list-item--hausing::before {
-    margin-right: 30px;
-  }
-}
-
 //tablet adventages ico image hausing
 
 @media (min-width: 768px) {
@@ -294,7 +296,7 @@
     width: 77px;
     height: 72px;
     margin: 0;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
   }
 }
 
@@ -484,7 +486,13 @@
 
 @media (min-width: 768px) {
   .adventages__text--number {
-    max-width: 300px;
+    max-width: 147px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adventages__text--number {
+    max-width: 267px;
   }
 }
 

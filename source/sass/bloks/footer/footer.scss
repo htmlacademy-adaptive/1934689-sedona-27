@@ -11,7 +11,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 29px 76px 23px 63px;
+    padding: 25px 76px 23px 61px;
   }
 }
 
@@ -19,7 +19,7 @@
 
 @media (min-width: 1280px) {
   .footer {
-    padding: 29px 136px 23px 121px;
+    padding: 26px 136px 23px 121px;
   }
 }
 
@@ -27,7 +27,7 @@
 
 @media (min-width: 768px) {
   .footer--catalog {
-    padding: 36px 60px;
+    padding: 36px 59px;
   }
 }
 
@@ -53,6 +53,7 @@
   .footer--form {
     min-width: 1200px;
     padding: 36px 120px 36px 120px;
+    margin-left: -40px;
   }
 }
 
@@ -71,10 +72,12 @@
 @media (min-width: 768px) {
   .footer__social-list {
     justify-content: space-between;
-    max-width: 162px;
+    max-width: 158px;
     margin-bottom: 0;
   }
 }
+
+// mobile  social list item
 
 .footer__list-item {
   display: flex;
@@ -84,7 +87,15 @@
   height: 48px;
   background-color: #81b3d2;
   cursor: pointer;
-  margin-right: 6px;
+  margin-right: 5px;
+}
+
+// descktop  social list item
+
+@media (min-width: 768px) {
+  .footer__list-item {
+    margin-right: 4px;
+  }
 }
 
 //footer actions elements
