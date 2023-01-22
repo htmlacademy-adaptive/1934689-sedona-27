@@ -10,9 +10,17 @@
   list-style: none;
 }
 
+.adventages__list-item {
+  background-color: #81b3d2;
+}
+
+.adventages-list__list-item {
+  background-color: #81b3d2;
+}
+
 // adventages blue
 
-.adventages-list__list-item--blue {
+.adventages-list__list-item-blue {
   background-color: #81b3d2;
   padding: 54px 18px 40px;
 }
@@ -24,14 +32,18 @@
 // tablet adventages blue
 
 @media (min-width: 768px) {
-  .adventages-list__list-item--blue {
+  .adventages-list__list-item-blue {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 52px 33px 31px 33px;
   }
 }
 
 @media (min-width: 1280px) {
-  .adventages-list__list-item--blue {
-    padding: 52px 80px 20px 80px;
+  .adventages-list__list-item-blue {
+    padding: 20px 50px;
     min-width: 400px;
   }
 }
@@ -50,6 +62,14 @@
 @media (min-width: 768px) {
   .adventages__title {
     font-size: 21px;
+    max-width: 185px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adventages__title {
+    max-width: 200px;
+    margin-bottom: 8px;
   }
 }
 
@@ -77,6 +97,7 @@
   .adventages__number {
     font-size: 14px;
     line-height: 26px;
+    max-width: 185px;
   }
 }
 
@@ -85,6 +106,8 @@
 @media (min-width: 1280px) {
   .adventages__number {
     line-height: 31px;
+    max-width: 230px;
+    margin-bottom: 19px;
   }
 }
 
@@ -97,70 +120,28 @@
   color: #ffffff;
 }
 
-// adventages blue img
-
-.adventages__list-item--image-city {
-  position: relative;
-  background-image: url("../img/adventages/adventages-mobile/photo-city.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px auto;
-  min-height: 260px;
-  padding: 0;
-}
-
-// adventages image @2x mobile
-
-@media (min-resolution: 2dppx) {
-  .adventages__list-item--image-city {
-    background-image: url("../img/adventages/adventages-mobile/photo-city@2x.jpg");
-    background-size: 320px auto;
-  }
-}
-
-@media (min-width: 322px) {
-  .adventages__list-item--image-city {
-    background-size: cover;
-  }
-}
-
-// tablet adventages blue img
-
 @media (min-width: 768px) {
-  .adventages__list-item--image-city {
-    position: relative;
-    background-image: url("../img/adventages/adventages-tablet/photo-city.jpg");
-    background-repeat: no-repeat;
-    background-size: 512px auto;
-    min-height: 256px;
-  }
-  // tablet  adventages image @2x
-
-  @media (min-resolution: 2dppx) {
-    .adventages__list-item--image-city {
-      background-image: url("../img/adventages/adventages-tablet/photo-city@2x.jpg");
-      background-size: 512px auto;
-    }
+  .adventages__text {
+    max-width: 185px;
   }
 }
-
-// descktop adventages blue img
 
 @media (min-width: 1280px) {
-  .adventages__list-item--image-city {
-    position: relative;
-    background-image: url("../img/adventages/adventages-descktop/photo-city.jpg");
-    background-repeat: no-repeat;
-    background-size: 800px auto;
+  .adventages__text {
+    max-width: 295px;
+    font-size: 14px;
+    line-height: 21px;
   }
+}
 
-  // descktop  adventages image @2x
+// adventages blue img
 
-  @media (min-resolution: 2dppx) {
-    .adventages__list-item--image-city {
-      background-image: url("../img/adventages/adventages-descktop/photo-city@2x.jpg");
-      background-size: 800px auto;
-    }
-  }
+.adventages-list__list-item-image-city {
+  vertical-align: bottom;
+}
+
+.adventages__list-item-image-bridge {
+  vertical-align: bottom;
 }
 
 // adventages list with ico
@@ -250,7 +231,7 @@
 
 // adventages description text with ico
 
-.adventages__description--ico {
+.adventages__text-description-ico {
   color: #333333;
   text-align: start;
 }
@@ -258,7 +239,7 @@
 // tablet adventages description text with ico
 
 @media (min-width: 768px) {
-  .adventages__description--ico {
+  .adventages__text-description-ico {
     text-align: center;
   }
 }
@@ -378,65 +359,12 @@
   }
 }
 
-// adventages img number two for blue
+// // adventages img number two for blue
+
+// adventages blue img
 
 .adventages__list-item--image-bridge {
-  position: relative;
-  background-image: url("../img/adventages/adventages-mobile/photo-bridge.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px auto;
-  min-height: 260px;
-  padding: 0;
-}
-
-// adventages image @2x mobile
-
-@media (min-resolution: 2dppx) {
-  .adventages__list-item--image-bridge {
-    background-image: url("../img/adventages/adventages-mobile/photo-bridge@2x.jpg");
-    background-size: 320px auto;
-  }
-}
-
-// tablet adventages blue img
-
-@media (min-width: 768px) {
-  .adventages__list-item--image-bridge {
-    position: relative;
-    background-image: url("../img/adventages/adventages-tablet/photo-bridge.jpg");
-    background-repeat: no-repeat;
-    background-size: 512px auto;
-    min-height: 256px;
-  }
-
-  // tablet  adventages image @2x
-
-  @media (min-resolution: 2dppx) {
-    .adventages__list-item--image-bridge {
-      background-image: url("../img/adventages/adventages-tablet/photo-bridge@2x.jpg");
-      background-size: 512px auto;
-    }
-  }
-}
-
-// descktop adventages blue img
-
-@media (min-width: 1280px) {
-  .adventages__list-item--image-bridge {
-    position: relative;
-    background-image: url("../img/adventages/adventages-descktop/photo-bridge.jpg");
-    background-repeat: no-repeat;
-    background-size: 800px auto;
-  }
-
-  // tablet  adventages image @2x
-
-  @media (min-resolution: 2dppx) {
-    .adventages__list-item--image-bridge {
-      background-image: url("../img/adventages/adventages-descktop/photo-bridge@2x.jpg");
-      background-size: 800px auto;
-    }
-  }
+  vertical-align: bottom;
 }
 
 // adventages list no ico

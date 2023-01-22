@@ -19,24 +19,26 @@
 
   <!--header -->
 
-  <header class="header header__menu--no-js">
+  <header class="header">
 
-    <div class="header__top">
+    <div class="header__top header__top--no-js-catalog">
 
       <!--header logo -->
 
       <a class="logo" href="index.html">
 
-        <img class="logo__image" src="img/header-logo/logotype-mobile.svg" alt="логотипа sedona of sity.">
+        <img class="logo__image" src="img/header-logo/logotype-mobile.svg" alt="логотипа sedona of sity." width="185"
+          height="96">
       </a>
 
       <!--header nav -->
 
-      <nav class="header__menu">
+      <nav class="header__menu header__menu--no-js">
 
         <h2 class="visually-hidden">Навигация по сайту Седона</h2>
 
-        <button class="header__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
+        <button class="header__button header__button--no-js" aria-controls="menu" aria-expanded="false"
+          aria-label="Открыть меню">
 
           <span class="header__button-line"></span>
 
@@ -49,7 +51,7 @@
 
           <li class="menu__list-item">
 
-            <a class="menu__link menu__link--current" href="index.html">Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
 
           <li class="menu__list-item">
@@ -115,31 +117,31 @@
       <ul class="gallery__list">
 
         <li class="gallery__list-card gallery__list-card-first">
+          <a href="#">
+            <picture>
 
-          <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop.webp 1x, ./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop@2x.webp 2x">
 
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop.webp 1x, ./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1.webp 1x, ./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1-@2x.webp 2x">
 
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1.webp 1x, ./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1-@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile.webp 1x, ./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile@2x.webp 2x">
 
-            <source type="image/webp"
-              srcset="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile.webp 1x, ./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1280px)"
+                srcset="./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop@2x.jpg 2x">
 
-            <source media="(min-width: 1280px)"
-              srcset="./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-1/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1-@2x.jpg 2x">
 
-            <source media="(min-width: 768px)"
-              srcset="./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-1/tablet-photo-1-@2x.jpg 2x">
+              <img class="gallery__image-first"
+                src="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile.jpg"
+                srcset="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile@2x.jpg 2x" width="280"
+                height="280" alt="дорога в закат.">
 
-            <img class="gallery__image-first"
-              src="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile.jpg"
-              srcset="./img/gallery/card/mobile-card/gallery-photo-1/gallery-photo-1-mobile@2x.jpg 2x" width="280"
-              height="280" alt="дорога в закат.">
-
-          </picture>
-
+            </picture>
+          </a>
           <div class="gallery__card-description gallery__card-description-first">
 
             <div class="gallery__wrapper-author">
@@ -170,20 +172,25 @@
 
         <li class="gallery__list-card">
 
-          <picture>
+          <a href="#">
 
-            <source media="(min-width: 1280px)"
-              srcset="./img/gallery/card/descktop-card/descktop-photo-2/photo-2-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-2/photo-2-desktop@2x.jpg 2x">
+            <picture>
 
-            <source media="(min-width: 768px)"
-              srcset="./img/gallery/card/tablet-card/tablet-photo-2/tablet-photo-2.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-2/tablet-photo-2-@2x.jpg 2x">
+              <source media="(min-width: 1280px)"
+                srcset="./img/gallery/card/descktop-card/descktop-photo-2/photo-2-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-2/photo-2-desktop@2x.jpg 2x">
 
-            <img class="gallery__image-second"
-              src="./img/gallery/card/mobile-card/gallery-photo-2/gallery-photo-2-mobile.jpg"
-              srcset="./img/gallery/card/mobile-card/gallery-photo-2/gallery-photo-2-mobile@2x.jpg 2x" width="280"
-              height="280" alt="офигенская ветка.">
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/card/tablet-card/tablet-photo-2/tablet-photo-2.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-2/tablet-photo-2-@2x.jpg 2x">
 
-          </picture>
+              <img class="gallery__image-second"
+                src="./img/gallery/card/mobile-card/gallery-photo-2/gallery-photo-2-mobile.jpg"
+                srcset="./img/gallery/card/mobile-card/gallery-photo-2/gallery-photo-2-mobile@2x.jpg 2x" width="280"
+                height="280" alt="офигенская ветка.">
+
+            </picture>
+
+          </a>
+
           <div class="gallery__card-description">
 
             <div class="gallery__wrapper-author">
@@ -215,19 +222,23 @@
 
         <li class="gallery__list-card">
 
-          <picture>
+          <a href="#">
 
-            <source media="(min-width: 1280px)"
-              srcset="./img/gallery/card/descktop-card/descktop-photo-3/photo-3-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-3/photo-3-desktop@2x.jpg 2x">
+            <picture>
 
-            <source media="(min-width: 768px)"
-              srcset="./img/gallery/card/tablet-card/tablet-photo-3/tablet-photo-3.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-3/tablet-photo-3-@2x.jpg 2x">
+              <source media="(min-width: 1280px)"
+                srcset="./img/gallery/card/descktop-card/descktop-photo-3/photo-3-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-3/photo-3-desktop@2x.jpg 2x">
 
-            <img class="gallery__image-third"
-              src="./img/gallery/card/mobile-card/gallery-photo-3/gallery-photo-3-mobile.jpg"
-              srcset="./img/gallery/card/mobile-card/gallery-photo-3/gallery-photo-3-mobile@2x.jpg 2x" width="280"
-              height="280" alt="другая дорога.">
-          </picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/card/tablet-card/tablet-photo-3/tablet-photo-3.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-3/tablet-photo-3-@2x.jpg 2x">
+
+              <img class="gallery__image-third"
+                src="./img/gallery/card/mobile-card/gallery-photo-3/gallery-photo-3-mobile.jpg"
+                srcset="./img/gallery/card/mobile-card/gallery-photo-3/gallery-photo-3-mobile@2x.jpg 2x" width="280"
+                height="280" alt="другая дорога.">
+            </picture>
+
+          </a>
 
           <div class="gallery__card-description gallery__card-description--darck">
 
@@ -260,19 +271,23 @@
 
         <li class="gallery__list-card">
 
-          <picture>
+          <a href="#">
 
-            <source media="(min-width: 1280px)"
-              srcset="./img/gallery/card/descktop-card/descktop-photo-4/photo-4-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-4/photo-4-desktop@2x.jpg 2x">
+            <picture>
 
-            <source media="(min-width: 768px)"
-              srcset="./img/gallery/card/tablet-card/tablet-photo-4/tablet-photo-4.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-4/tablet-photo-4-@2x.jpg 2x">
+              <source media="(min-width: 1280px)"
+                srcset="./img/gallery/card/descktop-card/descktop-photo-4/photo-4-desktop.jpg 1x, ./img/gallery/card/descktop-card/descktop-photo-4/photo-4-desktop@2x.jpg 2x">
 
-            <img class="gallery__image-fourth"
-              src="./img/gallery/card/mobile-card/gallery-photo-4/gallery-photo-4-mobile.jpg"
-              srcset="./img/gallery/card/mobile-card/gallery-photo-4/gallery-photo-4-mobile@2x.jpg 2x" width="280"
-              height="280" alt="мост дьявола.">
-          </picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/gallery/card/tablet-card/tablet-photo-4/tablet-photo-4.jpg 1x, ./img/gallery/card/tablet-card/tablet-photo-4/tablet-photo-4-@2x.jpg 2x">
+
+              <img class="gallery__image-fourth"
+                src="./img/gallery/card/mobile-card/gallery-photo-4/gallery-photo-4-mobile.jpg"
+                srcset="./img/gallery/card/mobile-card/gallery-photo-4/gallery-photo-4-mobile@2x.jpg 2x" width="280"
+                height="280" alt="мост дьявола.">
+            </picture>
+
+          </a>
 
           <div class="gallery__card-description">
 

@@ -1,0 +1,19 @@
+// tablet fildset wrapper
+
+@media (min-width: 768px) {
+  .fildset-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// descktop fildset wrapper
+
+@media (min-width: 1280px) {
+  .fildset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+}

@@ -18,5 +18,9 @@ const headerBtn = document.querySelector('.header__button'),
 
             document.addEventListener('DOMContentLoaded', function (Event) {
               const  header = document.querySelector('.header')
-            header.classList.remove('header__menu--no-js')
+              const  headerButton = document.querySelector('.header__button')
+              const  menu = document.querySelector('.header__top')
+            header.classList.remove('header--no-js'),
+            headerButton.classList.remove('header__button--no-js'),
+            menu.classList.remove('header__top--no-js-catalog')
             });

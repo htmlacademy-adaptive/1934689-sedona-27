@@ -3,7 +3,7 @@
 .menu {
   list-style: none;
   position: absolute;
-  top: -400%;
+  top: -392%;
   left: 0;
   right: 0;
   margin: auto;
@@ -20,6 +20,13 @@
   width: 185px;
   grid-column: 3;
   grid-row: span 2;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .menu--no-js-catalog {
+    display: block;
+    top: 219px;
+  }
 }
 
 // tablet menu
@@ -40,11 +47,11 @@
 @media (min-width: 1280px) {
   .menu {
     position: relative;
-    padding-right: 53px;
   }
 }
 
 // descktop menu catalog
+
 @media (min-width: 1280px) {
   .menu--catalog {
     padding-left: 44px;
@@ -57,7 +64,6 @@
   .menu--form {
     padding: 0;
     min-width: 1200px;
-    margin-left: -40px;
   }
 }
 

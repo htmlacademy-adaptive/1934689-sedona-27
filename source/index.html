@@ -21,7 +21,7 @@
 
   <!--header -->
 
-  <header class="header header__menu--no-js">
+  <header class="header header--no-js">
 
     <div class="header__top">
 
@@ -39,7 +39,8 @@
 
         <h2 class="visually-hidden">Навигация по сайту Седона</h2>
 
-        <button class="header__button" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">
+        <button class="header__button header__button--no-js" aria-controls="menu" aria-expanded="false"
+          aria-label="Открыть меню">
 
           <span class="header__button-line"></span>
 
@@ -126,7 +127,7 @@
 
         <!--adventages description-->
 
-        <li class="adventages-list__list-item adventages-list__list-item--blue adventages-list__list-one">
+        <li class="adventages-list__list-item adventages-list__list-item-blue adventages-list__list-one">
 
           <p class="adventages__title adventages__title--blue">Настоящий городок</p>
 
@@ -137,7 +138,23 @@
 
         <!--adventages photo-->
 
-        <li class="adventages-list__list-item adventages__list-item--image-city adventages__list-image-one">
+        <li class="adventages-list__list-item  adventages__list-image-one">
+
+          <a href="#">
+
+            <picture>
+
+              <source media="(min-width: 1280px)"
+                srcset="./img/adventages/adventages-descktop/photo-city.jpg 1x, ./img/adventages/adventages-descktop/photo-city@2x.jpg 2x">
+
+              <source media="(min-width: 768px)"
+                srcset="./img/adventages/adventages-tablet/photo-city.jpg 1x, ./img/adventages/adventages-tablet/photo-city@2x.jpg 2x">
+
+              <img class="adventages-list__list-item-image-city" src="./img/adventages/adventages-mobile/photo-city.jpg"
+                srcset="./img/adventages/adventages-mobile/photo-city@2x.jpg" width="520" height="260"
+                alt="город Седона.">
+            </picture>
+          </a>
         </li>
 
         <!--adventages features with icon-->
@@ -151,7 +168,8 @@
 
             <span class="adventages__title adventages__title--ico">Жилье</span>
 
-            <p class="adventages__text adventages__description--ico">Рекомендуем пожить в настоящем мотеле, все как в
+            <p class="adventages__text adventages__text-description-ico">Рекомендуем пожить в настоящем мотеле, все как
+              в
               кино!</p>
           </div>
         </li>
@@ -164,7 +182,7 @@
 
             <span class="adventages__title adventages__title--ico">Еда</span>
 
-            <p class="adventages__text adventages__description--ico">Всегда заказывайте фирменный бургер, вы не
+            <p class="adventages__text adventages__text-description-ico">Всегда заказывайте фирменный бургер, вы не
               разочаруетесь!</p>
           </div>
         </li>
@@ -177,7 +195,8 @@
 
             <span class="adventages__title adventages__title--ico">Сувениры</span>
 
-            <p class="adventages__text adventages__description--ico">Не только китайского, но и местного производства!
+            <p class="adventages__text adventages__text-description-ico">Не только китайского, но и местного<br>
+              производства!
             </p>
           </div>
         </li>
@@ -186,7 +205,7 @@
 
         <!--adventages description-->
 
-        <li class="adventages__list-item adventages-list__list-item--blue adventages-list__list-two">
+        <li class="adventages__list-item adventages-list__list-item-blue adventages-list__list-two">
 
           <p class="adventages__title adventages__title--blue">Там есть мост Дьявола</p>
 
@@ -198,7 +217,22 @@
 
         <!--adventages photo-->
 
-        <li class="adventages__list-item adventages__list-item--image-bridge adventages__list-item-image-two">
+        <li class="adventages__list-item  adventages__list-item-image-two">
+          <a href="#">
+
+            <picture>
+
+              <source media="(min-width: 1280px)"
+                srcset="./img/adventages/adventages-descktop/photo-bridge.jpg 1x, ./img/adventages/adventages-descktop/photo-bridge@2x.jpg 2x">
+
+              <source media="(min-width: 768px)"
+                srcset="./img/adventages/adventages-tablet/photo-bridge.jpg 1x, ./img/adventages/adventages-tablet/photo-bridge@2x.jpg 2x">
+
+              <img class="adventages__list-item-image-bridge" src="./img/adventages/adventages-mobile/photo-bridge.jpg"
+                srcset="./img/adventages/adventages-mobile/photo-bridge@2x.jpg" width="520" height="260"
+                alt="город Седона.">
+            </picture>
+          </a>
         </li>
 
         <!--adventages features without icon-->
@@ -249,7 +283,7 @@
         седоне.
       </p>
 
-      <button class="hotel__button button">найти гостиницу</button>
+      <a class="hotel__button button" href="#">найти гостиницу</a>
     </section>
 
     <!--map-->

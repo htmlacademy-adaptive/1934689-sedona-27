@@ -31,6 +31,22 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotel__button {
+//button form
+
+.button--form {
   padding: 16px 49px;
+  min-width: 280px;
+}
+
+@media (min-width: 768px) {
+  .button--form {
+    min-width: 324px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .button--form {
+    min-width: 384px;
+    margin-left: 21px;
+  }
 }

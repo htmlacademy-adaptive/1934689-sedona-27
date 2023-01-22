@@ -70,6 +70,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .gallery__list-card-first {
+    width: 100%;
+  }
+}
+
 // gallery card underline
 
 .gallery__list-card::before {
@@ -200,6 +206,7 @@
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 3px;
+  max-width: 300px;
 }
 
 // descktop gallery text
@@ -304,6 +311,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  max-width: 300px;
 }
 
 // descktop gallery card name author

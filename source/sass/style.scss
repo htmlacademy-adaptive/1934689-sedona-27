@@ -24,9 +24,13 @@
 
 @use "../sass/bloks/hero/hero.scss";
 
+// hero-trangle section
+
+@use "../sass/bloks/hero/hero-rtiangle/hero-triangle.scss";
+
 // adventages section
 
-@use "../sass/bloks/adventages/adventages-list.scss";
+@use "../sass/bloks/adventages/adventages.scss";
 
 //hotel section
 
@@ -47,6 +51,14 @@
 // form section page
 
 @use "../sass/bloks/form/form.scss";
+
+// form-review section page
+
+@use "../sass/bloks/form/form-review/form-review.scss";
+
+// fildset-wrapper section page
+
+@use "../sass/bloks/form/fildset-wrapper/fildset-wrapper.scss";
 
 // footer section
 
