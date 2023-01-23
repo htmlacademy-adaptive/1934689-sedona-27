@@ -22,7 +22,7 @@
 
 .adventages-list__list-item-blue {
   background-color: #81b3d2;
-  padding: 54px 18px 40px;
+  padding: 54px 18px 39px;
 }
 
 .adventages-list__list-two {
@@ -37,7 +37,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 52px 33px 31px 33px;
+    padding: 52px 20px 31px 20px;
   }
 }
 
@@ -57,6 +57,22 @@
   margin-bottom: 11px;
 }
 
+//add and remove tag br
+
+.adventages__title--blue-br {
+  display: none;
+}
+
+//add and remove tag br
+
+.adventages__text-description-ico-br {
+  display: none;
+}
+
+.adventages__text-description-ico-br-tablet {
+  display: none;
+}
+
 // tablet adventages title
 
 @media (min-width: 768px) {
@@ -70,6 +86,52 @@
   .adventages__title {
     max-width: 200px;
     margin-bottom: 8px;
+  }
+}
+
+//add and remove tag br
+
+@media (min-width: 768px) {
+  .adventages__title--blue-br {
+    display: block;
+  }
+}
+
+//add and remove tag br
+
+@media (min-width: 1280px) {
+  .adventages__title--blue-br {
+    display: block;
+  }
+}
+
+//add and remove tag br
+
+@media (min-width: 768px) {
+  .adventages__text-description-ico-br-tablet {
+    display: block;
+  }
+}
+
+//add and remove tag br
+
+@media (min-width: 768px) {
+  .adventages__text-description-ico-br {
+    display: block;
+  }
+}
+
+//add and remove tag br
+
+@media (min-width: 1280px) {
+  .adventages__text-description-ico-br {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .adventages__text-description-ico-tablet {
+    max-width: 174px;
   }
 }
 
@@ -98,6 +160,7 @@
     font-size: 14px;
     line-height: 26px;
     max-width: 185px;
+    margin-bottom: 20px;
   }
 }
 
@@ -122,8 +185,20 @@
 
 @media (min-width: 768px) {
   .adventages__text {
-    max-width: 185px;
+    max-width: 180px;
   }
+}
+
+// add  and remove tag br
+
+.adventages__text-br {
+  display: none;
+}
+
+// add  and remove tag br
+
+.adventages__text-br-tablet {
+  display: none;
 }
 
 @media (min-width: 1280px) {
@@ -131,6 +206,28 @@
     max-width: 295px;
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+// add  and remove tag br
+
+@media (min-width: 768px) {
+  .adventages__text-br-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adventages__text-br-tablet {
+    display: none;
+  }
+}
+
+// add  and remove tag br
+
+@media (min-width: 1280px) {
+  .adventages__text-br {
+    display: block;
   }
 }
 
@@ -150,7 +247,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
-  padding: 8px 18px;
+  padding: 0 18px;
 }
 
 // list center between mobile and descktop
@@ -209,14 +306,28 @@
 
 .adventages__title--ico {
   color: #333333;
-  margin: 8px 0 15px;
   text-align: start;
+}
+
+.adventages__title--ico-hause {
+  margin-top: 19px;
+  margin-bottom: 16px;
+}
+
+.adventages__title--ico-eat {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.adventages__title--ico-gifts {
+  margin-top: 20px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
   .adventages__title--ico {
     color: #333333;
-    margin: 0 0 22px;
+    margin: 0 0 24px;
     text-align: start;
   }
 }
@@ -247,7 +358,7 @@
 // adventages list ico gifts bobile margin
 
 .adventages-list__list-item--gifts {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 // tablet adventages list gifts no margin
@@ -263,7 +374,7 @@
 .adventages-list__list-item--hausing::before {
   content: url("../img/adventages/features/icon-house.svg");
   margin-right: 7px;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 //tablet adventages ico image hausing
@@ -297,7 +408,7 @@
 .adventages-list__list-item--eat::before {
   content: url("../img/adventages/features/icon-burger.svg");
   margin-right: 7px;
-  margin-top: 13px;
+  margin-top: 25px;
 }
 
 // list center between mobile and tablet
@@ -333,7 +444,7 @@
 .adventages-list__list-item--gifts::before {
   content: url("../img/adventages/features/icon-gift.svg");
   margin-right: 7px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 //tablet adventages ico image gifts
@@ -372,7 +483,7 @@
 .adventages__list-item-no-ico {
   background-color: #eeeeee;
   position: relative;
-  padding: 25px 26px;
+  padding: 25px 38px;
 }
 
 .adventages__title--no-ico {
@@ -399,6 +510,13 @@
   color: #000000;
 }
 
+@media (min-width: 1280px) {
+  .adventages__number--no-ico {
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+}
+
 .adventages__text--no-ico {
   color: #000000;
 }
@@ -412,9 +530,23 @@
   }
 }
 
+// add and remove tag br
+
+.adventages__text--number-br {
+  display: none;
+}
+
+// add and remove tag br
+
+@media (min-width: 768px) {
+  .adventages__text--number-br {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .adventages__text--number {
-    max-width: 147px;
+    max-width: 161px;
   }
 }
 
@@ -481,6 +613,7 @@
 
   .adventages-list__list-two {
     grid-area: bltw;
+    padding-top: 53px;
   }
 
   .adventages__list-item-image-two {
@@ -500,6 +633,12 @@
   .adventages__list-item-third {
     grid-area: lith;
     padding: 52px 33px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adventages-list__list-two {
+    padding-top: 18px;
   }
 }
 

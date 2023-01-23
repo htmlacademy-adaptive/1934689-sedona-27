@@ -13,7 +13,7 @@
 
 @media (min-width: 768px) {
   .hotel {
-    padding: 61px 166px 58px;
+    padding: 61px 160px 58px;
   }
 }
 
@@ -21,7 +21,7 @@
 
 @media (min-width: 1280px) {
   .hotel {
-    padding: 61px 382px 66px;
+    padding: 61px 381px 66px;
   }
 }
 
@@ -41,7 +41,15 @@
 @media (min-width: 768px) {
   .hotel__title {
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+// secktop hotel title
+
+@media (min-width: 1280px) {
+  .hotel__title {
+    margin-bottom: 33px;
   }
 }
 
@@ -53,6 +61,16 @@
   line-height: 21px;
   text-transform: uppercase;
   margin-bottom: 32px;
+}
+
+// add and remove tag br
+
+.hotel__description-br {
+  display: none;
+}
+
+.hotel__description-br-tablet {
+  display: none;
 }
 
 // tablet hotel description
@@ -68,7 +86,23 @@
 
 @media (min-width: 1280px) {
   .hotel__description {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
+  }
+}
+
+// add and remove tag br
+
+@media (min-width: 678px) {
+  .hotel__description-br {
+    display: block;
+  }
+}
+
+// add and remove tag br
+
+@media (min-width: 1280px) {
+  .hotel__description-br {
+    display: block;
   }
 }
 
