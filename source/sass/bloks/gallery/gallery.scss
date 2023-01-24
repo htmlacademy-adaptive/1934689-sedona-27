@@ -1,11 +1,9 @@
 // gallery catalog page
 
 .gallery {
-  padding: 13px 0;
+  padding: 24px 0 13px;
   margin-bottom: -41px;
 }
-
-// tablet gallery catalog
 
 @media (min-width: 768px) {
   .gallery {
@@ -135,7 +133,6 @@
 
 @media (min-width: 768px) {
   .gallery__image-second {
-    display: block;
     padding: 0;
     margin: 0;
   }
@@ -152,7 +149,6 @@
 
 @media (min-width: 768px) {
   .gallery__image-third {
-    display: block;
     padding: 0;
     margin: 0;
   }
@@ -171,7 +167,7 @@
   .gallery__image-fourth {
     display: block;
     padding: 0;
-    margin: 0;
+    margin-bottom: 7px;
   }
 }
 
@@ -214,6 +210,8 @@
 @media (min-width: 1280px) {
   .gallery__card-title {
     color: #ffffff;
+    margin-bottom: 5px;
+    margin-left: 5px;
   }
 }
 
@@ -233,7 +231,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
-    padding: 26px 20px 12px 20px;
+    padding: 22px 20px 13px 20px;
     background-color: #f2f2f2;
   }
 }
@@ -245,6 +243,7 @@
     position: absolute;
     bottom: 0;
     background-color: rgb(0, 0, 0, 0.3);
+    padding: 18px 20px 19px 20px;
     min-width: 400px;
   }
 }
@@ -273,9 +272,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0;
     min-width: 648px;
-    padding: 19px 18px;
+    padding-top: 22px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #f2f2f2;
     margin-top: 0;
   }
@@ -289,14 +290,29 @@
     bottom: 0;
     margin-bottom: 0;
     min-width: 1200px;
+    padding: 21px 20px 17px;
     background-color: rgb(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery__card-description-first .gallery__card-title {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery__card-description-first .gallery__card-author {
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
 // gallery card wrapper text
 
 .gallery__wrapper-author {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -319,8 +335,11 @@
 @media (min-width: 1280px) {
   .gallery__card-author {
     color: #ffffff;
+    margin-left: 5px;
+    margin-bottom: 3px;
   }
 }
+
 // gallery card action
 
 .gallery__card-like {
@@ -345,12 +364,27 @@
   opacity: 0.3;
 }
 
+@media (min-width: 768px) {
+  .gallery__number-reaction {
+    margin-left: 3px;
+  }
+}
+
 // descktop card like icon
 
 @media (min-width: 1280px) {
   .gallery__card-icon {
     fill: #ffffff;
     opacity: 1;
+  }
+}
+
+//tablet card reaction
+
+@media (min-width: 768px) {
+  .gallery__card-reaction {
+    display: inline-block;
+    margin-bottom: 10px;
   }
 }
 

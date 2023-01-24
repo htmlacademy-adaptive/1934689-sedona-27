@@ -16,6 +16,7 @@
 .hero--form {
   margin-bottom: 0;
   position: relative;
+  padding-top: 35px;
   padding-bottom: 28px;
 }
 
@@ -54,6 +55,7 @@
 .hero--catalog {
   position: relative;
   padding: 37px 20px 36px;
+  margin-bottom: 0;
 }
 
 //tablet  hero  darck
@@ -69,7 +71,7 @@
 @media (min-width: 1280px) {
   .hero--catalog {
     padding: 100px 372px 65px;
-    margin-bottom: 19px;
+    margin-bottom: 24px;
   }
 }
 
@@ -109,7 +111,8 @@
 // mobil bottom hero
 
 .hero--bottom-catalog {
-  padding: 20px 0;
+  padding: 22px 0;
+  margin-bottom: 3px;
 }
 
 // tablet hero dark catalog
@@ -128,7 +131,8 @@
     font-size: 30px;
     padding: 62px 378px 64px;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 23px;
+    margin-top: -7px;
   }
 }
 
@@ -201,7 +205,7 @@
     font-size: 30px;
     line-height: 26px;
     padding: 0;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 }
 
@@ -259,6 +263,14 @@
   padding: 0;
 }
 
+// tablet hero description catalog
+
+@media (min-width: 768px) {
+  .hero__description--catalog {
+    max-width: 432px;
+  }
+}
+
 .hero__description--dark {
   padding: 0 30px;
 }
@@ -276,6 +288,12 @@
     font-size: 14px;
     line-height: 21px;
     padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__description--form {
+    max-width: 441px;
   }
 }
 

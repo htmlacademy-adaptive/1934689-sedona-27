@@ -1,8 +1,12 @@
 // footer
 
 .footer {
-  padding: 29px 77px 21px 77px;
+  padding: 32px 77px 21px 77px;
   background-color: #ffffff;
+}
+
+.footer--form {
+  padding: 28px 77px 21px;
 }
 
 @media (min-width: 768px) {
@@ -27,7 +31,7 @@
 
 @media (min-width: 768px) {
   .footer--catalog {
-    padding: 36px 59px;
+    padding: 34px 59px 0 62px;
   }
 }
 
@@ -35,7 +39,7 @@
 
 @media (min-width: 1280px) {
   .footer--catalog {
-    padding: 118px 120px 40px 119px;
+    padding: 129px 120px 31px 116px;
   }
 }
 
@@ -77,6 +81,26 @@
     max-width: 158px;
     margin-bottom: 0;
     padding-left: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__social-list-form {
+    justify-content: center;
+    padding: 0;
+    max-width: 167px;
+  }
+
+  .footer__social-list-form .footer__list-item {
+    margin-right: 6px;
+  }
+}
+
+// tablet footer catalog social list
+
+@media (min-width: 768px) {
+  .footer__social-list-catalog {
+    margin-left: -17px;
   }
 }
 
