@@ -7,12 +7,12 @@
   position: relative;
 }
 
-.header__form {
+.header-form {
   margin-bottom: 1px;
 }
 
 @media (min-width: 1280px) {
-  .header__form {
+  .header-form {
     margin-bottom: 55px;
   }
 }
@@ -58,9 +58,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .header__menu--no-js {
+  .header--no-js {
     display: block;
     top: 165px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .header__top--no-js-catalog {
+    display: block;
+    top: 219px;
   }
 }
 
@@ -89,6 +96,10 @@
   width: 22px;
   height: 22px;
   z-index: 10;
+}
+
+.header__button--no-js {
+  visibility: hidden;
 }
 
 .header__button:hover {
@@ -162,13 +173,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000000;
+  background-color: #81b3d2;
   background-image: url("../img/header/mobile/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 320px auto;
   background-position: 50% 0;
   min-width: 100%;
-  padding: 85px 20px;
+  padding: 90px 20px;
   margin-top: 56px;
 }
 
@@ -186,16 +197,16 @@
 .header__bottom::before {
   position: absolute;
   content: "";
-  clip-path: polygon(100% 100%, 100% 60%, 50% 100%, 0 60%, 0 100%);
+  clip-path: polygon(121% 145%, 100% 55%, 50% 94%, 0 55%, 0 100%);
   min-width: 320px;
   width: 100%;
-  height: 57px;
+  height: 66px;
   bottom: 0;
   background-color: #ffffff;
 }
 
 .header__bottom--catalog::before {
-  clip-path: polygon(100% 100%, 100% 52%, 50% 98%, 0 52%, 0 100%);
+  clip-path: polygon(100% 100%, 100% 59%, 50% 98%, 0 59%, 0 100%);
 }
 
 // header bottom tablet
@@ -283,17 +294,17 @@
       0 -1%,
       0 98%
     );
-    min-width: 1200px;
-    bottom: -2px;
-    height: 57px;
+    min-width: 1201px;
+    height: 58px;
     background-color: #ffffff;
+    bottom: -2px;
   }
 }
 
 // header bottom catalog
 
 .header__bottom--catalog {
-  padding: 110px 0 53px 0;
+  padding: 107px 0 53px 0;
   min-height: 215px;
   margin: 0;
   background-position: 50% -175px;
@@ -318,6 +329,7 @@
     min-height: 357px;
     background-position: 50% -156px;
     min-width: 1200px;
+    padding-top: 157px;
   }
 }
 
@@ -329,7 +341,7 @@
   background-repeat: no-repeat;
   height: 28px;
   width: 115px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .header__wrapper-gorgeus {
@@ -375,7 +387,7 @@
 
   .header__wrapper-gorgeus {
     height: 29px;
-    width: 253px;
+    width: 256px;
     margin-bottom: 52px;
   }
 
@@ -387,7 +399,7 @@
 
   .header__wrapper-canyon {
     height: 75px;
-    width: 282px;
+    width: 286px;
   }
 }
 

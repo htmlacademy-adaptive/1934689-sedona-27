@@ -1,8 +1,12 @@
 // footer
 
 .footer {
-  padding: 28px 77px 21px 77px;
+  padding: 32px 77px 21px 77px;
   background-color: #ffffff;
+}
+
+.footer--form {
+  padding: 28px 77px 21px;
 }
 
 @media (min-width: 768px) {
@@ -11,7 +15,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 25px 76px 23px 61px;
+    padding: 27px 76px 23px 61px;
   }
 }
 
@@ -27,7 +31,7 @@
 
 @media (min-width: 768px) {
   .footer--catalog {
-    padding: 36px 59px;
+    padding: 34px 59px 0 62px;
   }
 }
 
@@ -35,7 +39,7 @@
 
 @media (min-width: 1280px) {
   .footer--catalog {
-    padding: 118px 120px 40px 119px;
+    padding: 129px 120px 31px 116px;
   }
 }
 
@@ -51,9 +55,11 @@
 
 @media (min-width: 1280px) {
   .footer--form {
-    min-width: 1200px;
-    padding: 36px 120px 36px 120px;
-    margin-left: -40px;
+    max-width: 1200px;
+    padding: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
   }
 }
 
@@ -66,14 +72,53 @@
   align-items: center;
   list-style: none;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  padding-left: 3px;
 }
+
+// tablet footer social list
 
 @media (min-width: 768px) {
   .footer__social-list {
     justify-content: space-between;
     max-width: 158px;
     margin-bottom: 0;
+    padding-left: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__social-list-form {
+    justify-content: center;
+    padding: 0;
+    max-width: 167px;
+  }
+
+  .footer__social-list-form .footer__list-item {
+    margin-right: 6px;
+  }
+}
+
+// tablet footer catalog social list
+
+@media (min-width: 768px) {
+  .footer__social-list-catalog {
+    margin-left: -17px;
+  }
+}
+
+// descktop footer social list
+
+@media (min-width: 1280px) {
+  .footer__social-list {
+    padding-left: 7px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer__social-list-form {
+    justify-content: center;
+    padding: 0;
   }
 }
 
@@ -87,14 +132,23 @@
   height: 48px;
   background-color: #81b3d2;
   cursor: pointer;
-  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-right: 6px;
+}
+
+// tablet social list item
+
+@media (min-width: 768px) {
+  .footer__list-item {
+    margin-right: -3px;
+  }
 }
 
 // descktop  social list item
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .footer__list-item {
-    margin-right: 4px;
+    margin-right: -5px;
   }
 }
 
@@ -152,6 +206,12 @@
 }
 
 .footer__link:hover .footer__logo-title {
+  opacity: 0.8;
+  fill: #81b3d2;
+  color: #81b3d2;
+}
+
+.footer__link:hover .footer__logo-image {
   opacity: 0.8;
   fill: #81b3d2;
   color: #81b3d2;

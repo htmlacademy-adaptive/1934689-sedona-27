@@ -3,7 +3,7 @@
 .menu {
   list-style: none;
   position: absolute;
-  top: -400%;
+  top: -392%;
   left: 0;
   right: 0;
   margin: auto;
@@ -22,6 +22,13 @@
   grid-row: span 2;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .menu--no-js-catalog {
+    display: block;
+    top: 219px;
+  }
+}
+
 // tablet menu
 
 @media (min-width: 768px) {
@@ -32,6 +39,16 @@
     background-image: none;
     background-color: #ffffff;
     top: 0;
+    padding-top: 19px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu--form {
+    padding-top: 18px;
+    padding-bottom: 17px;
   }
 }
 
@@ -40,11 +57,13 @@
 @media (min-width: 1280px) {
   .menu {
     position: relative;
-    padding-right: 53px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 // descktop menu catalog
+
 @media (min-width: 1280px) {
   .menu--catalog {
     padding-left: 44px;
@@ -57,7 +76,8 @@
   .menu--form {
     padding: 0;
     min-width: 1200px;
-    margin-left: -40px;
+    padding-top: 18px;
+    padding-bottom: 17px;
   }
 }
 
@@ -77,56 +97,61 @@
   text-transform: uppercase;
 }
 
+// catalog menu
+
+@media (min-width: 768px) {
+  .menu--catalog {
+    padding: 18px 0 17px;
+  }
+}
+
 @media (min-width: 768px) {
   .menu__list-item:last-of-type::before {
     display: none;
   }
+}
 
-  .menu--catalog .menu__list-item {
-    box-shadow: none;
-    padding: 18px 20px 17px 20px;
-  }
+// tablet catalog menu
 
+@media (min-width: 768px) {
   .menu--catalog .menu__list-item:nth-child(1) {
-    box-shadow: none;
-    padding: 18px 11px 17px 20px;
+    padding-left: 9px;
   }
 
   .menu--catalog .menu__list-item:nth-child(2) {
-    box-shadow: none;
-    padding: 18px 0 17px 26px;
-  }
-
-  .menu--catalog .menu__list-item:nth-child(3) {
-    box-shadow: none;
-    padding: 18px 26px 17px 0;
+    padding-left: 25px;
   }
 
   .menu--catalog .menu__list-item:last-child {
-    box-shadow: none;
-    padding: 18px 23px 17px 12px;
+    padding-right: 11px;
   }
 }
 
-// descktop menu
+// desctop catalog menu
 
 @media (min-width: 1280px) {
+  .menu--catalog .menu__list-item {
+    padding: 0;
+  }
+
   .menu--catalog .menu__list-item:nth-child(1) {
-    padding: 19px 87px 12px 20px;
+    padding: 0;
   }
 
   .menu--catalog .menu__list-item:nth-child(2) {
-    padding: 19px 53px 12px 20px;
+    padding: 0;
   }
 
   .menu--catalog .menu__list-item:nth-child(3) {
-    padding: 19px 0 12px 38px;
+    padding: 0;
   }
 
   .menu--catalog .menu__list-item:last-child {
-    text-align: end;
+    padding: 0;
+    margin-left: -2px;
   }
 }
+
 // menu shdow line
 
 .menu__list-item {
@@ -138,7 +163,33 @@
 @media (min-width: 768px) {
   .menu__list-item {
     box-shadow: none;
-    padding: 18px 20px 17px 20px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__list-item:nth-child(2) {
+    padding-left: 22px;
+  }
+}
+
+// descktop menu
+
+@media (min-width: 1280px) {
+  .menu__list-item:nth-child(2) {
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__list-item:nth-child(3) {
+    padding-right: 21px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu__list-item:nth-child(3) {
+    padding-left: 24px;
   }
 }
 

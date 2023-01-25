@@ -1,0 +1,1063 @@
+.form-review {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+  .form-review {
+    align-items: stretch;
+    min-width: 1200px;
+    margin-left: -40px;
+  }
+}
+
+.form-review__wrapper-radiobox {
+  margin-right: 40px;
+}
+
+// tablet radio box
+
+@media (min-width: 768px) {
+  .form-review__wrapper-radiobox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    justify-content: space-between;
+  }
+
+  .form-review__wrapper-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 518px;
+    margin: 0 auto;
+  }
+}
+
+// descktop wrapper checkbox
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    margin-top: 34px;
+    max-width: 1000px;
+    margin-left: 194px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-radiobox {
+    justify-content: flex-start;
+    padding-left: 194px;
+    margin-top: 19px;
+    max-width: 1100px;
+  }
+}
+
+// fildset border off
+
+.form-review__fildset {
+  position: relative;
+  border: none;
+}
+
+// fildset line
+
+.form-review__fildset::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #c4bcbc;
+}
+
+// tablet underline off
+
+@media (min-width: 768px) {
+  .form-review__fildset::before {
+    content: none;
+  }
+}
+
+// title form
+
+.form-review__title {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 17px;
+}
+
+// tablet review title and lines
+
+@media (min-width: 768px) {
+  .form-review__title {
+    font-size: 21px;
+    margin-bottom: 22px;
+    margin-left: -3px;
+    max-width: 401px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__title--line {
+    min-width: 404px;
+    background-color: #ffffff;
+    margin-left: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__title-contact-information {
+    text-align: start;
+    margin-left: 26px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__title {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__title-attraction {
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__title--line {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__title--meet {
+    margin-left: 112px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__title-contact-information {
+    text-align: start;
+    margin-left: 30px;
+  }
+}
+
+// form imput
+
+.form-review__user-input {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  flex-direction: column;
+  padding-bottom: 27px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .form-review__user-input {
+    min-width: 324px;
+  }
+}
+
+.form-review__contacts {
+  padding-bottom: 23px;
+}
+
+.form-review__user-checkbox {
+  padding-bottom: 9px;
+}
+
+@media (min-width: 768px) {
+  .form-review__user-checkbox {
+    padding-bottom: 6px;
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__user-checkbox::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: -37px;
+    background: #dbdbdb;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__user-checkbox::before {
+    max-width: 959px;
+    width: 100%;
+    left: 161px;
+    top: -39px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__user-checkbox {
+    padding-bottom: 50px;
+  }
+}
+
+.form-review__user-radiobox {
+  padding-bottom: 9px;
+}
+
+@media (min-width: 768px) {
+  .form-review__user-radiobox {
+    padding-bottom: 19px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__user-radiobox {
+    padding-bottom: 47px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__user-radiobox::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: -50px;
+    background: #dbdbdb;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__user-radiobox::before {
+    max-width: 960px;
+    width: 100%;
+    left: 160px;
+    top: -53px;
+  }
+}
+
+//descktop  form user imput
+
+@media (min-width: 1280px) {
+  .form-review__user-input:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__user-input:nth-child(4) {
+    margin-left: 0;
+  }
+}
+
+.form-review__input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  line-height: 26px;
+  width: 280px;
+  height: 58px;
+  background: #f2f2f2;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  align-items: center;
+  color: #000000;
+  padding: 16px;
+  margin-left: 18px;
+  margin-bottom: 11px;
+}
+
+// tablet form imput
+
+@media (min-width: 768px) {
+  .form-review__input {
+    margin-bottom: 11px;
+    margin-left: 0;
+    width: 280px;
+    padding: 16px;
+  }
+}
+
+// descktop form imput
+
+@media (min-width: 1280px) {
+  .form-review__input {
+    min-width: 430px;
+    margin-left: 160px;
+    margin-bottom: 13px;
+  }
+}
+
+// form input actions
+
+.form-review__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-review__input:hover {
+  background: #e5e5e5;
+}
+
+.form-review__input:focus {
+  outline: none;
+  background: #ffffff;
+  border: 4px solid #e5e5e5;
+}
+
+.form-review__wrapper-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// tablet wrapper input
+
+@media (min-width: 768px) {
+  .form-review__wrapper-input {
+    justify-content: flex-end;
+  }
+}
+
+.form-review-short {
+  max-width: 222px;
+}
+
+// descktop user imput short
+
+@media (min-width: 1280px) {
+  .form-review-short {
+    min-width: 344px;
+    margin: 0;
+  }
+}
+
+// form input ico
+
+.form-review__ico {
+  background-color: #dbd7d7;
+  width: 58px;
+  height: 58px;
+  padding-top: 14px;
+  padding-left: 19px;
+}
+
+// descktop fotm input ico
+
+@media (min-width: 1280px) {
+  .form-review__ico {
+    margin-right: 120px;
+    margin-bottom: 13px;
+  }
+}
+
+.form-review__ico--tel::after {
+  content: url("../img/form/phone.svg");
+}
+
+@media (min-width: 768px) {
+  .form-review__ico--tel {
+    padding-top: 18px;
+    padding-left: 20px;
+  }
+}
+
+.form-review__ico--mail::before {
+  content: url("../img/form/mail.svg");
+}
+
+@media (min-width: 768px) {
+  .form-review__ico--mail {
+    padding-top: 15px;
+    padding-left: 21px;
+  }
+}
+
+.form-review__label {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 0 18px 0 36px;
+}
+
+// tablet form input label
+
+@media (min-width: 768px) {
+  .form-review__label {
+    padding-left: 16px;
+    padding-top: 2px;
+    margin-bottom: -2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__label--tablet {
+    padding-left: 60px;
+  }
+}
+
+// descktop form input label
+
+@media (min-width: 1280px) {
+  .form-review__label {
+    margin-left: 160px;
+    margin-top: -2px;
+  }
+}
+
+// descktop right label margin off
+
+@media (min-width: 1280px) {
+  .form-review__label--tablet {
+    margin-left: 0;
+    padding-left: 17px;
+  }
+}
+
+.form-review__radio-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form-review__check-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .form-review__check-title {
+    margin-top: 5px;
+  }
+}
+// form emotion input
+
+.form-review__emotions {
+  margin: 0 18px;
+}
+
+// tablet emotion bottom
+
+@media (min-width: 768px) {
+  .form-review__emotions {
+    position: relative;
+    margin: 0;
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__emotions::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    width: 100%;
+    height: 1px;
+    background: #c4bcbc;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__emotions::before {
+    position: absolute;
+    content: "";
+    max-width: 962px;
+    width: 100%;
+    height: 1px;
+    left: 159px;
+    bottom: 0;
+    background: #c4bcbc;
+  }
+}
+
+// descktop emotion bottom
+
+@media (min-width: 1280px) {
+  .form-review__emotions {
+    padding: 0 216px;
+    margin-bottom: 42px;
+  }
+}
+
+// form emotion input title
+
+.form-review__emotions-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+// tablet emotion title
+
+@media (min-width: 768px) {
+  .form-review__emotions-title {
+    font-size: 21px;
+    max-width: 402px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__emotions-title {
+    font-size: 21px;
+    max-width: 402px;
+    margin-left: 222px;
+    margin-bottom: 28px;
+    background-color: #ffffff;
+  }
+}
+
+// form emotion input
+
+.form-review__emotions-input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  min-width: 280px;
+  width: 100%;
+  height: 150px;
+  border: none;
+  background: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  padding: 16px 0 0 16px;
+  margin-bottom: 47px;
+}
+
+// tablet emotions input
+
+@media (min-width: 768px) {
+  .form-review__emotions-input {
+    min-height: 160px;
+    margin-bottom: 0;
+    min-width: 648px;
+  }
+}
+
+// descktop form emotion input
+
+@media (min-width: 1280px) {
+  .form-review__emotions-input {
+    max-width: 768px;
+    margin-left: 41px;
+  }
+}
+
+// emotions input actions
+
+.form-review__emotions-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form-review__emotions-input:hover {
+  background: #e5e5e5;
+}
+
+.form-review__emotions-input:focus {
+  outline: none;
+  background: #ffffff;
+  border: 4px solid #e5e5e5;
+}
+
+// form popup window
+
+.form-review-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #2d34404d;
+}
+
+// open form popup window
+
+.form-review--active {
+  display: flex;
+}
+
+//poppup wrapper
+
+.form-review-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 320px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  padding-top: 45px;
+  z-index: 100;
+  margin-bottom: 550px;
+}
+
+.form-review-wrapper-right {
+  padding-top: 39px;
+  margin-bottom: 350px;
+}
+
+//wrapper error tablet
+
+@media (min-width: 768px) {
+  .form-review-wrapper {
+    min-width: 400px;
+    margin-bottom: 370px;
+    padding-top: 50px;
+  }
+}
+
+//wrapper error descktop
+
+@media (min-width: 1280px) {
+  .form-review-wrapper {
+    margin-bottom: 440px;
+  }
+}
+
+//wrapper access tablet
+
+@media (min-width: 768px) {
+  .form-review-wrapper-right {
+    padding-top: 53px;
+    min-width: 640px;
+    margin-bottom: 458px;
+  }
+}
+
+// wrapper access secktop
+
+@media (min-width: 1280px) {
+  .form-review-wrapper-right {
+    padding-top: 51px;
+    margin-bottom: 506px;
+  }
+}
+
+//wrapper error descktop
+
+@media (min-width: 1280px) {
+  .form-review__wrapper {
+    min-width: 400px;
+  }
+}
+
+//tablet title error
+
+@media (min-width: 768px) {
+  .form-review__title-popup-error {
+    max-width: 170px;
+  }
+}
+
+// form check box
+
+.form-review__check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .form-review__check {
+    min-width: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__check-radio:nth-child(1) {
+    margin-left: 17px;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__check-radio:nth-child(2) {
+    margin-right: 75px;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__check-radio:nth-child(3) {
+    margin-left: 16px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(1) {
+    margin-left: 19px;
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(2) {
+    margin: 0;
+    margin-top: -12px;
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(3) {
+    margin: 0;
+    margin-top: 0;
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(4) {
+    margin: 0;
+    margin-top: -1px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__check-radio:nth-child(1) {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__check-radio:nth-child(2) {
+    margin: 0;
+    margin-left: 41px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__check-radio:nth-child(3) {
+    margin: 0;
+    margin-left: 49px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(1) {
+    margin-top: -2px;
+    margin-left: 11px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(2) {
+    margin-top: -17px;
+    margin-right: -4px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(3) {
+    margin-top: -17px;
+    margin-right: -3px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(4) {
+    margin-top: -17px;
+    margin-right: -3px;
+  }
+}
+
+.form-review__control-mark {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+}
+
+.form-review__control-mark:hover {
+  background: #e5e5e5;
+}
+
+.form-review__radio-box:focus + .form-review__control-mark {
+  outline: auto;
+}
+
+.form-review__checkbox-box:focus + .form-review__check-mark {
+  outline: auto;
+}
+
+.form-review__control-mark::after {
+  content: "";
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+/* stylelint-disable*/
+// Prettier cod formater in vs-code formats the code below with a space before the plus sign, swears at it stylelint.
+
+.form-review__radio-box[type="radio"]:checked
+  + .form-review__control-mark::after {
+  display: flex;
+}
+
+.form-review__radio-box[type="radio"]:checked:active
+  + .form-review__control-mark::after {
+  background: rgba(51, 51, 51, 0.3);
+}
+
+/* stylelint-enable*/
+
+.form-review__check-mark {
+  display: block;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 2px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+}
+
+// tablet checkbox
+
+@media (min-width: 768px) {
+  .form-review__check-mark {
+    margin: 0;
+    margin-right: 16px;
+  }
+}
+
+.form-review__check-mark:hover {
+  background: #e5e5e5;
+}
+
+.form-review__check-mark::after {
+  content: url("../img/form/tick.svg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  position: absolute;
+  width: 22px;
+  height: 16px;
+}
+
+@media (min-width: 1280px) {
+  .form-review__check-mark::after {
+    padding-bottom: 22px;
+  }
+}
+
+/* stylelint-disable*/
+// Prettier cod formater in vs-code formats the code below with a space before the plus sign, swears at it stylelint.
+
+.form-review__checkbox-box[type="checkbox"]:checked
+  + .form-review__check-mark::after {
+  display: flex;
+}
+
+.form-review__checkbox-box[type="checkbox"]:checked:active
+  + .form-review__check-mark::after {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
+/* stylelint-enable*/
+
+.form-review__emotion-active-wrapper {
+  margin: 0 18px;
+}
+
+// tablet wrapper emotion active
+
+@media (min-width: 768px) {
+  .form-review__emotion-active-wrapper {
+    margin: 0;
+    display: flex;
+    min-width: 648px;
+  }
+}
+
+// descktop wrapper emotion active
+
+@media (min-width: 1280px) {
+  .form-review__emotion-active-wrapper {
+    padding: 0;
+    padding-left: 235px;
+    padding-right: 216px;
+  }
+}
+
+// form rulles
+
+.form-review__rulles {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+// tablet form rulles
+
+@media (min-width: 768px) {
+  .form-review__rulles {
+    margin-bottom: 0;
+    font-size: 14px;
+    margin-right: 0;
+    margin-top: 9px;
+  }
+}
+
+//poppup window access
+
+.form-review-title-popup {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.form-review-title-popup-right {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-review-title-popup-right {
+    font-size: 26px;
+  }
+}
+// add and remuve tag br
+
+.form-review-title-popup-error-br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form-review-title-popup-error-br {
+    display: block;
+  }
+}
+
+//popup window error
+
+.form-review-title-popup-error {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-review-title-popup-error {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+//mobile poppup description
+
+.form-review-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  max-width: 237px;
+  margin-bottom: 20px;
+}
+
+.form-review-description-right {
+  max-width: 244px;
+  margin-bottom: 50px;
+}
+
+//tablet poppup description error
+
+@media (min-width: 768px) {
+  .form-review-description {
+    min-width: 307px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review-description-error {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+}
+
+//tablet poppup description access
+
+@media (min-width: 768px) {
+  .form-review-description-right {
+    min-width: 424px;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+}
+
+//mobale wrapper error button
+
+.form-review-button-wrapper {
+  background: #f2f2f2;
+  min-width: 320px;
+  padding: 20px 20px 0;
+}
+
+//tablet wrapper error button
+
+@media (min-width: 768px) {
+  .form-review-button-wrapper {
+    min-width: 640px;
+    text-align: center;
+    padding: 44px 20px;
+  }
+}

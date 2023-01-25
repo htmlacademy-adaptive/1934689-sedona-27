@@ -14,12 +14,19 @@
   width: 48px;
   height: 54px;
   cursor: pointer;
-  top: 36%;
+  top: 37%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
   transition: all 0.2s;
+}
+
+@media (min-width: 768px) {
+  .video-presentation__button::before {
+    cursor: pointer;
+    top: 44%;
+  }
 }
 
 .video-presentation__video {
