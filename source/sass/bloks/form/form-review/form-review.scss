@@ -205,9 +205,10 @@
 
 @media (min-width: 1280px) {
   .form-review__user-checkbox::before {
-    max-width: 1000px;
+    max-width: 959px;
     width: 100%;
-    left: 120px;
+    left: 161px;
+    top: -39px;
   }
 }
 
@@ -229,7 +230,7 @@
 
 @media (min-width: 1280px) {
   .form-review__user-radiobox {
-    padding-bottom: 64px;
+    padding-bottom: 47px;
   }
 }
 
@@ -246,9 +247,10 @@
 
 @media (min-width: 1280px) {
   .form-review__user-radiobox::before {
-    max-width: 1000px;
+    max-width: 960px;
     width: 100%;
-    left: 120px;
+    left: 160px;
+    top: -53px;
   }
 }
 
@@ -454,8 +456,34 @@
 
 @media (min-width: 768px) {
   .form-review__emotions {
+    position: relative;
     margin: 0;
     margin-bottom: 39px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review__emotions::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    width: 100%;
+    height: 1px;
+    background: #c4bcbc;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__emotions::before {
+    position: absolute;
+    content: "";
+    max-width: 962px;
+    width: 100%;
+    height: 1px;
+    left: 159px;
+    bottom: 0;
+    background: #c4bcbc;
   }
 }
 
@@ -464,14 +492,7 @@
 @media (min-width: 1280px) {
   .form-review__emotions {
     padding: 0 216px;
-  }
-}
-
-@media (min-width: 1285px) {
-  .form-review__emotions {
-    margin: 0 auto;
-    min-width: 1200px;
-    text-align: center;
+    margin-bottom: 42px;
   }
 }
 
@@ -492,7 +513,20 @@
 @media (min-width: 768px) {
   .form-review__emotions-title {
     font-size: 21px;
+    max-width: 402px;
+    margin: 0 auto;
     margin-bottom: 28px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__emotions-title {
+    font-size: 21px;
+    max-width: 402px;
+    margin-left: 222px;
+    margin-bottom: 28px;
+    background-color: #ffffff;
   }
 }
 
@@ -528,6 +562,7 @@
 @media (min-width: 1280px) {
   .form-review__emotions-input {
     max-width: 768px;
+    margin-left: 41px;
   }
 }
 
@@ -581,6 +616,12 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding-top: 45px;
   z-index: 100;
+  margin-bottom: 550px;
+}
+
+.form-review-wrapper-right {
+  padding-top: 39px;
+  margin-bottom: 350px;
 }
 
 //wrapper error tablet
@@ -588,6 +629,16 @@
 @media (min-width: 768px) {
   .form-review-wrapper {
     min-width: 400px;
+    margin-bottom: 370px;
+    padding-top: 50px;
+  }
+}
+
+//wrapper error descktop
+
+@media (min-width: 1280px) {
+  .form-review-wrapper {
+    margin-bottom: 440px;
   }
 }
 
@@ -595,7 +646,18 @@
 
 @media (min-width: 768px) {
   .form-review-wrapper-right {
+    padding-top: 53px;
     min-width: 640px;
+    margin-bottom: 458px;
+  }
+}
+
+// wrapper access secktop
+
+@media (min-width: 1280px) {
+  .form-review-wrapper-right {
+    padding-top: 51px;
+    margin-bottom: 506px;
   }
 }
 
@@ -612,88 +674,6 @@
 @media (min-width: 768px) {
   .form-review__title-popup-error {
     max-width: 170px;
-  }
-}
-
-//mobile poppup description
-
-.form-review-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-  max-width: 237px;
-  margin-bottom: 35px;
-}
-
-//tablet poppup description error
-
-@media (min-width: 768px) {
-  .form-review-description {
-    min-width: 307px;
-  }
-}
-
-//tablet poppup description access
-
-@media (min-width: 768px) {
-  .form-review-description-right {
-    min-width: 444px;
-    margin-bottom: 80px;
-  }
-}
-
-// mobile button poppup error
-
-.button--form-error {
-  max-width: 180px;
-  padding: 18px 64px 14px 64px;
-  margin-bottom: 35px;
-}
-
-// tablet button poppup error
-
-@media (min-width: 768px) {
-  .button--form-error {
-    max-width: 272px;
-    padding: 18px 108px 14px 108px;
-  }
-}
-
-// mobile button poppup access
-
-.button--form-right {
-  max-width: 280px;
-  padding: 18px 64px 14px 64px;
-  margin-bottom: 35px;
-}
-
-// tablet button poppup access
-
-@media (min-width: 768px) {
-  .button--form-right {
-    min-width: 458px;
-    padding: 18px 140px 14px;
-  }
-}
-
-//mobale wrapper error button
-
-.form-review-button-wrapper {
-  background: #f2f2f2;
-  min-width: 320px;
-  padding: 20px 20px 0;
-}
-
-//tablet wrapper error button
-
-@media (min-width: 768px) {
-  .form-review-button-wrapper {
-    min-width: 640px;
-    text-align: center;
-    padding: 40px 20px 0;
   }
 }
 
@@ -787,21 +767,28 @@
   .form-review__wrapper-checkbox .form-review__check:nth-child(1) {
     margin-top: -2px;
     margin-left: 11px;
-    margin-right: 49px;
+    margin-right: 15px;
   }
 }
 
 @media (min-width: 1280px) {
   .form-review__wrapper-checkbox .form-review__check:nth-child(2) {
-    margin-top: -2px;
-    margin-right: 26px;
+    margin-top: -17px;
+    margin-right: -4px;
   }
 }
 
 @media (min-width: 1280px) {
   .form-review__wrapper-checkbox .form-review__check:nth-child(3) {
-    margin-top: -2px;
-    margin-right: 30px;
+    margin-top: -17px;
+    margin-right: -3px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form-review__wrapper-checkbox .form-review__check:nth-child(4) {
+    margin-top: -17px;
+    margin-right: -3px;
   }
 }
 
@@ -899,6 +886,12 @@
   height: 16px;
 }
 
+@media (min-width: 1280px) {
+  .form-review__check-mark::after {
+    padding-bottom: 22px;
+  }
+}
+
 /* stylelint-disable*/
 // Prettier cod formater in vs-code formats the code below with a space before the plus sign, swears at it stylelint.
 
@@ -913,8 +906,6 @@
 }
 
 /* stylelint-enable*/
-
-// form wrapper button
 
 .form-review__emotion-active-wrapper {
   margin: 0 18px;
@@ -934,7 +925,9 @@
 
 @media (min-width: 1280px) {
   .form-review__emotion-active-wrapper {
-    padding: 0 216px;
+    padding: 0;
+    padding-left: 235px;
+    padding-right: 216px;
   }
 }
 
@@ -962,5 +955,109 @@
     font-size: 14px;
     margin-right: 0;
     margin-top: 9px;
+  }
+}
+
+//poppup window access
+
+.form-review-title-popup {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.form-review-title-popup-right {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-review-title-popup-right {
+    font-size: 26px;
+  }
+}
+// add and remuve tag br
+
+.form-review-title-popup-error-br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form-review-title-popup-error-br {
+    display: block;
+  }
+}
+
+//popup window error
+
+.form-review-title-popup-error {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-review-title-popup-error {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+//mobile poppup description
+
+.form-review-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  max-width: 237px;
+  margin-bottom: 20px;
+}
+
+.form-review-description-right {
+  max-width: 244px;
+  margin-bottom: 50px;
+}
+
+//tablet poppup description error
+
+@media (min-width: 768px) {
+  .form-review-description {
+    min-width: 307px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-review-description-error {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+}
+
+//tablet poppup description access
+
+@media (min-width: 768px) {
+  .form-review-description-right {
+    min-width: 424px;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+}
+
+//mobale wrapper error button
+
+.form-review-button-wrapper {
+  background: #f2f2f2;
+  min-width: 320px;
+  padding: 20px 20px 0;
+}
+
+//tablet wrapper error button
+
+@media (min-width: 768px) {
+  .form-review-button-wrapper {
+    min-width: 640px;
+    text-align: center;
+    padding: 44px 20px;
   }
 }
