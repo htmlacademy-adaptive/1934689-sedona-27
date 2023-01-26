@@ -57,17 +57,29 @@
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) {
   .header--no-js {
     display: block;
     top: 165px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 768px) {
+  .header--no-js {
+    top: -56px;
+  }
+}
+
+@media (min-width: 320px) {
   .header__top--no-js-catalog {
     display: block;
     top: 219px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__top--no-js-catalog {
+    top: 0;
   }
 }
 
