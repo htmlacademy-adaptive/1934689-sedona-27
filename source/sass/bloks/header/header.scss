@@ -53,15 +53,9 @@
 
 //header top menu
 
-.header__menu {
-  display: none;
-}
-
-@media (min-width: 320px) {
-  .header--no-js {
-    display: block;
-    top: 165px;
-  }
+.header--no-js {
+  display: block;
+  top: 165px;
 }
 
 @media (min-width: 768px) {
@@ -70,11 +64,9 @@
   }
 }
 
-@media (min-width: 320px) {
-  .header__top--no-js-catalog {
-    display: block;
-    top: 219px;
-  }
+.header__top--no-js-catalog {
+  display: block;
+  top: 219px;
 }
 
 @media (min-width: 768px) {
@@ -83,10 +75,8 @@
   }
 }
 
-@media (min-width: 320px) {
-  .header__menu {
-    display: block;
-  }
+.header__menu {
+  display: block;
 }
 
 @media (min-width: 768px) {

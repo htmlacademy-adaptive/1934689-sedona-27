@@ -22,11 +22,9 @@
   grid-row: span 2;
 }
 
-@media (min-width: 320px) {
-  .menu--no-js-catalog {
-    display: block;
-    top: 219px;
-  }
+.menu--no-js-catalog {
+  display: block;
+  top: 219px;
 }
 
 // tablet menu
